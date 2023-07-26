@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment}.
 type DataLaunchdarklyFeatureFlagEnvironment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) TrackEventsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment} Data Source.
 func NewDataLaunchdarklyFeatureFlagEnvironment(scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagEnvironmentConfig) DataLaunchdarklyFeatureFlagEnvironment {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewDataLaunchdarklyFeatureFlagEnvironment(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment} Data Source.
 func NewDataLaunchdarklyFeatureFlagEnvironment_Override(d DataLaunchdarklyFeatureFlagEnvironment, scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagEnvironmentConfig) {
 	_init_.Initialize()
 
