@@ -1,0 +1,428 @@
+//go:build !no_runtime_type_checking
+
+package datalaunchdarklyfeatureflagenvironment
+
+import (
+	"fmt"
+
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
+	if path == nil {
+		return fmt.Errorf("parameter path is required, but nil was provided")
+	}
+
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateGetListAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	if newLogicalId == nil {
+		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validatePutContextTargetsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataLaunchdarklyFeatureFlagEnvironmentContextTargets:
+		value := value.(*[]*DataLaunchdarklyFeatureFlagEnvironmentContextTargets)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataLaunchdarklyFeatureFlagEnvironmentContextTargets:
+		value_ := value.([]*DataLaunchdarklyFeatureFlagEnvironmentContextTargets)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataLaunchdarklyFeatureFlagEnvironmentContextTargets; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validatePutFallthroughParameters(value *DataLaunchdarklyFeatureFlagEnvironmentFallthrough) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validatePutPrerequisitesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataLaunchdarklyFeatureFlagEnvironmentPrerequisites:
+		value := value.(*[]*DataLaunchdarklyFeatureFlagEnvironmentPrerequisites)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataLaunchdarklyFeatureFlagEnvironmentPrerequisites:
+		value_ := value.([]*DataLaunchdarklyFeatureFlagEnvironmentPrerequisites)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataLaunchdarklyFeatureFlagEnvironmentPrerequisites; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validatePutRulesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataLaunchdarklyFeatureFlagEnvironmentRules:
+		value := value.(*[]*DataLaunchdarklyFeatureFlagEnvironmentRules)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataLaunchdarklyFeatureFlagEnvironmentRules:
+		value_ := value.([]*DataLaunchdarklyFeatureFlagEnvironmentRules)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataLaunchdarklyFeatureFlagEnvironmentRules; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validatePutTargetsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataLaunchdarklyFeatureFlagEnvironmentTargets:
+		value := value.(*[]*DataLaunchdarklyFeatureFlagEnvironmentTargets)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataLaunchdarklyFeatureFlagEnvironmentTargets:
+		value_ := value.([]*DataLaunchdarklyFeatureFlagEnvironmentTargets)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataLaunchdarklyFeatureFlagEnvironmentTargets; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func validateDataLaunchdarklyFeatureFlagEnvironment_IsConstructParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataLaunchdarklyFeatureFlagEnvironment_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataLaunchdarklyFeatureFlagEnvironment_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetCountParameters(val interface{}) error {
+	switch val.(type) {
+	case *float64:
+		// ok
+	case float64:
+		// ok
+	case *int:
+		// ok
+	case int:
+		// ok
+	case *uint:
+		// ok
+	case uint:
+		// ok
+	case *int8:
+		// ok
+	case int8:
+		// ok
+	case *int16:
+		// ok
+	case int16:
+		// ok
+	case *int32:
+		// ok
+	case int32:
+		// ok
+	case *int64:
+		// ok
+	case int64:
+		// ok
+	case *uint8:
+		// ok
+	case uint8:
+		// ok
+	case *uint16:
+		// ok
+	case uint16:
+		// ok
+	case *uint32:
+		// ok
+	case uint32:
+		// ok
+	case *uint64:
+		// ok
+	case uint64:
+		// ok
+	case cdktf.TerraformCount:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetEnvKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetFlagIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetOffVariationParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetOnParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetTrackEventsParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func validateNewDataLaunchdarklyFeatureFlagEnvironmentParameters(scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagEnvironmentConfig) error {
+	if scope == nil {
+		return fmt.Errorf("parameter scope is required, but nil was provided")
+	}
+
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+

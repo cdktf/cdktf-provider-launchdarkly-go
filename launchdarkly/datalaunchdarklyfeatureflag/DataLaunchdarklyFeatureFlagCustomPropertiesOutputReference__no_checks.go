@@ -1,0 +1,86 @@
+//go:build no_runtime_type_checking
+
+package datalaunchdarklyfeatureflag
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetValueParameters(val *[]*string) error {
+	return nil
+}
+
+func validateNewDataLaunchdarklyFeatureFlagCustomPropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

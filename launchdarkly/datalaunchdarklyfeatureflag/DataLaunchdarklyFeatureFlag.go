@@ -1,0 +1,1200 @@
+package datalaunchdarklyfeatureflag
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/feature_flag launchdarkly_feature_flag}.
+type DataLaunchdarklyFeatureFlag interface {
+	cdktf.TerraformDataSource
+	Archived() interface{}
+	SetArchived(val interface{})
+	ArchivedInput() interface{}
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	ClientSideAvailability() DataLaunchdarklyFeatureFlagClientSideAvailabilityList
+	ClientSideAvailabilityInput() interface{}
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	CustomProperties() DataLaunchdarklyFeatureFlagCustomPropertiesList
+	CustomPropertiesInput() interface{}
+	Defaults() DataLaunchdarklyFeatureFlagDefaultsOutputReference
+	DefaultsInput() *DataLaunchdarklyFeatureFlagDefaults
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	IncludeInSnippet() interface{}
+	SetIncludeInSnippet(val interface{})
+	IncludeInSnippetInput() interface{}
+	Key() *string
+	SetKey(val *string)
+	KeyInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintainerId() *string
+	SetMaintainerId(val *string)
+	MaintainerIdInput() *string
+	Name() *string
+	// The tree node.
+	Node() constructs.Node
+	ProjectKey() *string
+	SetProjectKey(val *string)
+	ProjectKeyInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	Tags() *[]*string
+	SetTags(val *[]*string)
+	TagsInput() *[]*string
+	Temporary() interface{}
+	SetTemporary(val interface{})
+	TemporaryInput() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Variations() DataLaunchdarklyFeatureFlagVariationsList
+	VariationsInput() interface{}
+	VariationType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutClientSideAvailability(value interface{})
+	PutCustomProperties(value interface{})
+	PutDefaults(value *DataLaunchdarklyFeatureFlagDefaults)
+	PutVariations(value interface{})
+	ResetArchived()
+	ResetClientSideAvailability()
+	ResetCustomProperties()
+	ResetDefaults()
+	ResetDescription()
+	ResetId()
+	ResetIncludeInSnippet()
+	ResetMaintainerId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTemporary()
+	ResetVariations()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DataLaunchdarklyFeatureFlag
+type jsiiProxy_DataLaunchdarklyFeatureFlag struct {
+	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Archived() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"archived",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) ArchivedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"archivedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) ClientSideAvailability() DataLaunchdarklyFeatureFlagClientSideAvailabilityList {
+	var returns DataLaunchdarklyFeatureFlagClientSideAvailabilityList
+	_jsii_.Get(
+		j,
+		"clientSideAvailability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) ClientSideAvailabilityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clientSideAvailabilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) CustomProperties() DataLaunchdarklyFeatureFlagCustomPropertiesList {
+	var returns DataLaunchdarklyFeatureFlagCustomPropertiesList
+	_jsii_.Get(
+		j,
+		"customProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) CustomPropertiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customPropertiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Defaults() DataLaunchdarklyFeatureFlagDefaultsOutputReference {
+	var returns DataLaunchdarklyFeatureFlagDefaultsOutputReference
+	_jsii_.Get(
+		j,
+		"defaults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) DefaultsInput() *DataLaunchdarklyFeatureFlagDefaults {
+	var returns *DataLaunchdarklyFeatureFlagDefaults
+	_jsii_.Get(
+		j,
+		"defaultsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) IncludeInSnippet() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeInSnippet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) IncludeInSnippetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeInSnippetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Key() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"key",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) KeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) MaintainerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintainerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) MaintainerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintainerIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) ProjectKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) ProjectKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) TagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Temporary() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"temporary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) TemporaryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"temporaryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Variations() DataLaunchdarklyFeatureFlagVariationsList {
+	var returns DataLaunchdarklyFeatureFlagVariationsList
+	_jsii_.Get(
+		j,
+		"variations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) VariationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"variationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) VariationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"variationType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
+func NewDataLaunchdarklyFeatureFlag(scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagConfig) DataLaunchdarklyFeatureFlag {
+	_init_.Initialize()
+
+	if err := validateNewDataLaunchdarklyFeatureFlagParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_DataLaunchdarklyFeatureFlag{}
+
+	_jsii_.Create(
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
+func NewDataLaunchdarklyFeatureFlag_Override(d DataLaunchdarklyFeatureFlag, scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag",
+		[]interface{}{scope, id, config},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetArchived(val interface{}) {
+	if err := j.validateSetArchivedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"archived",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetIncludeInSnippet(val interface{}) {
+	if err := j.validateSetIncludeInSnippetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeInSnippet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"key",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetMaintainerId(val *string) {
+	if err := j.validateSetMaintainerIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintainerId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetProjectKey(val *string) {
+	if err := j.validateSetProjectKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetTemporary(val interface{}) {
+	if err := j.validateSetTemporaryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"temporary",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DataLaunchdarklyFeatureFlag_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataLaunchdarklyFeatureFlag_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataLaunchdarklyFeatureFlag_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataLaunchdarklyFeatureFlag_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataLaunchdarklyFeatureFlag_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataLaunchdarklyFeatureFlag_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DataLaunchdarklyFeatureFlag_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) PutClientSideAvailability(value interface{}) {
+	if err := d.validatePutClientSideAvailabilityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putClientSideAvailability",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) PutCustomProperties(value interface{}) {
+	if err := d.validatePutCustomPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCustomProperties",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) PutDefaults(value *DataLaunchdarklyFeatureFlagDefaults) {
+	if err := d.validatePutDefaultsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDefaults",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) PutVariations(value interface{}) {
+	if err := d.validatePutVariationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putVariations",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetArchived() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetArchived",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetClientSideAvailability() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClientSideAvailability",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetCustomProperties() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomProperties",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetDefaults() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaults",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetDescription() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetIncludeInSnippet() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeInSnippet",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetMaintainerId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaintainerId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetTemporary() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTemporary",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetVariations() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVariations",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
