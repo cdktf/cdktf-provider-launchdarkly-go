@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/feature_flag launchdarkly_feature_flag}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag launchdarkly_feature_flag}.
 type DataLaunchdarklyFeatureFlag interface {
 	cdktf.TerraformDataSource
 	Archived() interface{}
@@ -566,7 +566,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) VariationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
 func NewDataLaunchdarklyFeatureFlag(scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagConfig) DataLaunchdarklyFeatureFlag {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewDataLaunchdarklyFeatureFlag(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
 func NewDataLaunchdarklyFeatureFlag_Override(d DataLaunchdarklyFeatureFlag, scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagConfig) {
 	_init_.Initialize()
 

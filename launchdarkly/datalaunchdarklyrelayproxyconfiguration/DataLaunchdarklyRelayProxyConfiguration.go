@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}.
 type DataLaunchdarklyRelayProxyConfiguration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfiguration) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Data Source.
 func NewDataLaunchdarklyRelayProxyConfiguration(scope constructs.Construct, id *string, config *DataLaunchdarklyRelayProxyConfigurationConfig) DataLaunchdarklyRelayProxyConfiguration {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataLaunchdarklyRelayProxyConfiguration(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Data Source.
 func NewDataLaunchdarklyRelayProxyConfiguration_Override(d DataLaunchdarklyRelayProxyConfiguration, scope constructs.Construct, id *string, config *DataLaunchdarklyRelayProxyConfigurationConfig) {
 	_init_.Initialize()
 

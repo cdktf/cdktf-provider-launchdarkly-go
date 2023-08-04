@@ -21,31 +21,31 @@ type FlagTriggerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Whether the trigger is currently active or not. This property defaults to true upon creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/flag_trigger#enabled FlagTrigger#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/flag_trigger#enabled FlagTrigger#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// The LaunchDarkly environment key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/flag_trigger#env_key FlagTrigger#env_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/flag_trigger#env_key FlagTrigger#env_key}
 	EnvKey *string `field:"required" json:"envKey" yaml:"envKey"`
 	// The key of the feature flag the trigger acts upon.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/flag_trigger#flag_key FlagTrigger#flag_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/flag_trigger#flag_key FlagTrigger#flag_key}
 	FlagKey *string `field:"required" json:"flagKey" yaml:"flagKey"`
 	// instructions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/flag_trigger#instructions FlagTrigger#instructions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/flag_trigger#instructions FlagTrigger#instructions}
 	Instructions *FlagTriggerInstructions `field:"required" json:"instructions" yaml:"instructions"`
 	// The unique identifier of the integration you intend to set your trigger up with.
 	//
 	// "generic-trigger" should be used for integrations not explicitly supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/flag_trigger#integration_key FlagTrigger#integration_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/flag_trigger#integration_key FlagTrigger#integration_key}
 	IntegrationKey *string `field:"required" json:"integrationKey" yaml:"integrationKey"`
 	// The LaunchDarkly project key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/flag_trigger#project_key FlagTrigger#project_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/flag_trigger#project_key FlagTrigger#project_key}
 	ProjectKey *string `field:"required" json:"projectKey" yaml:"projectKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/flag_trigger#id FlagTrigger#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/flag_trigger#id FlagTrigger#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

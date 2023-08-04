@@ -21,11 +21,11 @@ type TeamRoleMappingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A set of custom role keys to assign to the team.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
 	CustomRoleKeys *[]*string `field:"required" json:"customRoleKeys" yaml:"customRoleKeys"`
 	// The LaunchDarkly team key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
 	TeamKey *string `field:"required" json:"teamKey" yaml:"teamKey"`
 }
 
