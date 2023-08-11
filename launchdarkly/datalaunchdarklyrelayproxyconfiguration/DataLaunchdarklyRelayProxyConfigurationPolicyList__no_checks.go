@@ -12,10 +12,6 @@ func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

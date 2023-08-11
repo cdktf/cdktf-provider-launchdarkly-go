@@ -48,10 +48,6 @@ func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetActionsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -60,23 +56,7 @@ func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetEffectParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetNotActionsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetNotResourcesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetResourcesParameters(val *[]*string) error {
+func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyRelayProxyConfigurationPolicy) error {
 	return nil
 }
 

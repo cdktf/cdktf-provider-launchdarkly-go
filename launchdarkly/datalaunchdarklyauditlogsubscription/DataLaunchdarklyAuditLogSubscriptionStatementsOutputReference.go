@@ -11,8 +11,6 @@ import (
 type DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference interface {
 	cdktf.ComplexObject
 	Actions() *[]*string
-	SetActions(val *[]*string)
-	ActionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,21 +27,13 @@ type DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Effect() *string
-	SetEffect(val *string)
-	EffectInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklyAuditLogSubscriptionStatements
+	SetInternalValue(val *DataLaunchdarklyAuditLogSubscriptionStatements)
 	NotActions() *[]*string
-	SetNotActions(val *[]*string)
-	NotActionsInput() *[]*string
 	NotResources() *[]*string
-	SetNotResources(val *[]*string)
-	NotResourcesInput() *[]*string
 	Resources() *[]*string
-	SetResources(val *[]*string)
-	ResourcesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,10 +66,6 @@ type DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetActions()
-	ResetNotActions()
-	ResetNotResources()
-	ResetResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -100,16 +86,6 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
 	_jsii_.Get(
 		j,
 		"actions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) ActionsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"actionsInput",
 		&returns,
 	)
 	return returns
@@ -155,16 +131,6 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) EffectInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -175,8 +141,8 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) InternalValue() *DataLaunchdarklyAuditLogSubscriptionStatements {
+	var returns *DataLaunchdarklyAuditLogSubscriptionStatements
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,16 +161,6 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) NotActionsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"notActionsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) NotResources() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -215,31 +171,11 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) NotResourcesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"notResourcesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) Resources() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"resources",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) ResourcesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"resourcesInput",
 		&returns,
 	)
 	return returns
@@ -293,17 +229,6 @@ func NewDataLaunchdarklyAuditLogSubscriptionStatementsOutputReference_Override(d
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference)SetActions(val *[]*string) {
-	if err := j.validateSetActionsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"actions",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -326,57 +251,13 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference)SetEffect(val *string) {
-	if err := j.validateSetEffectParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effect",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference)SetInternalValue(val *DataLaunchdarklyAuditLogSubscriptionStatements) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference)SetNotActions(val *[]*string) {
-	if err := j.validateSetNotActionsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"notActions",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference)SetNotResources(val *[]*string) {
-	if err := j.validateSetNotResourcesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"notResources",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference)SetResources(val *[]*string) {
-	if err := j.validateSetResourcesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"resources",
 		val,
 	)
 }
@@ -587,38 +468,6 @@ func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) ResetActions() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetActions",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) ResetNotActions() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNotActions",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) ResetNotResources() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNotResources",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) ResetResources() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetResources",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

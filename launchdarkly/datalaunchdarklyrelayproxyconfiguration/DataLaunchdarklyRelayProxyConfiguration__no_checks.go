@@ -52,10 +52,6 @@ func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfiguration) validateOverrideLogi
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfiguration) validatePutPolicyParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataLaunchdarklyRelayProxyConfiguration_IsConstructParameters(x interface{}) error {
 	return nil
 }

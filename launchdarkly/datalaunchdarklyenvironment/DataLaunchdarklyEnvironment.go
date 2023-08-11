@@ -9,31 +9,24 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment launchdarkly_environment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/environment launchdarkly_environment}.
 type DataLaunchdarklyEnvironment interface {
 	cdktf.TerraformDataSource
 	ApiKey() *string
 	ApprovalSettings() DataLaunchdarklyEnvironmentApprovalSettingsList
-	ApprovalSettingsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientSideId() *string
 	Color() *string
-	ConfirmChanges() interface{}
-	SetConfirmChanges(val interface{})
-	ConfirmChangesInput() interface{}
+	ConfirmChanges() cdktf.IResolvable
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DefaultTrackEvents() interface{}
-	SetDefaultTrackEvents(val interface{})
-	DefaultTrackEventsInput() interface{}
+	DefaultTrackEvents() cdktf.IResolvable
 	DefaultTtl() *float64
-	SetDefaultTtl(val *float64)
-	DefaultTtlInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -69,15 +62,9 @@ type DataLaunchdarklyEnvironment interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	RequireComments() interface{}
-	SetRequireComments(val interface{})
-	RequireCommentsInput() interface{}
-	SecureMode() interface{}
-	SetSecureMode(val interface{})
-	SecureModeInput() interface{}
+	RequireComments() cdktf.IResolvable
+	SecureMode() cdktf.IResolvable
 	Tags() *[]*string
-	SetTags(val *[]*string)
-	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -109,18 +96,10 @@ type DataLaunchdarklyEnvironment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutApprovalSettings(value interface{})
-	ResetApprovalSettings()
-	ResetConfirmChanges()
-	ResetDefaultTrackEvents()
-	ResetDefaultTtl()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRequireComments()
-	ResetSecureMode()
-	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -156,16 +135,6 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) ApprovalSettings() DataLaunchdar
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) ApprovalSettingsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"approvalSettingsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyEnvironment) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -196,21 +165,11 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) Color() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) ConfirmChanges() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyEnvironment) ConfirmChanges() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"confirmChanges",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) ConfirmChangesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"confirmChangesInput",
 		&returns,
 	)
 	return returns
@@ -236,21 +195,11 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) DefaultTrackEvents() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyEnvironment) DefaultTrackEvents() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"defaultTrackEvents",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) DefaultTrackEventsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"defaultTrackEventsInput",
 		&returns,
 	)
 	return returns
@@ -261,16 +210,6 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) DefaultTtl() *float64 {
 	_jsii_.Get(
 		j,
 		"defaultTtl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) DefaultTtlInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"defaultTtlInput",
 		&returns,
 	)
 	return returns
@@ -436,8 +375,8 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) RequireComments() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyEnvironment) RequireComments() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"requireComments",
@@ -446,31 +385,11 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) RequireComments() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) RequireCommentsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"requireCommentsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) SecureMode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyEnvironment) SecureMode() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"secureMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) SecureModeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"secureModeInput",
 		&returns,
 	)
 	return returns
@@ -481,16 +400,6 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) Tags() *[]*string {
 	_jsii_.Get(
 		j,
 		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) TagsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -527,7 +436,7 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment launchdarkly_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/environment launchdarkly_environment} Data Source.
 func NewDataLaunchdarklyEnvironment(scope constructs.Construct, id *string, config *DataLaunchdarklyEnvironmentConfig) DataLaunchdarklyEnvironment {
 	_init_.Initialize()
 
@@ -545,7 +454,7 @@ func NewDataLaunchdarklyEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment launchdarkly_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/environment launchdarkly_environment} Data Source.
 func NewDataLaunchdarklyEnvironment_Override(d DataLaunchdarklyEnvironment, scope constructs.Construct, id *string, config *DataLaunchdarklyEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -556,17 +465,6 @@ func NewDataLaunchdarklyEnvironment_Override(d DataLaunchdarklyEnvironment, scop
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironment)SetConfirmChanges(val interface{}) {
-	if err := j.validateSetConfirmChangesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"confirmChanges",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyEnvironment)SetCount(val interface{}) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
@@ -574,28 +472,6 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment)SetDefaultTrackEvents(val interface{}) {
-	if err := j.validateSetDefaultTrackEventsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"defaultTrackEvents",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment)SetDefaultTtl(val *float64) {
-	if err := j.validateSetDefaultTtlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"defaultTtl",
 		val,
 	)
 }
@@ -664,39 +540,6 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment)SetRequireComments(val interface{}) {
-	if err := j.validateSetRequireCommentsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"requireComments",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment)SetSecureMode(val interface{}) {
-	if err := j.validateSetSecureModeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"secureMode",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment)SetTags(val *[]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -967,49 +810,6 @@ func (d *jsiiProxy_DataLaunchdarklyEnvironment) OverrideLogicalId(newLogicalId *
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyEnvironment) PutApprovalSettings(value interface{}) {
-	if err := d.validatePutApprovalSettingsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putApprovalSettings",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironment) ResetApprovalSettings() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetApprovalSettings",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironment) ResetConfirmChanges() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetConfirmChanges",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironment) ResetDefaultTrackEvents() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDefaultTrackEvents",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironment) ResetDefaultTtl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDefaultTtl",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklyEnvironment) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1022,30 +822,6 @@ func (d *jsiiProxy_DataLaunchdarklyEnvironment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironment) ResetRequireComments() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRequireComments",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironment) ResetSecureMode() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSecureMode",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironment) ResetTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTags",
 		nil, // no parameters
 	)
 }

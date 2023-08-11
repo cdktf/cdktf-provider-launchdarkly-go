@@ -90,48 +90,9 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) validatePutClausesParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataLaunchdarklyFeatureFlagEnvironmentRulesClauses:
-		value := value.(*[]*DataLaunchdarklyFeatureFlagEnvironmentRulesClauses)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataLaunchdarklyFeatureFlagEnvironmentRulesClauses:
-		value_ := value.([]*DataLaunchdarklyFeatureFlagEnvironmentRulesClauses)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataLaunchdarklyFeatureFlagEnvironmentRulesClauses; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) validateSetBucketByParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -202,41 +163,9 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataLaunchdarklyFeatureFlagEnvironmentRules:
-		val := val.(*DataLaunchdarklyFeatureFlagEnvironmentRules)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataLaunchdarklyFeatureFlagEnvironmentRules:
-		val_ := val.(DataLaunchdarklyFeatureFlagEnvironmentRules)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataLaunchdarklyFeatureFlagEnvironmentRules; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) validateSetRolloutWeightsParameters(val *[]*float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyFeatureFlagEnvironmentRules) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -251,14 +180,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) v
 }
 
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference) validateSetVariationParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

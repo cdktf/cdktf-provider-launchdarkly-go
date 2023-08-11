@@ -12,10 +12,6 @@ func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

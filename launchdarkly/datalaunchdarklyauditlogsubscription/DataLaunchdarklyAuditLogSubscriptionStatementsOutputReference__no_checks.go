@@ -48,10 +48,6 @@ func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetActionsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -60,23 +56,7 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetEffectParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetNotActionsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetNotResourcesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetResourcesParameters(val *[]*string) error {
+func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyAuditLogSubscriptionStatements) error {
 	return nil
 }
 

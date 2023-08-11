@@ -48,10 +48,6 @@ func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetActionsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -60,23 +56,7 @@ func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetEffectParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetNotActionsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetNotResourcesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetResourcesParameters(val *[]*string) error {
+func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyWebhookStatements) error {
 	return nil
 }
 

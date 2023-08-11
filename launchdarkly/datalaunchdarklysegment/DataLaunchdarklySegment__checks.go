@@ -349,14 +349,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment) validateSetProjectKeyParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegment) validateSetTagsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDataLaunchdarklySegmentParameters(scope constructs.Construct, id *string, config *DataLaunchdarklySegmentConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

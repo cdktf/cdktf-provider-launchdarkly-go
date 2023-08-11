@@ -52,26 +52,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateOverrideLogic
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validatePutContextTargetsParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validatePutFallthroughParameters(value *DataLaunchdarklyFeatureFlagEnvironmentFallthrough) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validatePutPrerequisitesParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validatePutRulesParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validatePutTargetsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataLaunchdarklyFeatureFlagEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -101,18 +81,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetIdParamete
 }
 
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetOffVariationParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetOnParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateSetTrackEventsParameters(val interface{}) error {
 	return nil
 }
 

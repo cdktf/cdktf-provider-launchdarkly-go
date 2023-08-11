@@ -48,14 +48,6 @@ func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) validateSetCanApplyDeclinedChangesParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) validateSetCanReviewOwnRequestParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -64,19 +56,7 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) validateSetMinNumApprovalsParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) validateSetRequiredParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) validateSetRequiredApprovalTagsParameters(val *[]*string) error {
+func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyEnvironmentApprovalSettings) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/metric launchdarkly_metric}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/metric launchdarkly_metric}.
 type DataLaunchdarklyMetric interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -84,8 +84,6 @@ type DataLaunchdarklyMetric interface {
 	SetSuccessCriteria(val *string)
 	SuccessCriteriaInput() *string
 	Tags() *[]*string
-	SetTags(val *[]*string)
-	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -137,7 +135,6 @@ type DataLaunchdarklyMetric interface {
 	ResetRandomizationUnits()
 	ResetSelector()
 	ResetSuccessCriteria()
-	ResetTags()
 	ResetUnit()
 	ResetUrls()
 	SynthesizeAttributes() *map[string]interface{}
@@ -535,16 +532,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) Tags() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) TagsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -616,7 +603,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) UrlsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/metric launchdarkly_metric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/metric launchdarkly_metric} Data Source.
 func NewDataLaunchdarklyMetric(scope constructs.Construct, id *string, config *DataLaunchdarklyMetricConfig) DataLaunchdarklyMetric {
 	_init_.Initialize()
 
@@ -634,7 +621,7 @@ func NewDataLaunchdarklyMetric(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/metric launchdarkly_metric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/metric launchdarkly_metric} Data Source.
 func NewDataLaunchdarklyMetric_Override(d DataLaunchdarklyMetric, scope constructs.Construct, id *string, config *DataLaunchdarklyMetricConfig) {
 	_init_.Initialize()
 
@@ -830,17 +817,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetric)SetSuccessCriteria(val *string) {
 	_jsii_.Set(
 		j,
 		"successCriteria",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetTags(val *[]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -1225,14 +1201,6 @@ func (d *jsiiProxy_DataLaunchdarklyMetric) ResetSuccessCriteria() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSuccessCriteria",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTags",
 		nil, // no parameters
 	)
 }

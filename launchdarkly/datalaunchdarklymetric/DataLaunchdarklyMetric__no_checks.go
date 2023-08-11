@@ -128,10 +128,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetSuccessCriteriaParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetTagsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetUnitParameters(val *string) error {
 	return nil
 }

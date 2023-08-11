@@ -1,14 +1,14 @@
-package datalaunchdarklyauditlogsubscription
+package datalaunchdarklyfeatureflagenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/jsii"
 
-	"github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyauditlogsubscription/internal"
+	"github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflagenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataLaunchdarklyAuditLogSubscriptionStatementsList interface {
+type DataLaunchdarklyFeatureFlagEnvironmentFallthroughList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -28,7 +28,7 @@ type DataLaunchdarklyAuditLogSubscriptionStatementsList interface {
 	SetWrapsSet(val *bool)
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
+	Get(index *float64) DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -39,12 +39,12 @@ type DataLaunchdarklyAuditLogSubscriptionStatementsList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataLaunchdarklyAuditLogSubscriptionStatementsList
-type jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList struct {
+// The jsii proxy struct for DataLaunchdarklyFeatureFlagEnvironmentFallthroughList
+type jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) CreationStack() *[]*string {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -54,7 +54,7 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) CreationS
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) Fqn() *string {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) TerraformAttribute() *string {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -74,7 +74,7 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -84,7 +84,7 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) WrapsSet() *bool {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -95,16 +95,16 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) WrapsSet(
 }
 
 
-func NewDataLaunchdarklyAuditLogSubscriptionStatementsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyAuditLogSubscriptionStatementsList {
+func NewDataLaunchdarklyFeatureFlagEnvironmentFallthroughList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyFeatureFlagEnvironmentFallthroughList {
 	_init_.Initialize()
 
-	if err := validateNewDataLaunchdarklyAuditLogSubscriptionStatementsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewDataLaunchdarklyFeatureFlagEnvironmentFallthroughListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList{}
+	j := jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-launchdarkly.dataLaunchdarklyAuditLogSubscription.DataLaunchdarklyAuditLogSubscriptionStatementsList",
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlagEnvironment.DataLaunchdarklyFeatureFlagEnvironmentFallthroughList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -112,17 +112,17 @@ func NewDataLaunchdarklyAuditLogSubscriptionStatementsList(terraformResource cdk
 	return &j
 }
 
-func NewDataLaunchdarklyAuditLogSubscriptionStatementsList_Override(d DataLaunchdarklyAuditLogSubscriptionStatementsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataLaunchdarklyFeatureFlagEnvironmentFallthroughList_Override(d DataLaunchdarklyFeatureFlagEnvironmentFallthroughList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-launchdarkly.dataLaunchdarklyAuditLogSubscription.DataLaunchdarklyAuditLogSubscriptionStatementsList",
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlagEnvironment.DataLaunchdarklyFeatureFlagEnvironmentFallthroughList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -133,7 +133,7 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -144,7 +144,7 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -155,7 +155,7 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList)SetWrapsSe
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) ComputeFqn() *string {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -168,11 +168,11 @@ func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) ComputeFq
 	return returns
 }
 
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) Get(index *float64) DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) Get(index *float64) DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference {
 	if err := d.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
+	var returns DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference
 
 	_jsii_.Invoke(
 		d,
@@ -184,7 +184,7 @@ func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) Get(index
 	return returns
 }
 
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -200,7 +200,7 @@ func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) Resolve(_
 	return returns
 }
 
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) ToString() *string {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

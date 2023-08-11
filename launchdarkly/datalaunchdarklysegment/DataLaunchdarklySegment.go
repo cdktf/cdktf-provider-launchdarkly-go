@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment launchdarkly_segment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment launchdarkly_segment}.
 type DataLaunchdarklySegment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -74,8 +74,6 @@ type DataLaunchdarklySegment interface {
 	Rules() DataLaunchdarklySegmentRulesList
 	RulesInput() interface{}
 	Tags() *[]*string
-	SetTags(val *[]*string)
-	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -120,7 +118,6 @@ type DataLaunchdarklySegment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRules()
-	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -476,16 +473,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment) Tags() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegment) TagsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -517,7 +504,7 @@ func (j *jsiiProxy_DataLaunchdarklySegment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment launchdarkly_segment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment launchdarkly_segment} Data Source.
 func NewDataLaunchdarklySegment(scope constructs.Construct, id *string, config *DataLaunchdarklySegmentConfig) DataLaunchdarklySegment {
 	_init_.Initialize()
 
@@ -535,7 +522,7 @@ func NewDataLaunchdarklySegment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment launchdarkly_segment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment launchdarkly_segment} Data Source.
 func NewDataLaunchdarklySegment_Override(d DataLaunchdarklySegment, scope constructs.Construct, id *string, config *DataLaunchdarklySegmentConfig) {
 	_init_.Initialize()
 
@@ -665,17 +652,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegment)SetTags(val *[]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -1039,14 +1015,6 @@ func (d *jsiiProxy_DataLaunchdarklySegment) ResetRules() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRules",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) ResetTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTags",
 		nil, // no parameters
 	)
 }

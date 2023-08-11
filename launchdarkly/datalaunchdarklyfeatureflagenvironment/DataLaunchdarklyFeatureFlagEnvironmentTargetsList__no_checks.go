@@ -12,10 +12,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

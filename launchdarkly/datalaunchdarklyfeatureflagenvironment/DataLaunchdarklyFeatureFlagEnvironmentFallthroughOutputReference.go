@@ -11,8 +11,6 @@ import (
 type DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference interface {
 	cdktf.ComplexObject
 	BucketBy() *string
-	SetBucketBy(val *string)
-	BucketByInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -24,8 +22,6 @@ type DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference interface 
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ContextKind() *string
-	SetContextKind(val *string)
-	ContextKindInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -36,8 +32,6 @@ type DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference interface 
 	InternalValue() *DataLaunchdarklyFeatureFlagEnvironmentFallthrough
 	SetInternalValue(val *DataLaunchdarklyFeatureFlagEnvironmentFallthrough)
 	RolloutWeights() *[]*float64
-	SetRolloutWeights(val *[]*float64)
-	RolloutWeightsInput() *[]*float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,8 +41,6 @@ type DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference interface 
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Variation() *float64
-	SetVariation(val *float64)
-	VariationInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,10 +65,6 @@ type DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetBucketBy()
-	ResetContextKind()
-	ResetRolloutWeights()
-	ResetVariation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,16 +85,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputRefere
 	_jsii_.Get(
 		j,
 		"bucketBy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) BucketByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bucketByInput",
 		&returns,
 	)
 	return returns
@@ -137,16 +115,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputRefere
 	_jsii_.Get(
 		j,
 		"contextKind",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) ContextKindInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"contextKindInput",
 		&returns,
 	)
 	return returns
@@ -192,16 +160,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) RolloutWeightsInput() *[]*float64 {
-	var returns *[]*float64
-	_jsii_.Get(
-		j,
-		"rolloutWeightsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -232,52 +190,31 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) VariationInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"variationInput",
-		&returns,
-	)
-	return returns
-}
 
-
-func NewDataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference {
+func NewDataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlagEnvironment.DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference_Override(d DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference_Override(d DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlagEnvironment.DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference)SetBucketBy(val *string) {
-	if err := j.validateSetBucketByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"bucketBy",
-		val,
 	)
 }
 
@@ -303,17 +240,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference)SetContextKind(val *string) {
-	if err := j.validateSetContextKindParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"contextKind",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference)SetInternalValue(val *DataLaunchdarklyFeatureFlagEnvironmentFallthrough) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -321,17 +247,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputRefere
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference)SetRolloutWeights(val *[]*float64) {
-	if err := j.validateSetRolloutWeightsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"rolloutWeights",
 		val,
 	)
 }
@@ -354,17 +269,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputRefere
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference)SetVariation(val *float64) {
-	if err := j.validateSetVariationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"variation",
 		val,
 	)
 }
@@ -553,38 +457,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputRefere
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) ResetBucketBy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetBucketBy",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) ResetContextKind() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetContextKind",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) ResetRolloutWeights() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRolloutWeights",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) ResetVariation() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetVariation",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -11,8 +11,6 @@ import (
 type DataLaunchdarklyWebhookStatementsOutputReference interface {
 	cdktf.ComplexObject
 	Actions() *[]*string
-	SetActions(val *[]*string)
-	ActionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,21 +27,13 @@ type DataLaunchdarklyWebhookStatementsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Effect() *string
-	SetEffect(val *string)
-	EffectInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklyWebhookStatements
+	SetInternalValue(val *DataLaunchdarklyWebhookStatements)
 	NotActions() *[]*string
-	SetNotActions(val *[]*string)
-	NotActionsInput() *[]*string
 	NotResources() *[]*string
-	SetNotResources(val *[]*string)
-	NotResourcesInput() *[]*string
 	Resources() *[]*string
-	SetResources(val *[]*string)
-	ResourcesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,10 +66,6 @@ type DataLaunchdarklyWebhookStatementsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetActions()
-	ResetNotActions()
-	ResetNotResources()
-	ResetResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -100,16 +86,6 @@ func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) Actions() *
 	_jsii_.Get(
 		j,
 		"actions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) ActionsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"actionsInput",
 		&returns,
 	)
 	return returns
@@ -155,16 +131,6 @@ func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) Effect() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) EffectInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -175,8 +141,8 @@ func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) InternalValue() *DataLaunchdarklyWebhookStatements {
+	var returns *DataLaunchdarklyWebhookStatements
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,16 +161,6 @@ func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) NotActions(
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) NotActionsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"notActionsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) NotResources() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -215,31 +171,11 @@ func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) NotResource
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) NotResourcesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"notResourcesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) Resources() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"resources",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) ResourcesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"resourcesInput",
 		&returns,
 	)
 	return returns
@@ -293,17 +229,6 @@ func NewDataLaunchdarklyWebhookStatementsOutputReference_Override(d DataLaunchda
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference)SetActions(val *[]*string) {
-	if err := j.validateSetActionsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"actions",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -326,57 +251,13 @@ func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference)SetEffect(val *string) {
-	if err := j.validateSetEffectParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effect",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference)SetInternalValue(val *DataLaunchdarklyWebhookStatements) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference)SetNotActions(val *[]*string) {
-	if err := j.validateSetNotActionsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"notActions",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference)SetNotResources(val *[]*string) {
-	if err := j.validateSetNotResourcesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"notResources",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference)SetResources(val *[]*string) {
-	if err := j.validateSetResourcesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"resources",
 		val,
 	)
 }
@@ -587,38 +468,6 @@ func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) Interpolati
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) ResetActions() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetActions",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) ResetNotActions() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNotActions",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) ResetNotResources() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNotResources",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) ResetResources() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetResources",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

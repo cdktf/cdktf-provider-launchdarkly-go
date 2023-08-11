@@ -98,14 +98,6 @@ func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetActionsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -171,57 +163,9 @@ func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetEffectParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataLaunchdarklyRelayProxyConfigurationPolicy:
-		val := val.(*DataLaunchdarklyRelayProxyConfigurationPolicy)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataLaunchdarklyRelayProxyConfigurationPolicy:
-		val_ := val.(DataLaunchdarklyRelayProxyConfigurationPolicy)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataLaunchdarklyRelayProxyConfigurationPolicy; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetNotActionsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetNotResourcesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetResourcesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyRelayProxyConfigurationPolicy) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

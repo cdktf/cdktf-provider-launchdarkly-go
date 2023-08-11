@@ -98,14 +98,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateSetAttributeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -171,61 +163,9 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateSetContextKindParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataLaunchdarklyFeatureFlagEnvironmentRulesClauses:
-		val := val.(*DataLaunchdarklyFeatureFlagEnvironmentRulesClauses)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataLaunchdarklyFeatureFlagEnvironmentRulesClauses:
-		val_ := val.(DataLaunchdarklyFeatureFlagEnvironmentRulesClauses)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataLaunchdarklyFeatureFlagEnvironmentRulesClauses; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateSetNegateParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateSetOpParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyFeatureFlagEnvironmentRulesClauses) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -240,22 +180,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 }
 
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateSetValuesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateSetValueTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

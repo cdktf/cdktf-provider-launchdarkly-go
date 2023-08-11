@@ -12,10 +12,6 @@ func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

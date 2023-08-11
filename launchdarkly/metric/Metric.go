@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/metric launchdarkly_metric}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/metric launchdarkly_metric}.
 type Metric interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -642,7 +642,7 @@ func (j *jsiiProxy_Metric) UrlsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/metric launchdarkly_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/metric launchdarkly_metric} Resource.
 func NewMetric(scope constructs.Construct, id *string, config *MetricConfig) Metric {
 	_init_.Initialize()
 
@@ -660,7 +660,7 @@ func NewMetric(scope constructs.Construct, id *string, config *MetricConfig) Met
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/metric launchdarkly_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/metric launchdarkly_metric} Resource.
 func NewMetric_Override(m Metric, scope constructs.Construct, id *string, config *MetricConfig) {
 	_init_.Initialize()
 

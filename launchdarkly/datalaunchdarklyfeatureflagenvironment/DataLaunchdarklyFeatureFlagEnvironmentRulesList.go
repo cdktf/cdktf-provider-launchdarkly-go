@@ -17,8 +17,6 @@ type DataLaunchdarklyFeatureFlagEnvironmentRulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -61,16 +59,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesList) Fqn() *strin
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesList) InternalValue() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"internalValue",
 		&returns,
 	)
 	return returns
@@ -131,17 +119,6 @@ func NewDataLaunchdarklyFeatureFlagEnvironmentRulesList_Override(d DataLaunchdar
 		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlagEnvironment.DataLaunchdarklyFeatureFlagEnvironmentRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesList)SetInternalValue(val interface{}) {
-	if err := j.validateSetInternalValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"internalValue",
-		val,
 	)
 }
 

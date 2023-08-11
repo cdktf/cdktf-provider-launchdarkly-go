@@ -112,10 +112,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment) validateSetProjectKeyParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegment) validateSetTagsParameters(val *[]*string) error {
-	return nil
-}
-
 func validateNewDataLaunchdarklySegmentParameters(scope constructs.Construct, id *string, config *DataLaunchdarklySegmentConfig) error {
 	return nil
 }

@@ -11,8 +11,6 @@ import (
 type DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference interface {
 	cdktf.ComplexObject
 	Attribute() *string
-	SetAttribute(val *string)
-	AttributeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -24,8 +22,6 @@ type DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference interface
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ContextKind() *string
-	SetContextKind(val *string)
-	ContextKindInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -33,14 +29,10 @@ type DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference interface
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	Negate() interface{}
-	SetNegate(val interface{})
-	NegateInput() interface{}
+	InternalValue() *DataLaunchdarklyFeatureFlagEnvironmentRulesClauses
+	SetInternalValue(val *DataLaunchdarklyFeatureFlagEnvironmentRulesClauses)
+	Negate() cdktf.IResolvable
 	Op() *string
-	SetOp(val *string)
-	OpInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -50,11 +42,7 @@ type DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference interface
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Values() *[]*string
-	SetValues(val *[]*string)
-	ValuesInput() *[]*string
 	ValueType() *string
-	SetValueType(val *string)
-	ValueTypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,9 +67,6 @@ type DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetContextKind()
-	ResetNegate()
-	ResetValueType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -102,16 +87,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	_jsii_.Get(
 		j,
 		"attribute",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) AttributeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attributeInput",
 		&returns,
 	)
 	return returns
@@ -147,16 +122,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) ContextKindInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"contextKindInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -177,8 +142,8 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) InternalValue() *DataLaunchdarklyFeatureFlagEnvironmentRulesClauses {
+	var returns *DataLaunchdarklyFeatureFlagEnvironmentRulesClauses
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -187,21 +152,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) Negate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) Negate() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"negate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) NegateInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"negateInput",
 		&returns,
 	)
 	return returns
@@ -212,16 +167,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	_jsii_.Get(
 		j,
 		"op",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) OpInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"opInput",
 		&returns,
 	)
 	return returns
@@ -257,31 +202,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) ValuesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"valuesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) ValueType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"valueType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) ValueTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"valueTypeInput",
 		&returns,
 	)
 	return returns
@@ -315,17 +240,6 @@ func NewDataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference_Overri
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference)SetAttribute(val *string) {
-	if err := j.validateSetAttributeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"attribute",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -348,46 +262,13 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference)SetContextKind(val *string) {
-	if err := j.validateSetContextKindParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"contextKind",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference)SetInternalValue(val *DataLaunchdarklyFeatureFlagEnvironmentRulesClauses) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference)SetNegate(val interface{}) {
-	if err := j.validateSetNegateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"negate",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference)SetOp(val *string) {
-	if err := j.validateSetOpParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"op",
 		val,
 	)
 }
@@ -410,28 +291,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference)SetValues(val *[]*string) {
-	if err := j.validateSetValuesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"values",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference)SetValueType(val *string) {
-	if err := j.validateSetValueTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"valueType",
 		val,
 	)
 }
@@ -620,30 +479,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) ResetContextKind() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetContextKind",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) ResetNegate() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNegate",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) ResetValueType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetValueType",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -12,10 +12,6 @@ func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

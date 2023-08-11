@@ -116,10 +116,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetProjectKeyParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetTagsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetTemporaryParameters(val interface{}) error {
 	return nil
 }

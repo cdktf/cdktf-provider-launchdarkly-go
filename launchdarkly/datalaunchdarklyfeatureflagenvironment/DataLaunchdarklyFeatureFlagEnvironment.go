@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment}.
 type DataLaunchdarklyFeatureFlagEnvironment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,7 +17,6 @@ type DataLaunchdarklyFeatureFlagEnvironment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	ContextTargets() DataLaunchdarklyFeatureFlagEnvironmentContextTargetsList
-	ContextTargetsInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -29,8 +28,7 @@ type DataLaunchdarklyFeatureFlagEnvironment interface {
 	EnvKey() *string
 	SetEnvKey(val *string)
 	EnvKeyInput() *string
-	Fallthrough() DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference
-	FallthroughInput() *DataLaunchdarklyFeatureFlagEnvironmentFallthrough
+	Fallthrough() DataLaunchdarklyFeatureFlagEnvironmentFallthroughList
 	FlagId() *string
 	SetFlagId(val *string)
 	FlagIdInput() *string
@@ -52,13 +50,8 @@ type DataLaunchdarklyFeatureFlagEnvironment interface {
 	// The tree node.
 	Node() constructs.Node
 	OffVariation() *float64
-	SetOffVariation(val *float64)
-	OffVariationInput() *float64
-	On() interface{}
-	SetOn(val interface{})
-	OnInput() interface{}
+	On() cdktf.IResolvable
 	Prerequisites() DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesList
-	PrerequisitesInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -66,18 +59,14 @@ type DataLaunchdarklyFeatureFlagEnvironment interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Rules() DataLaunchdarklyFeatureFlagEnvironmentRulesList
-	RulesInput() interface{}
 	Targets() DataLaunchdarklyFeatureFlagEnvironmentTargetsList
-	TargetsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	TrackEvents() interface{}
-	SetTrackEvents(val interface{})
-	TrackEventsInput() interface{}
+	TrackEvents() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -103,23 +92,10 @@ type DataLaunchdarklyFeatureFlagEnvironment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutContextTargets(value interface{})
-	PutFallthrough(value *DataLaunchdarklyFeatureFlagEnvironmentFallthrough)
-	PutPrerequisites(value interface{})
-	PutRules(value interface{})
-	PutTargets(value interface{})
-	ResetContextTargets()
-	ResetFallthrough()
 	ResetId()
-	ResetOffVariation()
-	ResetOn()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPrerequisites()
-	ResetRules()
-	ResetTargets()
-	ResetTrackEvents()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -165,16 +141,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ContextTargets() Data
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ContextTargetsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"contextTargetsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -215,21 +181,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) EnvKeyInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) Fallthrough() DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference {
-	var returns DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) Fallthrough() DataLaunchdarklyFeatureFlagEnvironmentFallthroughList {
+	var returns DataLaunchdarklyFeatureFlagEnvironmentFallthroughList
 	_jsii_.Get(
 		j,
 		"fallthrough",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) FallthroughInput() *DataLaunchdarklyFeatureFlagEnvironmentFallthrough {
-	var returns *DataLaunchdarklyFeatureFlagEnvironmentFallthrough
-	_jsii_.Get(
-		j,
-		"fallthroughInput",
 		&returns,
 	)
 	return returns
@@ -335,31 +291,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) OffVariation() *float
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) OffVariationInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"offVariationInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) On() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) On() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"on",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) OnInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"onInput",
 		&returns,
 	)
 	return returns
@@ -370,16 +306,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) Prerequisites() DataL
 	_jsii_.Get(
 		j,
 		"prerequisites",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) PrerequisitesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"prerequisitesInput",
 		&returns,
 	)
 	return returns
@@ -415,31 +341,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) Rules() DataLaunchdar
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) RulesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"rulesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) Targets() DataLaunchdarklyFeatureFlagEnvironmentTargetsList {
 	var returns DataLaunchdarklyFeatureFlagEnvironmentTargetsList
 	_jsii_.Get(
 		j,
 		"targets",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) TargetsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"targetsInput",
 		&returns,
 	)
 	return returns
@@ -475,8 +381,8 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) TerraformResourceType
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) TrackEvents() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) TrackEvents() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"trackEvents",
@@ -485,18 +391,8 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) TrackEvents() interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) TrackEventsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"trackEventsInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment} Data Source.
 func NewDataLaunchdarklyFeatureFlagEnvironment(scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagEnvironmentConfig) DataLaunchdarklyFeatureFlagEnvironment {
 	_init_.Initialize()
 
@@ -514,7 +410,7 @@ func NewDataLaunchdarklyFeatureFlagEnvironment(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment} Data Source.
 func NewDataLaunchdarklyFeatureFlagEnvironment_Override(d DataLaunchdarklyFeatureFlagEnvironment, scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -596,43 +492,10 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment)SetOffVariation(val *float64) {
-	if err := j.validateSetOffVariationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"offVariation",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment)SetOn(val interface{}) {
-	if err := j.validateSetOnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"on",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment)SetTrackEvents(val interface{}) {
-	if err := j.validateSetTrackEventsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"trackEvents",
 		val,
 	)
 }
@@ -903,77 +766,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) OverrideLogicalId(new
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) PutContextTargets(value interface{}) {
-	if err := d.validatePutContextTargetsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putContextTargets",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) PutFallthrough(value *DataLaunchdarklyFeatureFlagEnvironmentFallthrough) {
-	if err := d.validatePutFallthroughParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putFallthrough",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) PutPrerequisites(value interface{}) {
-	if err := d.validatePutPrerequisitesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putPrerequisites",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) PutRules(value interface{}) {
-	if err := d.validatePutRulesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putRules",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) PutTargets(value interface{}) {
-	if err := d.validatePutTargetsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putTargets",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ResetContextTargets() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetContextTargets",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ResetFallthrough() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetFallthrough",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -982,58 +774,10 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ResetId() {
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ResetOffVariation() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOffVariation",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ResetOn() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOn",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ResetPrerequisites() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPrerequisites",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ResetRules() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRules",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ResetTargets() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTargets",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) ResetTrackEvents() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTrackEvents",
 		nil, // no parameters
 	)
 }

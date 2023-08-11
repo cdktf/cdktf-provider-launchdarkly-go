@@ -11,8 +11,6 @@ import (
 type DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference interface {
 	cdktf.ComplexObject
 	Actions() *[]*string
-	SetActions(val *[]*string)
-	ActionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,21 +27,13 @@ type DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Effect() *string
-	SetEffect(val *string)
-	EffectInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklyRelayProxyConfigurationPolicy
+	SetInternalValue(val *DataLaunchdarklyRelayProxyConfigurationPolicy)
 	NotActions() *[]*string
-	SetNotActions(val *[]*string)
-	NotActionsInput() *[]*string
 	NotResources() *[]*string
-	SetNotResources(val *[]*string)
-	NotResourcesInput() *[]*string
 	Resources() *[]*string
-	SetResources(val *[]*string)
-	ResourcesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,10 +66,6 @@ type DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetActions()
-	ResetNotActions()
-	ResetNotResources()
-	ResetResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -100,16 +86,6 @@ func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)
 	_jsii_.Get(
 		j,
 		"actions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) ActionsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"actionsInput",
 		&returns,
 	)
 	return returns
@@ -155,16 +131,6 @@ func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) EffectInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"effectInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -175,8 +141,8 @@ func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) InternalValue() *DataLaunchdarklyRelayProxyConfigurationPolicy {
+	var returns *DataLaunchdarklyRelayProxyConfigurationPolicy
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,16 +161,6 @@ func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) NotActionsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"notActionsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) NotResources() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -215,31 +171,11 @@ func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) NotResourcesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"notResourcesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) Resources() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"resources",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) ResourcesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"resourcesInput",
 		&returns,
 	)
 	return returns
@@ -293,17 +229,6 @@ func NewDataLaunchdarklyRelayProxyConfigurationPolicyOutputReference_Override(d 
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)SetActions(val *[]*string) {
-	if err := j.validateSetActionsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"actions",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -326,57 +251,13 @@ func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)SetEffect(val *string) {
-	if err := j.validateSetEffectParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"effect",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)SetInternalValue(val *DataLaunchdarklyRelayProxyConfigurationPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)SetNotActions(val *[]*string) {
-	if err := j.validateSetNotActionsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"notActions",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)SetNotResources(val *[]*string) {
-	if err := j.validateSetNotResourcesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"notResources",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)SetResources(val *[]*string) {
-	if err := j.validateSetResourcesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"resources",
 		val,
 	)
 }
@@ -587,38 +468,6 @@ func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference)
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) ResetActions() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetActions",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) ResetNotActions() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNotActions",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) ResetNotResources() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNotResources",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) ResetResources() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetResources",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -216,14 +216,6 @@ func (j *jsiiProxy_DataLaunchdarklyProject) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyProject) validateSetTagsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDataLaunchdarklyProjectParameters(scope constructs.Construct, id *string, config *DataLaunchdarklyProjectConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -48,10 +48,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) validateSetBucketByParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -60,15 +56,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) validateSetContextKindParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyFeatureFlagEnvironmentFallthrough) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) validateSetRolloutWeightsParameters(val *[]*float64) error {
 	return nil
 }
 
@@ -80,11 +68,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference) validateSetVariationParameters(val *float64) error {
-	return nil
-}
-
-func validateNewDataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

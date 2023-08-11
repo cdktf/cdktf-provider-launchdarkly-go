@@ -52,10 +52,6 @@ func (d *jsiiProxy_DataLaunchdarklyEnvironment) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyEnvironment) validatePutApprovalSettingsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataLaunchdarklyEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -68,19 +64,7 @@ func validateDataLaunchdarklyEnvironment_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetConfirmChangesParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetDefaultTrackEventsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetDefaultTtlParameters(val *float64) error {
 	return nil
 }
 
@@ -97,18 +81,6 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetLifecycleParameters(v
 }
 
 func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetProjectKeyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetRequireCommentsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetSecureModeParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 

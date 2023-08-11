@@ -27,8 +27,8 @@ type DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklyFeatureFlagEnvironmentTargets
+	SetInternalValue(val *DataLaunchdarklyFeatureFlagEnvironmentTargets)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -38,11 +38,7 @@ type DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Values() *[]*string
-	SetValues(val *[]*string)
-	ValuesInput() *[]*string
 	Variation() *float64
-	SetVariation(val *float64)
-	VariationInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -122,8 +118,8 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference) InternalValue() *DataLaunchdarklyFeatureFlagEnvironmentTargets {
+	var returns *DataLaunchdarklyFeatureFlagEnvironmentTargets
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -162,31 +158,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference) ValuesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"valuesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference) Variation() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"variation",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference) VariationInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"variationInput",
 		&returns,
 	)
 	return returns
@@ -242,7 +218,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference)SetInternalValue(val *DataLaunchdarklyFeatureFlagEnvironmentTargets) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -271,28 +247,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference)
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference)SetValues(val *[]*string) {
-	if err := j.validateSetValuesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"values",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference)SetVariation(val *float64) {
-	if err := j.validateSetVariationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"variation",
 		val,
 	)
 }

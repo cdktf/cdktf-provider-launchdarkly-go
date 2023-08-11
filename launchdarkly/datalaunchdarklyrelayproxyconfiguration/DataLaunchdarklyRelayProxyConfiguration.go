@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}.
 type DataLaunchdarklyRelayProxyConfiguration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -44,7 +44,6 @@ type DataLaunchdarklyRelayProxyConfiguration interface {
 	// The tree node.
 	Node() constructs.Node
 	Policy() DataLaunchdarklyRelayProxyConfigurationPolicyList
-	PolicyInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -82,11 +81,9 @@ type DataLaunchdarklyRelayProxyConfiguration interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutPolicy(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPolicy()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -242,16 +239,6 @@ func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfiguration) Policy() DataLaunchd
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfiguration) PolicyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"policyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfiguration) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -303,7 +290,7 @@ func (j *jsiiProxy_DataLaunchdarklyRelayProxyConfiguration) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Data Source.
 func NewDataLaunchdarklyRelayProxyConfiguration(scope constructs.Construct, id *string, config *DataLaunchdarklyRelayProxyConfigurationConfig) DataLaunchdarklyRelayProxyConfiguration {
 	_init_.Initialize()
 
@@ -321,7 +308,7 @@ func NewDataLaunchdarklyRelayProxyConfiguration(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Data Source.
 func NewDataLaunchdarklyRelayProxyConfiguration_Override(d DataLaunchdarklyRelayProxyConfiguration, scope constructs.Construct, id *string, config *DataLaunchdarklyRelayProxyConfigurationConfig) {
 	_init_.Initialize()
 
@@ -655,29 +642,10 @@ func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfiguration) OverrideLogicalId(ne
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfiguration) PutPolicy(value interface{}) {
-	if err := d.validatePutPolicyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putPolicy",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyRelayProxyConfiguration) ResetPolicy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPolicy",
 		nil, // no parameters
 	)
 }

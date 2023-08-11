@@ -9,14 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/audit_log_subscription launchdarkly_audit_log_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/audit_log_subscription launchdarkly_audit_log_subscription}.
 type DataLaunchdarklyAuditLogSubscription interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	Config() *map[string]*string
-	SetConfig(val *map[string]*string)
-	ConfigInput() *map[string]*string
+	Config() cdktf.StringMap
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -46,13 +44,9 @@ type DataLaunchdarklyAuditLogSubscription interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	On() interface{}
-	SetOn(val interface{})
-	OnInput() interface{}
+	On() cdktf.IResolvable
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -60,10 +54,7 @@ type DataLaunchdarklyAuditLogSubscription interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Statements() DataLaunchdarklyAuditLogSubscriptionStatementsList
-	StatementsInput() interface{}
 	Tags() *[]*string
-	SetTags(val *[]*string)
-	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -95,15 +86,9 @@ type DataLaunchdarklyAuditLogSubscription interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutStatements(value interface{})
-	ResetConfig()
-	ResetName()
-	ResetOn()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetStatements()
-	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -129,21 +114,11 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) CdktfStack() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) Config() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) Config() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"config",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) ConfigInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"configInput",
 		&returns,
 	)
 	return returns
@@ -269,16 +244,6 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -289,21 +254,11 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) Node() constructs.Node 
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) On() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) On() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"on",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) OnInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"onInput",
 		&returns,
 	)
 	return returns
@@ -339,31 +294,11 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) Statements() DataLaunch
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) StatementsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"statementsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) TagsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -400,7 +335,7 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/audit_log_subscription launchdarkly_audit_log_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/audit_log_subscription launchdarkly_audit_log_subscription} Data Source.
 func NewDataLaunchdarklyAuditLogSubscription(scope constructs.Construct, id *string, config *DataLaunchdarklyAuditLogSubscriptionConfig) DataLaunchdarklyAuditLogSubscription {
 	_init_.Initialize()
 
@@ -418,7 +353,7 @@ func NewDataLaunchdarklyAuditLogSubscription(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/audit_log_subscription launchdarkly_audit_log_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/audit_log_subscription launchdarkly_audit_log_subscription} Data Source.
 func NewDataLaunchdarklyAuditLogSubscription_Override(d DataLaunchdarklyAuditLogSubscription, scope constructs.Construct, id *string, config *DataLaunchdarklyAuditLogSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -426,17 +361,6 @@ func NewDataLaunchdarklyAuditLogSubscription_Override(d DataLaunchdarklyAuditLog
 		"@cdktf/provider-launchdarkly.dataLaunchdarklyAuditLogSubscription.DataLaunchdarklyAuditLogSubscription",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription)SetConfig(val *map[string]*string) {
-	if err := j.validateSetConfigParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"config",
-		val,
 	)
 }
 
@@ -500,43 +424,10 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription)SetOn(val interface{}) {
-	if err := j.validateSetOnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"on",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription)SetTags(val *[]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -807,61 +698,10 @@ func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscription) OverrideLogicalId(newLo
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscription) PutStatements(value interface{}) {
-	if err := d.validatePutStatementsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putStatements",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscription) ResetConfig() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetConfig",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscription) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscription) ResetOn() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOn",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscription) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscription) ResetStatements() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetStatements",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscription) ResetTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTags",
 		nil, // no parameters
 	)
 }

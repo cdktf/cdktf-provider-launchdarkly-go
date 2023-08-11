@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag launchdarkly_feature_flag}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag launchdarkly_feature_flag}.
 type DataLaunchdarklyFeatureFlag interface {
 	cdktf.TerraformDataSource
 	Archived() interface{}
@@ -73,8 +73,6 @@ type DataLaunchdarklyFeatureFlag interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Tags() *[]*string
-	SetTags(val *[]*string)
-	TagsInput() *[]*string
 	Temporary() interface{}
 	SetTemporary(val interface{})
 	TemporaryInput() interface{}
@@ -127,7 +125,6 @@ type DataLaunchdarklyFeatureFlag interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTags()
 	ResetTemporary()
 	ResetVariations()
 	SynthesizeAttributes() *map[string]interface{}
@@ -475,16 +472,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Tags() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) TagsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Temporary() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -566,7 +553,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) VariationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
 func NewDataLaunchdarklyFeatureFlag(scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagConfig) DataLaunchdarklyFeatureFlag {
 	_init_.Initialize()
 
@@ -584,7 +571,7 @@ func NewDataLaunchdarklyFeatureFlag(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
 func NewDataLaunchdarklyFeatureFlag_Override(d DataLaunchdarklyFeatureFlag, scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagConfig) {
 	_init_.Initialize()
 
@@ -714,17 +701,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetTags(val *[]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -1118,14 +1094,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTags",
 		nil, // no parameters
 	)
 }

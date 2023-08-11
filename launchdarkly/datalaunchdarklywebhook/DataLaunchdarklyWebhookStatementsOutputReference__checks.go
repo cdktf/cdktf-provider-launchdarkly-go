@@ -98,14 +98,6 @@ func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetActionsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -171,57 +163,9 @@ func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetEffectParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataLaunchdarklyWebhookStatements:
-		val := val.(*DataLaunchdarklyWebhookStatements)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataLaunchdarklyWebhookStatements:
-		val_ := val.(DataLaunchdarklyWebhookStatements)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataLaunchdarklyWebhookStatements; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetNotActionsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetNotResourcesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetResourcesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataLaunchdarklyWebhookStatementsOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyWebhookStatements) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

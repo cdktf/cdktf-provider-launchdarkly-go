@@ -21,8 +21,6 @@ type DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference interfa
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ContextKind() *string
-	SetContextKind(val *string)
-	ContextKindInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -30,8 +28,8 @@ type DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference interfa
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklyFeatureFlagEnvironmentContextTargets
+	SetInternalValue(val *DataLaunchdarklyFeatureFlagEnvironmentContextTargets)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -41,11 +39,7 @@ type DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference interfa
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Values() *[]*string
-	SetValues(val *[]*string)
-	ValuesInput() *[]*string
 	Variation() *float64
-	SetVariation(val *float64)
-	VariationInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -115,16 +109,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference) ContextKindInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"contextKindInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -145,8 +129,8 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference) InternalValue() *DataLaunchdarklyFeatureFlagEnvironmentContextTargets {
+	var returns *DataLaunchdarklyFeatureFlagEnvironmentContextTargets
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -185,31 +169,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference) ValuesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"valuesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference) Variation() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"variation",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference) VariationInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"variationInput",
 		&returns,
 	)
 	return returns
@@ -265,18 +229,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference)SetContextKind(val *string) {
-	if err := j.validateSetContextKindParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"contextKind",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference)SetInternalValue(val *DataLaunchdarklyFeatureFlagEnvironmentContextTargets) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,28 +258,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputRef
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference)SetValues(val *[]*string) {
-	if err := j.validateSetValuesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"values",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference)SetVariation(val *float64) {
-	if err := j.validateSetVariationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"variation",
 		val,
 	)
 }

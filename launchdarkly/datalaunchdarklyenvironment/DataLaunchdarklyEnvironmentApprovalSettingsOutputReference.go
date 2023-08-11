@@ -10,12 +10,8 @@ import (
 
 type DataLaunchdarklyEnvironmentApprovalSettingsOutputReference interface {
 	cdktf.ComplexObject
-	CanApplyDeclinedChanges() interface{}
-	SetCanApplyDeclinedChanges(val interface{})
-	CanApplyDeclinedChangesInput() interface{}
-	CanReviewOwnRequest() interface{}
-	SetCanReviewOwnRequest(val interface{})
-	CanReviewOwnRequestInput() interface{}
+	CanApplyDeclinedChanges() cdktf.IResolvable
+	CanReviewOwnRequest() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -33,17 +29,11 @@ type DataLaunchdarklyEnvironmentApprovalSettingsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklyEnvironmentApprovalSettings
+	SetInternalValue(val *DataLaunchdarklyEnvironmentApprovalSettings)
 	MinNumApprovals() *float64
-	SetMinNumApprovals(val *float64)
-	MinNumApprovalsInput() *float64
-	Required() interface{}
-	SetRequired(val interface{})
+	Required() cdktf.IResolvable
 	RequiredApprovalTags() *[]*string
-	SetRequiredApprovalTags(val *[]*string)
-	RequiredApprovalTagsInput() *[]*string
-	RequiredInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,11 +66,6 @@ type DataLaunchdarklyEnvironmentApprovalSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCanApplyDeclinedChanges()
-	ResetCanReviewOwnRequest()
-	ResetMinNumApprovals()
-	ResetRequired()
-	ResetRequiredApprovalTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -96,8 +81,8 @@ type jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) CanApplyDeclinedChanges() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) CanApplyDeclinedChanges() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"canApplyDeclinedChanges",
@@ -106,31 +91,11 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) CanApplyDeclinedChangesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"canApplyDeclinedChangesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) CanReviewOwnRequest() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) CanReviewOwnRequest() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"canReviewOwnRequest",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) CanReviewOwnRequestInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"canReviewOwnRequestInput",
 		&returns,
 	)
 	return returns
@@ -176,8 +141,8 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) InternalValue() *DataLaunchdarklyEnvironmentApprovalSettings {
+	var returns *DataLaunchdarklyEnvironmentApprovalSettings
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -196,18 +161,8 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) M
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) MinNumApprovalsInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minNumApprovalsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) Required() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) Required() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"required",
@@ -221,26 +176,6 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) R
 	_jsii_.Get(
 		j,
 		"requiredApprovalTags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) RequiredApprovalTagsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"requiredApprovalTagsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) RequiredInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"requiredInput",
 		&returns,
 	)
 	return returns
@@ -294,28 +229,6 @@ func NewDataLaunchdarklyEnvironmentApprovalSettingsOutputReference_Override(d Da
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference)SetCanApplyDeclinedChanges(val interface{}) {
-	if err := j.validateSetCanApplyDeclinedChangesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"canApplyDeclinedChanges",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference)SetCanReviewOwnRequest(val interface{}) {
-	if err := j.validateSetCanReviewOwnRequestParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"canReviewOwnRequest",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -338,46 +251,13 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference)SetInternalValue(val *DataLaunchdarklyEnvironmentApprovalSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference)SetMinNumApprovals(val *float64) {
-	if err := j.validateSetMinNumApprovalsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"minNumApprovals",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference)SetRequired(val interface{}) {
-	if err := j.validateSetRequiredParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"required",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference)SetRequiredApprovalTags(val *[]*string) {
-	if err := j.validateSetRequiredApprovalTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"requiredApprovalTags",
 		val,
 	)
 }
@@ -588,46 +468,6 @@ func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) I
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) ResetCanApplyDeclinedChanges() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCanApplyDeclinedChanges",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) ResetCanReviewOwnRequest() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCanReviewOwnRequest",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) ResetMinNumApprovals() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMinNumApprovals",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) ResetRequired() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRequired",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) ResetRequiredApprovalTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRequiredApprovalTags",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

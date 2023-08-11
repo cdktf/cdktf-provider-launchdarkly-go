@@ -26,12 +26,10 @@ type DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference interfac
 	// Experimental.
 	CreationStack() *[]*string
 	FlagKey() *string
-	SetFlagKey(val *string)
-	FlagKeyInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklyFeatureFlagEnvironmentPrerequisites
+	SetInternalValue(val *DataLaunchdarklyFeatureFlagEnvironmentPrerequisites)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -41,8 +39,6 @@ type DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference interfac
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Variation() *float64
-	SetVariation(val *float64)
-	VariationInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -122,16 +118,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference) FlagKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"flagKeyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -142,8 +128,8 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference) InternalValue() *DataLaunchdarklyFeatureFlagEnvironmentPrerequisites {
+	var returns *DataLaunchdarklyFeatureFlagEnvironmentPrerequisites
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -177,16 +163,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputRefe
 	_jsii_.Get(
 		j,
 		"variation",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference) VariationInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"variationInput",
 		&returns,
 	)
 	return returns
@@ -242,18 +218,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference)SetFlagKey(val *string) {
-	if err := j.validateSetFlagKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"flagKey",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference)SetInternalValue(val *DataLaunchdarklyFeatureFlagEnvironmentPrerequisites) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,17 +247,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputRefe
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference)SetVariation(val *float64) {
-	if err := j.validateSetVariationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"variation",
 		val,
 	)
 }

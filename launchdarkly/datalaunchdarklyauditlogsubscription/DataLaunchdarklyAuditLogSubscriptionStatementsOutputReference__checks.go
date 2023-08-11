@@ -98,14 +98,6 @@ func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetActionsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -171,57 +163,9 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetEffectParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataLaunchdarklyAuditLogSubscriptionStatements:
-		val := val.(*DataLaunchdarklyAuditLogSubscriptionStatements)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataLaunchdarklyAuditLogSubscriptionStatements:
-		val_ := val.(DataLaunchdarklyAuditLogSubscriptionStatements)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataLaunchdarklyAuditLogSubscriptionStatements; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetNotActionsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetNotResourcesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetResourcesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyAuditLogSubscriptionStatements) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

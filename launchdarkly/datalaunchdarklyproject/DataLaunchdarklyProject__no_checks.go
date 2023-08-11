@@ -80,10 +80,6 @@ func (j *jsiiProxy_DataLaunchdarklyProject) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyProject) validateSetTagsParameters(val *[]*string) error {
-	return nil
-}
-
 func validateNewDataLaunchdarklyProjectParameters(scope constructs.Construct, id *string, config *DataLaunchdarklyProjectConfig) error {
 	return nil
 }

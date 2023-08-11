@@ -21,26 +21,16 @@ type DataLaunchdarklyAuditLogSubscriptionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The audit log subscription ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/audit_log_subscription#id DataLaunchdarklyAuditLogSubscription#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/audit_log_subscription#id DataLaunchdarklyAuditLogSubscription#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"required" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/audit_log_subscription#integration_key DataLaunchdarklyAuditLogSubscription#integration_key}.
+	// The integration key.
+	//
+	// Supported integration keys are `cloudtrail`, `datadog`, `dynatrace`, `elastic`, `grafana`, `honeycomb`, `logdna`, `msteams`, `new-relic-apm`, `signalfx`, `slack`, and `splunk`. A change in this field will force the destruction of the existing resource and the creation of a new one.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/audit_log_subscription#integration_key DataLaunchdarklyAuditLogSubscription#integration_key}
 	IntegrationKey *string `field:"required" json:"integrationKey" yaml:"integrationKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/audit_log_subscription#config DataLaunchdarklyAuditLogSubscription#config}.
-	Config *map[string]*string `field:"optional" json:"config" yaml:"config"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/audit_log_subscription#name DataLaunchdarklyAuditLogSubscription#name}.
-	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/audit_log_subscription#on DataLaunchdarklyAuditLogSubscription#on}.
-	On interface{} `field:"optional" json:"on" yaml:"on"`
-	// statements block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/audit_log_subscription#statements DataLaunchdarklyAuditLogSubscription#statements}
-	Statements interface{} `field:"optional" json:"statements" yaml:"statements"`
-	// Tags associated with your resource.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/audit_log_subscription#tags DataLaunchdarklyAuditLogSubscription#tags}
-	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

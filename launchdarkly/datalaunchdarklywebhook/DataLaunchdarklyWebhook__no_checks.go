@@ -52,10 +52,6 @@ func (d *jsiiProxy_DataLaunchdarklyWebhook) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyWebhook) validatePutStatementsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataLaunchdarklyWebhook_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -85,10 +81,6 @@ func (j *jsiiProxy_DataLaunchdarklyWebhook) validateSetNameParameters(val *strin
 }
 
 func (j *jsiiProxy_DataLaunchdarklyWebhook) validateSetSecretParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhook) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 

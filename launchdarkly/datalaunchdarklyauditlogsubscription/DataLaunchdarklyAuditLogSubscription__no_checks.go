@@ -52,10 +52,6 @@ func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscription) validateOverrideLogical
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscription) validatePutStatementsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataLaunchdarklyAuditLogSubscription_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -65,10 +61,6 @@ func validateDataLaunchdarklyAuditLogSubscription_IsTerraformDataSourceParameter
 }
 
 func validateDataLaunchdarklyAuditLogSubscription_IsTerraformElementParameters(x interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) validateSetConfigParameters(val *map[string]*string) error {
 	return nil
 }
 
@@ -85,18 +77,6 @@ func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) validateSetIntegrationK
 }
 
 func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) validateSetOnParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyAuditLogSubscription) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 

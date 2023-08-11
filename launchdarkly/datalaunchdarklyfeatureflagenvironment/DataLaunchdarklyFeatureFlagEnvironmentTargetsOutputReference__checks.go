@@ -163,25 +163,9 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataLaunchdarklyFeatureFlagEnvironmentTargets:
-		val := val.(*DataLaunchdarklyFeatureFlagEnvironmentTargets)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataLaunchdarklyFeatureFlagEnvironmentTargets:
-		val_ := val.(DataLaunchdarklyFeatureFlagEnvironmentTargets)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataLaunchdarklyFeatureFlagEnvironmentTargets; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyFeatureFlagEnvironmentTargets) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -196,22 +180,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference)
 }
 
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference) validateSetValuesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference) validateSetVariationParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
