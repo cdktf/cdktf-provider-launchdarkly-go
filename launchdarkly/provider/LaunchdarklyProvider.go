@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs launchdarkly}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs launchdarkly}.
 type LaunchdarklyProvider interface {
 	cdktf.TerraformProvider
 	AccessToken() *string
@@ -29,6 +29,9 @@ type LaunchdarklyProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HttpTimeout() *float64
+	SetHttpTimeout(val *float64)
+	HttpTimeoutInput() *float64
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
 	// The tree node.
@@ -52,6 +55,7 @@ type LaunchdarklyProvider interface {
 	ResetAccessToken()
 	ResetAlias()
 	ResetApiHost()
+	ResetHttpTimeout()
 	ResetOauthToken()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -171,6 +175,26 @@ func (j *jsiiProxy_LaunchdarklyProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LaunchdarklyProvider) HttpTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchdarklyProvider) HttpTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"httpTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LaunchdarklyProvider) MetaAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -252,7 +276,7 @@ func (j *jsiiProxy_LaunchdarklyProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs launchdarkly} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs launchdarkly} Resource.
 func NewLaunchdarklyProvider(scope constructs.Construct, id *string, config *LaunchdarklyProviderConfig) LaunchdarklyProvider {
 	_init_.Initialize()
 
@@ -270,7 +294,7 @@ func NewLaunchdarklyProvider(scope constructs.Construct, id *string, config *Lau
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs launchdarkly} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs launchdarkly} Resource.
 func NewLaunchdarklyProvider_Override(l LaunchdarklyProvider, scope constructs.Construct, id *string, config *LaunchdarklyProviderConfig) {
 	_init_.Initialize()
 
@@ -301,6 +325,14 @@ func (j *jsiiProxy_LaunchdarklyProvider)SetApiHost(val *string) {
 	_jsii_.Set(
 		j,
 		"apiHost",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LaunchdarklyProvider)SetHttpTimeout(val *float64) {
+	_jsii_.Set(
+		j,
+		"httpTimeout",
 		val,
 	)
 }
@@ -439,6 +471,14 @@ func (l *jsiiProxy_LaunchdarklyProvider) ResetApiHost() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetApiHost",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LaunchdarklyProvider) ResetHttpTimeout() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetHttpTimeout",
 		nil, // no parameters
 	)
 }
