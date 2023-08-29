@@ -1,11 +1,14 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package accesstoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken/internal"
+	"github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/accesstoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

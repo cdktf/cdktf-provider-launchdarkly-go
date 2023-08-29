@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package webhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/jsii"
 
-	"github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/webhook/internal"
+	"github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/webhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
