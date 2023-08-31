@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment launchdarkly_segment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment launchdarkly_segment}.
 type Segment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -560,7 +560,7 @@ func (j *jsiiProxy_Segment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment launchdarkly_segment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment launchdarkly_segment} Resource.
 func NewSegment(scope constructs.Construct, id *string, config *SegmentConfig) Segment {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewSegment(scope constructs.Construct, id *string, config *SegmentConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment launchdarkly_segment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment launchdarkly_segment} Resource.
 func NewSegment_Override(s Segment, scope constructs.Construct, id *string, config *SegmentConfig) {
 	_init_.Initialize()
 

@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyFeatureFlagClientSideAvailability) error {
 	return nil
 }
 
@@ -68,14 +68,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputRefere
 }
 
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) validateSetUsingEnvironmentIdParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) validateSetUsingMobileKeyParameters(val interface{}) error {
 	return nil
 }
 

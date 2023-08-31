@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/webhook launchdarkly_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/webhook launchdarkly_webhook}.
 type DataLaunchdarklyWebhook interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataLaunchdarklyWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/webhook launchdarkly_webhook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/webhook launchdarkly_webhook} Data Source.
 func NewDataLaunchdarklyWebhook(scope constructs.Construct, id *string, config *DataLaunchdarklyWebhookConfig) DataLaunchdarklyWebhook {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataLaunchdarklyWebhook(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/webhook launchdarkly_webhook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/webhook launchdarkly_webhook} Data Source.
 func NewDataLaunchdarklyWebhook_Override(d DataLaunchdarklyWebhook, scope constructs.Construct, id *string, config *DataLaunchdarklyWebhookConfig) {
 	_init_.Initialize()
 

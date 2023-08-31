@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/team launchdarkly_team}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/team launchdarkly_team}.
 type DataLaunchdarklyTeam interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataLaunchdarklyTeam) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/team launchdarkly_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/team launchdarkly_team} Data Source.
 func NewDataLaunchdarklyTeam(scope constructs.Construct, id *string, config *DataLaunchdarklyTeamConfig) DataLaunchdarklyTeam {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataLaunchdarklyTeam(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/team launchdarkly_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/team launchdarkly_team} Data Source.
 func NewDataLaunchdarklyTeam_Override(d DataLaunchdarklyTeam, scope constructs.Construct, id *string, config *DataLaunchdarklyTeamConfig) {
 	_init_.Initialize()
 

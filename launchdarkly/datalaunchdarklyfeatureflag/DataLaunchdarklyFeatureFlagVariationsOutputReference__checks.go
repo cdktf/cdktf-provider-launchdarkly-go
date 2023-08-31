@@ -166,41 +166,9 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataLaunchdarklyFeatureFlagVariations:
-		val := val.(*DataLaunchdarklyFeatureFlagVariations)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataLaunchdarklyFeatureFlagVariations:
-		val_ := val.(DataLaunchdarklyFeatureFlagVariations)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataLaunchdarklyFeatureFlagVariations; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyFeatureFlagVariations) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -215,14 +183,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) validat
 }
 
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) validateSetValueParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

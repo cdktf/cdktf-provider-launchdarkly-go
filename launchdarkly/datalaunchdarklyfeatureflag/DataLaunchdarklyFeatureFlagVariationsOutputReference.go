@@ -29,15 +29,11 @@ type DataLaunchdarklyFeatureFlagVariationsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklyFeatureFlagVariations
+	SetInternalValue(val *DataLaunchdarklyFeatureFlagVariations)
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,8 +43,6 @@ type DataLaunchdarklyFeatureFlagVariationsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Value() *string
-	SetValue(val *string)
-	ValueInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,8 +67,6 @@ type DataLaunchdarklyFeatureFlagVariationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDescription()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -130,16 +122,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) Descrip
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -150,8 +132,8 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) InternalValue() *DataLaunchdarklyFeatureFlagVariations {
+	var returns *DataLaunchdarklyFeatureFlagVariations
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -165,16 +147,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) Name() 
 	_jsii_.Get(
 		j,
 		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
 		&returns,
 	)
 	return returns
@@ -205,16 +177,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) Value()
 	_jsii_.Get(
 		j,
 		"value",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) ValueInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"valueInput",
 		&returns,
 	)
 	return returns
@@ -270,35 +232,13 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference)SetInternalValue(val *DataLaunchdarklyFeatureFlagVariations) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -321,17 +261,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference)SetTerra
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference)SetValue(val *string) {
-	if err := j.validateSetValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"value",
 		val,
 	)
 }
@@ -520,22 +449,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) Interpo
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataLaunchdarklyFeatureFlagVariationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

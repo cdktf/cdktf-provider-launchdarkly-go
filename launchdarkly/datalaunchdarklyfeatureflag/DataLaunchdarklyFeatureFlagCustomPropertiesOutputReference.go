@@ -30,14 +30,10 @@ type DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklyFeatureFlagCustomProperties
+	SetInternalValue(val *DataLaunchdarklyFeatureFlagCustomProperties)
 	Key() *string
-	SetKey(val *string)
-	KeyInput() *string
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,8 +43,6 @@ type DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Value() *[]*string
-	SetValue(val *[]*string)
-	ValueInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -128,8 +122,8 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) InternalValue() *DataLaunchdarklyFeatureFlagCustomProperties {
+	var returns *DataLaunchdarklyFeatureFlagCustomProperties
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -148,31 +142,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) K
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) KeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"keyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
 		&returns,
 	)
 	return returns
@@ -203,16 +177,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) V
 	_jsii_.Get(
 		j,
 		"value",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) ValueInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"valueInput",
 		&returns,
 	)
 	return returns
@@ -268,35 +232,13 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference)SetInternalValue(val *DataLaunchdarklyFeatureFlagCustomProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference)SetKey(val *string) {
-	if err := j.validateSetKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"key",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -319,17 +261,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference)Se
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference)SetValue(val *[]*string) {
-	if err := j.validateSetValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"value",
 		val,
 	)
 }

@@ -63,14 +63,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference) validateSetOffVariationParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference) validateSetOnVariationParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
@@ -79,7 +71,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference) validateS
 	return nil
 }
 
-func validateNewDataLaunchdarklyFeatureFlagDefaultsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataLaunchdarklyFeatureFlagDefaultsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

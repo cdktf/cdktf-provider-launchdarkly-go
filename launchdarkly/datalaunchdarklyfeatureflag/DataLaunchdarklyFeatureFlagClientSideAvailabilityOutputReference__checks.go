@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataLaunchdarklyFeatureFlagClientSideAvailability:
-		val := val.(*DataLaunchdarklyFeatureFlagClientSideAvailability)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataLaunchdarklyFeatureFlagClientSideAvailability:
-		val_ := val.(DataLaunchdarklyFeatureFlagClientSideAvailability)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataLaunchdarklyFeatureFlagClientSideAvailability; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyFeatureFlagClientSideAvailability) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -201,46 +185,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputRefere
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) validateSetUsingEnvironmentIdParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) validateSetUsingMobileKeyParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
 	}
 
 	return nil

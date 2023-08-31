@@ -59,15 +59,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetKeyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetNameParameters(val *string) error {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyFeatureFlagCustomProperties) error {
 	return nil
 }
 
@@ -76,10 +68,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) v
 }
 
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference) validateSetValueParameters(val *[]*string) error {
 	return nil
 }
 

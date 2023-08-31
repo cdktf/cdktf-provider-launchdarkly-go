@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataLaunchdarklyFeatureFlagCustomPropertiesList interface {
+type DataLaunchdarklyFeatureFlagDefaultsList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -31,7 +31,7 @@ type DataLaunchdarklyFeatureFlagCustomPropertiesList interface {
 	SetWrapsSet(val *bool)
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference
+	Get(index *float64) DataLaunchdarklyFeatureFlagDefaultsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -42,12 +42,12 @@ type DataLaunchdarklyFeatureFlagCustomPropertiesList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataLaunchdarklyFeatureFlagCustomPropertiesList
-type jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList struct {
+// The jsii proxy struct for DataLaunchdarklyFeatureFlagDefaultsList
+type jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) CreationStack() *[]*string {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -57,7 +57,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) CreationStac
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) Fqn() *string {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -67,7 +67,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) TerraformAttribute() *string {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -77,7 +77,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -87,7 +87,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) TerraformRes
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) WrapsSet() *bool {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -98,16 +98,16 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) WrapsSet() *
 }
 
 
-func NewDataLaunchdarklyFeatureFlagCustomPropertiesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyFeatureFlagCustomPropertiesList {
+func NewDataLaunchdarklyFeatureFlagDefaultsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyFeatureFlagDefaultsList {
 	_init_.Initialize()
 
-	if err := validateNewDataLaunchdarklyFeatureFlagCustomPropertiesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewDataLaunchdarklyFeatureFlagDefaultsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList{}
+	j := jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagCustomPropertiesList",
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagDefaultsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -115,17 +115,17 @@ func NewDataLaunchdarklyFeatureFlagCustomPropertiesList(terraformResource cdktf.
 	return &j
 }
 
-func NewDataLaunchdarklyFeatureFlagCustomPropertiesList_Override(d DataLaunchdarklyFeatureFlagCustomPropertiesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataLaunchdarklyFeatureFlagDefaultsList_Override(d DataLaunchdarklyFeatureFlagDefaultsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagCustomPropertiesList",
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagDefaultsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -136,7 +136,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -147,7 +147,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -158,7 +158,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList)SetWrapsSet(v
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) ComputeFqn() *string {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -171,11 +171,11 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) ComputeFqn()
 	return returns
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) Get(index *float64) DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList) Get(index *float64) DataLaunchdarklyFeatureFlagDefaultsOutputReference {
 	if err := d.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference
+	var returns DataLaunchdarklyFeatureFlagDefaultsOutputReference
 
 	_jsii_.Invoke(
 		d,
@@ -187,7 +187,7 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) Get(index *f
 	return returns
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -203,7 +203,7 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) Resolve(_con
 	return returns
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) ToString() *string {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

@@ -30,8 +30,8 @@ type DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference interface 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklyFeatureFlagClientSideAvailability
+	SetInternalValue(val *DataLaunchdarklyFeatureFlagClientSideAvailability)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,12 +40,8 @@ type DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference interface 
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UsingEnvironmentId() interface{}
-	SetUsingEnvironmentId(val interface{})
-	UsingEnvironmentIdInput() interface{}
-	UsingMobileKey() interface{}
-	SetUsingMobileKey(val interface{})
-	UsingMobileKeyInput() interface{}
+	UsingEnvironmentId() cdktf.IResolvable
+	UsingMobileKey() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,8 +66,6 @@ type DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetUsingEnvironmentId()
-	ResetUsingMobileKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,8 +121,8 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) InternalValue() *DataLaunchdarklyFeatureFlagClientSideAvailability {
+	var returns *DataLaunchdarklyFeatureFlagClientSideAvailability
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -157,8 +151,8 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) UsingEnvironmentId() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) UsingEnvironmentId() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"usingEnvironmentId",
@@ -167,31 +161,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) UsingEnvironmentIdInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"usingEnvironmentIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) UsingMobileKey() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) UsingMobileKey() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"usingMobileKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) UsingMobileKeyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"usingMobileKeyInput",
 		&returns,
 	)
 	return returns
@@ -247,7 +221,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference)SetInternalValue(val *DataLaunchdarklyFeatureFlagClientSideAvailability) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,28 +250,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputRefere
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference)SetUsingEnvironmentId(val interface{}) {
-	if err := j.validateSetUsingEnvironmentIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"usingEnvironmentId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference)SetUsingMobileKey(val interface{}) {
-	if err := j.validateSetUsingMobileKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"usingMobileKey",
 		val,
 	)
 }
@@ -486,22 +438,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputRefere
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) ResetUsingEnvironmentId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUsingEnvironmentId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) ResetUsingMobileKey() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUsingMobileKey",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

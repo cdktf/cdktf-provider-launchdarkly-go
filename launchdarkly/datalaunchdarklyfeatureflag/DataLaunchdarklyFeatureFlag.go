@@ -12,16 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/feature_flag launchdarkly_feature_flag}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/feature_flag launchdarkly_feature_flag}.
 type DataLaunchdarklyFeatureFlag interface {
 	cdktf.TerraformDataSource
-	Archived() interface{}
-	SetArchived(val interface{})
-	ArchivedInput() interface{}
+	Archived() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientSideAvailability() DataLaunchdarklyFeatureFlagClientSideAvailabilityList
-	ClientSideAvailabilityInput() interface{}
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -29,16 +26,12 @@ type DataLaunchdarklyFeatureFlag interface {
 	// Experimental.
 	SetCount(val interface{})
 	CustomProperties() DataLaunchdarklyFeatureFlagCustomPropertiesList
-	CustomPropertiesInput() interface{}
-	Defaults() DataLaunchdarklyFeatureFlagDefaultsOutputReference
-	DefaultsInput() *DataLaunchdarklyFeatureFlagDefaults
+	Defaults() DataLaunchdarklyFeatureFlagDefaultsList
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,9 +43,7 @@ type DataLaunchdarklyFeatureFlag interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IncludeInSnippet() interface{}
-	SetIncludeInSnippet(val interface{})
-	IncludeInSnippetInput() interface{}
+	IncludeInSnippet() cdktf.IResolvable
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -61,8 +52,6 @@ type DataLaunchdarklyFeatureFlag interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MaintainerId() *string
-	SetMaintainerId(val *string)
-	MaintainerIdInput() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -76,9 +65,7 @@ type DataLaunchdarklyFeatureFlag interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Tags() *[]*string
-	Temporary() interface{}
-	SetTemporary(val interface{})
-	TemporaryInput() interface{}
+	Temporary() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -86,7 +73,6 @@ type DataLaunchdarklyFeatureFlag interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Variations() DataLaunchdarklyFeatureFlagVariationsList
-	VariationsInput() interface{}
 	VariationType() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -113,23 +99,10 @@ type DataLaunchdarklyFeatureFlag interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutClientSideAvailability(value interface{})
-	PutCustomProperties(value interface{})
-	PutDefaults(value *DataLaunchdarklyFeatureFlagDefaults)
-	PutVariations(value interface{})
-	ResetArchived()
-	ResetClientSideAvailability()
-	ResetCustomProperties()
-	ResetDefaults()
-	ResetDescription()
 	ResetId()
-	ResetIncludeInSnippet()
-	ResetMaintainerId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTemporary()
-	ResetVariations()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -145,21 +118,11 @@ type jsiiProxy_DataLaunchdarklyFeatureFlag struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Archived() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Archived() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"archived",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) ArchivedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"archivedInput",
 		&returns,
 	)
 	return returns
@@ -180,16 +143,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) ClientSideAvailability() DataLau
 	_jsii_.Get(
 		j,
 		"clientSideAvailability",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) ClientSideAvailabilityInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"clientSideAvailabilityInput",
 		&returns,
 	)
 	return returns
@@ -225,31 +178,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) CustomProperties() DataLaunchdar
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) CustomPropertiesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"customPropertiesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Defaults() DataLaunchdarklyFeatureFlagDefaultsOutputReference {
-	var returns DataLaunchdarklyFeatureFlagDefaultsOutputReference
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Defaults() DataLaunchdarklyFeatureFlagDefaultsList {
+	var returns DataLaunchdarklyFeatureFlagDefaultsList
 	_jsii_.Get(
 		j,
 		"defaults",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) DefaultsInput() *DataLaunchdarklyFeatureFlagDefaults {
-	var returns *DataLaunchdarklyFeatureFlagDefaults
-	_jsii_.Get(
-		j,
-		"defaultsInput",
 		&returns,
 	)
 	return returns
@@ -270,16 +203,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -335,21 +258,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) IncludeInSnippet() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) IncludeInSnippet() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"includeInSnippet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) IncludeInSnippetInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"includeInSnippetInput",
 		&returns,
 	)
 	return returns
@@ -390,16 +303,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) MaintainerId() *string {
 	_jsii_.Get(
 		j,
 		"maintainerId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) MaintainerIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"maintainerIdInput",
 		&returns,
 	)
 	return returns
@@ -475,21 +378,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Tags() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Temporary() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Temporary() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"temporary",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) TemporaryInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"temporaryInput",
 		&returns,
 	)
 	return returns
@@ -535,16 +428,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Variations() DataLaunchdarklyFea
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) VariationsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"variationsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) VariationType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -556,7 +439,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) VariationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
 func NewDataLaunchdarklyFeatureFlag(scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagConfig) DataLaunchdarklyFeatureFlag {
 	_init_.Initialize()
 
@@ -574,7 +457,7 @@ func NewDataLaunchdarklyFeatureFlag(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
 func NewDataLaunchdarklyFeatureFlag_Override(d DataLaunchdarklyFeatureFlag, scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagConfig) {
 	_init_.Initialize()
 
@@ -582,17 +465,6 @@ func NewDataLaunchdarklyFeatureFlag_Override(d DataLaunchdarklyFeatureFlag, scop
 		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetArchived(val interface{}) {
-	if err := j.validateSetArchivedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"archived",
-		val,
 	)
 }
 
@@ -615,17 +487,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -641,17 +502,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetIncludeInSnippet(val interface{}) {
-	if err := j.validateSetIncludeInSnippetParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"includeInSnippet",
 		val,
 	)
 }
@@ -678,17 +528,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetMaintainerId(val *string) {
-	if err := j.validateSetMaintainerIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"maintainerId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetProjectKey(val *string) {
 	if err := j.validateSetProjectKeyParameters(val); err != nil {
 		panic(err)
@@ -704,17 +543,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetTemporary(val interface{}) {
-	if err := j.validateSetTemporaryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"temporary",
 		val,
 	)
 }
@@ -985,90 +813,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) OverrideLogicalId(newLogicalId *
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) PutClientSideAvailability(value interface{}) {
-	if err := d.validatePutClientSideAvailabilityParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putClientSideAvailability",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) PutCustomProperties(value interface{}) {
-	if err := d.validatePutCustomPropertiesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putCustomProperties",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) PutDefaults(value *DataLaunchdarklyFeatureFlagDefaults) {
-	if err := d.validatePutDefaultsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putDefaults",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) PutVariations(value interface{}) {
-	if err := d.validatePutVariationsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putVariations",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetArchived() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetArchived",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetClientSideAvailability() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetClientSideAvailability",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetCustomProperties() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCustomProperties",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetDefaults() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDefaults",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1077,42 +821,10 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetId() {
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetIncludeInSnippet() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIncludeInSnippet",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetMaintainerId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMaintainerId",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetTemporary() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTemporary",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetVariations() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetVariations",
 		nil, // no parameters
 	)
 }

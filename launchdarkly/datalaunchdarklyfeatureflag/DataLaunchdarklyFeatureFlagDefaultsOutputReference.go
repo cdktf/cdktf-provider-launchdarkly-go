@@ -33,11 +33,7 @@ type DataLaunchdarklyFeatureFlagDefaultsOutputReference interface {
 	InternalValue() *DataLaunchdarklyFeatureFlagDefaults
 	SetInternalValue(val *DataLaunchdarklyFeatureFlagDefaults)
 	OffVariation() *float64
-	SetOffVariation(val *float64)
-	OffVariationInput() *float64
 	OnVariation() *float64
-	SetOnVariation(val *float64)
-	OnVariationInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -145,31 +141,11 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference) OffVariat
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference) OffVariationInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"offVariationInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference) OnVariation() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"onVariation",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference) OnVariationInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"onVariationInput",
 		&returns,
 	)
 	return returns
@@ -196,29 +172,29 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference) Terraform
 }
 
 
-func NewDataLaunchdarklyFeatureFlagDefaultsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataLaunchdarklyFeatureFlagDefaultsOutputReference {
+func NewDataLaunchdarklyFeatureFlagDefaultsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataLaunchdarklyFeatureFlagDefaultsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataLaunchdarklyFeatureFlagDefaultsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataLaunchdarklyFeatureFlagDefaultsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagDefaultsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataLaunchdarklyFeatureFlagDefaultsOutputReference_Override(d DataLaunchdarklyFeatureFlagDefaultsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataLaunchdarklyFeatureFlagDefaultsOutputReference_Override(d DataLaunchdarklyFeatureFlagDefaultsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagDefaultsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -252,28 +228,6 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference)SetInterna
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference)SetOffVariation(val *float64) {
-	if err := j.validateSetOffVariationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"offVariation",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlagDefaultsOutputReference)SetOnVariation(val *float64) {
-	if err := j.validateSetOnVariationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"onVariation",
 		val,
 	)
 }

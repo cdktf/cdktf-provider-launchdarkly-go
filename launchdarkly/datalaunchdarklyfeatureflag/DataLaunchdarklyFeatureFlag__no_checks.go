@@ -55,22 +55,6 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) validatePutClientSideAvailabilityParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) validatePutCustomPropertiesParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) validatePutDefaultsParameters(value *DataLaunchdarklyFeatureFlagDefaults) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) validatePutVariationsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataLaunchdarklyFeatureFlag_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -83,23 +67,11 @@ func validateDataLaunchdarklyFeatureFlag_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetArchivedParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetIncludeInSnippetParameters(val interface{}) error {
 	return nil
 }
 
@@ -111,15 +83,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetMaintainerIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetProjectKeyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetTemporaryParameters(val interface{}) error {
 	return nil
 }
 

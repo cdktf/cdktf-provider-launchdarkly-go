@@ -24,44 +24,44 @@ type DataLaunchdarklySegmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The segment's environment key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
 	EnvKey *string `field:"required" json:"envKey" yaml:"envKey"`
 	// The unique key that references the segment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#key DataLaunchdarklySegment#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/segment#key DataLaunchdarklySegment#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The segment's project key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
 	ProjectKey *string `field:"required" json:"projectKey" yaml:"projectKey"`
 	// The description of the segment's purpose.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#description DataLaunchdarklySegment#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/segment#description DataLaunchdarklySegment#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#excluded DataLaunchdarklySegment#excluded}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/segment#excluded DataLaunchdarklySegment#excluded}
 	Excluded *[]*string `field:"optional" json:"excluded" yaml:"excluded"`
 	// excluded_contexts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#excluded_contexts DataLaunchdarklySegment#excluded_contexts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/segment#excluded_contexts DataLaunchdarklySegment#excluded_contexts}
 	ExcludedContexts interface{} `field:"optional" json:"excludedContexts" yaml:"excludedContexts"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#included DataLaunchdarklySegment#included}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/segment#included DataLaunchdarklySegment#included}
 	Included *[]*string `field:"optional" json:"included" yaml:"included"`
 	// included_contexts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#included_contexts DataLaunchdarklySegment#included_contexts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/segment#included_contexts DataLaunchdarklySegment#included_contexts}
 	IncludedContexts interface{} `field:"optional" json:"includedContexts" yaml:"includedContexts"`
 	// rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#rules DataLaunchdarklySegment#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/segment#rules DataLaunchdarklySegment#rules}
 	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
 }
 
