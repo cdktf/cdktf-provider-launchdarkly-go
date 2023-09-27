@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/flag_trigger launchdarkly_flag_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger launchdarkly_flag_trigger}.
 type FlagTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_FlagTrigger) TriggerUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/flag_trigger launchdarkly_flag_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger launchdarkly_flag_trigger} Resource.
 func NewFlagTrigger(scope constructs.Construct, id *string, config *FlagTriggerConfig) FlagTrigger {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewFlagTrigger(scope constructs.Construct, id *string, config *FlagTriggerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/flag_trigger launchdarkly_flag_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger launchdarkly_flag_trigger} Resource.
 func NewFlagTrigger_Override(f FlagTrigger, scope constructs.Construct, id *string, config *FlagTriggerConfig) {
 	_init_.Initialize()
 
