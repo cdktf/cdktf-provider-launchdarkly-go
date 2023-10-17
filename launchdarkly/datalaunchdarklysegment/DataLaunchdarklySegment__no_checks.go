@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataLaunchdarklySegment) validatePutRulesParameters(value int
 	return nil
 }
 
+func validateDataLaunchdarklySegment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataLaunchdarklySegment_IsConstructParameters(x interface{}) error {
 	return nil
 }

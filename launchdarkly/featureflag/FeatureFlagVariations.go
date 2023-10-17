@@ -13,7 +13,7 @@ type FeatureFlagVariations struct {
 	//
 	// ```terraform
 	// variations {
-	// value = ""
+	//   value = ""
 	// }
 	// ```
 	//

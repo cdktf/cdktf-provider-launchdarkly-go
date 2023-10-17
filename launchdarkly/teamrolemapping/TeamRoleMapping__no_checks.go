@@ -7,6 +7,10 @@ package teamrolemapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TeamRoleMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamRoleMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TeamRoleMapping) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (t *jsiiProxy_TeamRoleMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamRoleMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TeamRoleMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamRoleMapping) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTeamRoleMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

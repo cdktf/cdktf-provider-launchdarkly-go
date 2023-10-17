@@ -15,6 +15,10 @@ func (l *jsiiProxy_LaunchdarklyProvider) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func validateLaunchdarklyProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateLaunchdarklyProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

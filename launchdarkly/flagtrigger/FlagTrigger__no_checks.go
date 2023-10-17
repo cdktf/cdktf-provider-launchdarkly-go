@@ -7,6 +7,10 @@ package flagtrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FlagTrigger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FlagTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FlagTrigger) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (f *jsiiProxy_FlagTrigger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FlagTrigger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FlagTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (f *jsiiProxy_FlagTrigger) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (f *jsiiProxy_FlagTrigger) validatePutInstructionsParameters(value *FlagTriggerInstructions) error {
+	return nil
+}
+
+func validateFlagTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package segment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Segment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Segment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_Segment) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (s *jsiiProxy_Segment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Segment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Segment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_Segment) validatePutIncludedContextsParameters(value interfac
 }
 
 func (s *jsiiProxy_Segment) validatePutRulesParameters(value interface{}) error {
+	return nil
+}
+
+func validateSegment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

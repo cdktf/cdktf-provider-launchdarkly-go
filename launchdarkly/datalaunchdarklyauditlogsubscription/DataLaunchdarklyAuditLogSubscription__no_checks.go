@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscription) validateOverrideLogical
 	return nil
 }
 
+func validateDataLaunchdarklyAuditLogSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataLaunchdarklyAuditLogSubscription_IsConstructParameters(x interface{}) error {
 	return nil
 }

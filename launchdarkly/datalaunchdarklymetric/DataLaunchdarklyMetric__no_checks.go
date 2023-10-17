@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataLaunchdarklyMetric) validatePutUrlsParameters(value inter
 	return nil
 }
 
+func validateDataLaunchdarklyMetric_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataLaunchdarklyMetric_IsConstructParameters(x interface{}) error {
 	return nil
 }

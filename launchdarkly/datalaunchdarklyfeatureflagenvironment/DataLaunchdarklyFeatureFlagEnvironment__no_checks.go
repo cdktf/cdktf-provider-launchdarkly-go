@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironment) validateOverrideLogic
 	return nil
 }
 
+func validateDataLaunchdarklyFeatureFlagEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataLaunchdarklyFeatureFlagEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }

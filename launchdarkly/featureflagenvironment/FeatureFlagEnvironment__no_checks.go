@@ -7,6 +7,10 @@ package featureflagenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FeatureFlagEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureFlagEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FeatureFlagEnvironment) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (f *jsiiProxy_FeatureFlagEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FeatureFlagEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FeatureFlagEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (f *jsiiProxy_FeatureFlagEnvironment) validatePutRulesParameters(value inte
 }
 
 func (f *jsiiProxy_FeatureFlagEnvironment) validatePutTargetsParameters(value interface{}) error {
+	return nil
+}
+
+func validateFeatureFlagEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

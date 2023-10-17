@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataLaunchdarklyWebhook) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func validateDataLaunchdarklyWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataLaunchdarklyWebhook_IsConstructParameters(x interface{}) error {
 	return nil
 }
