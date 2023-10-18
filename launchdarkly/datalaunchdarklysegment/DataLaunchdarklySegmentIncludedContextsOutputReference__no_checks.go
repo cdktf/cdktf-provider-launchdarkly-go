@@ -59,11 +59,7 @@ func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) validateSetContextKindParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklySegmentIncludedContexts) error {
 	return nil
 }
 
@@ -72,10 +68,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) valid
 }
 
 func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) validateSetValuesParameters(val *[]*string) error {
 	return nil
 }
 

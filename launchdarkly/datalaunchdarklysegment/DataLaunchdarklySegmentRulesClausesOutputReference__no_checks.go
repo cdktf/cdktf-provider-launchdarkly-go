@@ -51,10 +51,6 @@ func (d *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateSetAttributeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -63,19 +59,7 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateSetContextKindParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateSetNegateParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateSetOpParameters(val *string) error {
+func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklySegmentRulesClauses) error {
 	return nil
 }
 
@@ -84,14 +68,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateS
 }
 
 func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateSetValuesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateSetValueTypeParameters(val *string) error {
 	return nil
 }
 

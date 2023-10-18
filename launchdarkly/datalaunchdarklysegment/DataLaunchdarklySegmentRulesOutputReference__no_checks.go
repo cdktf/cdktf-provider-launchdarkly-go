@@ -47,15 +47,7 @@ func (d *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) validateInterpol
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) validatePutClausesParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) validateSetBucketByParameters(val *string) error {
 	return nil
 }
 
@@ -67,11 +59,7 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) validateSetRolloutContextKindParameters(val *string) error {
+func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklySegmentRules) error {
 	return nil
 }
 
@@ -80,10 +68,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) validateSetTerra
 }
 
 func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) validateSetWeightParameters(val *float64) error {
 	return nil
 }
 

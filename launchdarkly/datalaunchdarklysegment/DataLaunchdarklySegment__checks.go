@@ -114,99 +114,6 @@ func (d *jsiiProxy_DataLaunchdarklySegment) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklySegment) validatePutExcludedContextsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataLaunchdarklySegmentExcludedContexts:
-		value := value.(*[]*DataLaunchdarklySegmentExcludedContexts)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataLaunchdarklySegmentExcludedContexts:
-		value_ := value.([]*DataLaunchdarklySegmentExcludedContexts)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataLaunchdarklySegmentExcludedContexts; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) validatePutIncludedContextsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataLaunchdarklySegmentIncludedContexts:
-		value := value.(*[]*DataLaunchdarklySegmentIncludedContexts)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataLaunchdarklySegmentIncludedContexts:
-		value_ := value.([]*DataLaunchdarklySegmentIncludedContexts)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataLaunchdarklySegmentIncludedContexts; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) validatePutRulesParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataLaunchdarklySegmentRules:
-		value := value.(*[]*DataLaunchdarklySegmentRules)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataLaunchdarklySegmentRules:
-		value_ := value.([]*DataLaunchdarklySegmentRules)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataLaunchdarklySegmentRules; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func validateDataLaunchdarklySegment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -304,14 +211,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment) validateSetCountParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegment) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegment) validateSetEnvKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -320,23 +219,7 @@ func (j *jsiiProxy_DataLaunchdarklySegment) validateSetEnvKeyParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegment) validateSetExcludedParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegment) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegment) validateSetIncludedParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

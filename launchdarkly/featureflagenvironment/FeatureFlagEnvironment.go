@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/feature_flag_environment launchdarkly_feature_flag_environment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/feature_flag_environment launchdarkly_feature_flag_environment}.
 type FeatureFlagEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -533,7 +533,7 @@ func (j *jsiiProxy_FeatureFlagEnvironment) TrackEventsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/feature_flag_environment launchdarkly_feature_flag_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/feature_flag_environment launchdarkly_feature_flag_environment} Resource.
 func NewFeatureFlagEnvironment(scope constructs.Construct, id *string, config *FeatureFlagEnvironmentConfig) FeatureFlagEnvironment {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewFeatureFlagEnvironment(scope constructs.Construct, id *string, config *F
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/feature_flag_environment launchdarkly_feature_flag_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/feature_flag_environment launchdarkly_feature_flag_environment} Resource.
 func NewFeatureFlagEnvironment_Override(f FeatureFlagEnvironment, scope constructs.Construct, id *string, config *FeatureFlagEnvironmentConfig) {
 	_init_.Initialize()
 

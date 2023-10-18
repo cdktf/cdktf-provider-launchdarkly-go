@@ -55,18 +55,6 @@ func (d *jsiiProxy_DataLaunchdarklySegment) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklySegment) validatePutExcludedContextsParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) validatePutIncludedContextsParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) validatePutRulesParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataLaunchdarklySegment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -87,23 +75,11 @@ func (j *jsiiProxy_DataLaunchdarklySegment) validateSetCountParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegment) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegment) validateSetEnvKeyParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegment) validateSetExcludedParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegment) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegment) validateSetIncludedParameters(val *[]*string) error {
 	return nil
 }
 

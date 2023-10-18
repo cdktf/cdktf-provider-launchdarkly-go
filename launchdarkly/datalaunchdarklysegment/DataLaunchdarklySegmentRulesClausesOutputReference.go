@@ -14,8 +14,6 @@ import (
 type DataLaunchdarklySegmentRulesClausesOutputReference interface {
 	cdktf.ComplexObject
 	Attribute() *string
-	SetAttribute(val *string)
-	AttributeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -27,8 +25,6 @@ type DataLaunchdarklySegmentRulesClausesOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ContextKind() *string
-	SetContextKind(val *string)
-	ContextKindInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -36,14 +32,10 @@ type DataLaunchdarklySegmentRulesClausesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	Negate() interface{}
-	SetNegate(val interface{})
-	NegateInput() interface{}
+	InternalValue() *DataLaunchdarklySegmentRulesClauses
+	SetInternalValue(val *DataLaunchdarklySegmentRulesClauses)
+	Negate() cdktf.IResolvable
 	Op() *string
-	SetOp(val *string)
-	OpInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -53,11 +45,7 @@ type DataLaunchdarklySegmentRulesClausesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Values() *[]*string
-	SetValues(val *[]*string)
-	ValuesInput() *[]*string
 	ValueType() *string
-	SetValueType(val *string)
-	ValueTypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -82,9 +70,6 @@ type DataLaunchdarklySegmentRulesClausesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetContextKind()
-	ResetNegate()
-	ResetValueType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -105,16 +90,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) Attribute
 	_jsii_.Get(
 		j,
 		"attribute",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) AttributeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attributeInput",
 		&returns,
 	)
 	return returns
@@ -150,16 +125,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) ContextKi
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) ContextKindInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"contextKindInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -180,8 +145,8 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) InternalValue() *DataLaunchdarklySegmentRulesClauses {
+	var returns *DataLaunchdarklySegmentRulesClauses
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -190,21 +155,11 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) InternalV
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) Negate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) Negate() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"negate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) NegateInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"negateInput",
 		&returns,
 	)
 	return returns
@@ -215,16 +170,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) Op() *str
 	_jsii_.Get(
 		j,
 		"op",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) OpInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"opInput",
 		&returns,
 	)
 	return returns
@@ -260,31 +205,11 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) Values() 
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) ValuesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"valuesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) ValueType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"valueType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) ValueTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"valueTypeInput",
 		&returns,
 	)
 	return returns
@@ -318,17 +243,6 @@ func NewDataLaunchdarklySegmentRulesClausesOutputReference_Override(d DataLaunch
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference)SetAttribute(val *string) {
-	if err := j.validateSetAttributeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"attribute",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -351,46 +265,13 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference)SetContextKind(val *string) {
-	if err := j.validateSetContextKindParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"contextKind",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference)SetInternalValue(val *DataLaunchdarklySegmentRulesClauses) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference)SetNegate(val interface{}) {
-	if err := j.validateSetNegateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"negate",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference)SetOp(val *string) {
-	if err := j.validateSetOpParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"op",
 		val,
 	)
 }
@@ -413,28 +294,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference)SetTerrafo
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference)SetValues(val *[]*string) {
-	if err := j.validateSetValuesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"values",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference)SetValueType(val *string) {
-	if err := j.validateSetValueTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"valueType",
 		val,
 	)
 }
@@ -623,30 +482,6 @@ func (d *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) Interpola
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) ResetContextKind() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetContextKind",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) ResetNegate() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNegate",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) ResetValueType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetValueType",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

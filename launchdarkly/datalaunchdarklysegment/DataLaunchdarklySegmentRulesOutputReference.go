@@ -14,10 +14,7 @@ import (
 type DataLaunchdarklySegmentRulesOutputReference interface {
 	cdktf.ComplexObject
 	BucketBy() *string
-	SetBucketBy(val *string)
-	BucketByInput() *string
 	Clauses() DataLaunchdarklySegmentRulesClausesList
-	ClausesInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,11 +32,9 @@ type DataLaunchdarklySegmentRulesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklySegmentRules
+	SetInternalValue(val *DataLaunchdarklySegmentRules)
 	RolloutContextKind() *string
-	SetRolloutContextKind(val *string)
-	RolloutContextKindInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,8 +44,6 @@ type DataLaunchdarklySegmentRulesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Weight() *float64
-	SetWeight(val *float64)
-	WeightInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,11 +68,6 @@ type DataLaunchdarklySegmentRulesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutClauses(value interface{})
-	ResetBucketBy()
-	ResetClauses()
-	ResetRolloutContextKind()
-	ResetWeight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -105,31 +93,11 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) BucketBy() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) BucketByInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bucketByInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) Clauses() DataLaunchdarklySegmentRulesClausesList {
 	var returns DataLaunchdarklySegmentRulesClausesList
 	_jsii_.Get(
 		j,
 		"clauses",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) ClausesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"clausesInput",
 		&returns,
 	)
 	return returns
@@ -175,8 +143,8 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) InternalValue() *DataLaunchdarklySegmentRules {
+	var returns *DataLaunchdarklySegmentRules
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -190,16 +158,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) RolloutContextKi
 	_jsii_.Get(
 		j,
 		"rolloutContextKind",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) RolloutContextKindInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"rolloutContextKindInput",
 		&returns,
 	)
 	return returns
@@ -235,16 +193,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) Weight() *float6
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) WeightInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"weightInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewDataLaunchdarklySegmentRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataLaunchdarklySegmentRulesOutputReference {
 	_init_.Initialize()
@@ -273,17 +221,6 @@ func NewDataLaunchdarklySegmentRulesOutputReference_Override(d DataLaunchdarklyS
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference)SetBucketBy(val *string) {
-	if err := j.validateSetBucketByParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"bucketBy",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -306,24 +243,13 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference)SetInternalValue(val *DataLaunchdarklySegmentRules) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference)SetRolloutContextKind(val *string) {
-	if err := j.validateSetRolloutContextKindParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"rolloutContextKind",
 		val,
 	)
 }
@@ -346,17 +272,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference)SetWeight(val *float64) {
-	if err := j.validateSetWeightParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"weight",
 		val,
 	)
 }
@@ -545,49 +460,6 @@ func (d *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) InterpolationFor
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) PutClauses(value interface{}) {
-	if err := d.validatePutClausesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putClauses",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) ResetBucketBy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetBucketBy",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) ResetClauses() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetClauses",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) ResetRolloutContextKind() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRolloutContextKind",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) ResetWeight() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetWeight",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataLaunchdarklySegmentRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

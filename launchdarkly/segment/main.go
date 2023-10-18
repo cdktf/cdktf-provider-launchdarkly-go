@@ -75,6 +75,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRules", GoMethod: "ResetRules"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUnbounded", GoMethod: "ResetUnbounded"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUnboundedContextKind", GoMethod: "ResetUnboundedContextKind"},
 			_jsii_.MemberProperty{JsiiProperty: "rules", GoGetter: "Rules"},
 			_jsii_.MemberProperty{JsiiProperty: "rulesInput", GoGetter: "RulesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -86,6 +88,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "unbounded", GoGetter: "Unbounded"},
+			_jsii_.MemberProperty{JsiiProperty: "unboundedContextKind", GoGetter: "UnboundedContextKind"},
+			_jsii_.MemberProperty{JsiiProperty: "unboundedContextKindInput", GoGetter: "UnboundedContextKindInput"},
+			_jsii_.MemberProperty{JsiiProperty: "unboundedInput", GoGetter: "UnboundedInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Segment{}

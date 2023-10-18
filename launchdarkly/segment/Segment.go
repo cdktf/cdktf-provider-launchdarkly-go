@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment launchdarkly_segment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment launchdarkly_segment}.
 type Segment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -95,6 +95,12 @@ type Segment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Unbounded() interface{}
+	SetUnbounded(val interface{})
+	UnboundedContextKind() *string
+	SetUnboundedContextKind(val *string)
+	UnboundedContextKindInput() *string
+	UnboundedInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -142,6 +148,8 @@ type Segment interface {
 	ResetOverrideLogicalId()
 	ResetRules()
 	ResetTags()
+	ResetUnbounded()
+	ResetUnboundedContextKind()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -567,8 +575,48 @@ func (j *jsiiProxy_Segment) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Segment) Unbounded() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unbounded",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment launchdarkly_segment} Resource.
+func (j *jsiiProxy_Segment) UnboundedContextKind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unboundedContextKind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Segment) UnboundedContextKindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unboundedContextKindInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Segment) UnboundedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unboundedInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment launchdarkly_segment} Resource.
 func NewSegment(scope constructs.Construct, id *string, config *SegmentConfig) Segment {
 	_init_.Initialize()
 
@@ -586,7 +634,7 @@ func NewSegment(scope constructs.Construct, id *string, config *SegmentConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment launchdarkly_segment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment launchdarkly_segment} Resource.
 func NewSegment_Override(s Segment, scope constructs.Construct, id *string, config *SegmentConfig) {
 	_init_.Initialize()
 
@@ -760,6 +808,28 @@ func (j *jsiiProxy_Segment)SetTags(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Segment)SetUnbounded(val interface{}) {
+	if err := j.validateSetUnboundedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unbounded",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Segment)SetUnboundedContextKind(val *string) {
+	if err := j.validateSetUnboundedContextKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unboundedContextKind",
 		val,
 	)
 }
@@ -1183,6 +1253,22 @@ func (s *jsiiProxy_Segment) ResetTags() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Segment) ResetUnbounded() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUnbounded",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Segment) ResetUnboundedContextKind() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUnboundedContextKind",
 		nil, // no parameters
 	)
 }

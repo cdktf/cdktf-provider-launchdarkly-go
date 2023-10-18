@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/audit_log_subscription launchdarkly_audit_log_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/audit_log_subscription launchdarkly_audit_log_subscription}.
 type AuditLogSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_AuditLogSubscription) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/audit_log_subscription launchdarkly_audit_log_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/audit_log_subscription launchdarkly_audit_log_subscription} Resource.
 func NewAuditLogSubscription(scope constructs.Construct, id *string, config *AuditLogSubscriptionConfig) AuditLogSubscription {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewAuditLogSubscription(scope constructs.Construct, id *string, config *Aud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/audit_log_subscription launchdarkly_audit_log_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/audit_log_subscription launchdarkly_audit_log_subscription} Resource.
 func NewAuditLogSubscription_Override(a AuditLogSubscription, scope constructs.Construct, id *string, config *AuditLogSubscriptionConfig) {
 	_init_.Initialize()
 

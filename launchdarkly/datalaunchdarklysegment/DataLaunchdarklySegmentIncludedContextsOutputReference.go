@@ -24,8 +24,6 @@ type DataLaunchdarklySegmentIncludedContextsOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ContextKind() *string
-	SetContextKind(val *string)
-	ContextKindInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -33,8 +31,8 @@ type DataLaunchdarklySegmentIncludedContextsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklySegmentIncludedContexts
+	SetInternalValue(val *DataLaunchdarklySegmentIncludedContexts)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,8 +42,6 @@ type DataLaunchdarklySegmentIncludedContextsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Values() *[]*string
-	SetValues(val *[]*string)
-	ValuesInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -115,16 +111,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) Conte
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) ContextKindInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"contextKindInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -145,8 +131,8 @@ func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) InternalValue() *DataLaunchdarklySegmentIncludedContexts {
+	var returns *DataLaunchdarklySegmentIncludedContexts
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -180,16 +166,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) Value
 	_jsii_.Get(
 		j,
 		"values",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference) ValuesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"valuesInput",
 		&returns,
 	)
 	return returns
@@ -245,18 +221,7 @@ func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference)SetContextKind(val *string) {
-	if err := j.validateSetContextKindParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"contextKind",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference)SetInternalValue(val *DataLaunchdarklySegmentIncludedContexts) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -285,17 +250,6 @@ func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegmentIncludedContextsOutputReference)SetValues(val *[]*string) {
-	if err := j.validateSetValuesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"values",
 		val,
 	)
 }

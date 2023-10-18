@@ -147,6 +147,14 @@ func (j *jsiiProxy_Segment) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Segment) validateSetUnboundedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Segment) validateSetUnboundedContextKindParameters(val *string) error {
+	return nil
+}
+
 func validateNewSegmentParameters(scope constructs.Construct, id *string, config *SegmentConfig) error {
 	return nil
 }

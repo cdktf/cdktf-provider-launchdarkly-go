@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/flag_trigger launchdarkly_flag_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/flag_trigger launchdarkly_flag_trigger}.
 type DataLaunchdarklyFlagTrigger interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) TriggerUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/flag_trigger launchdarkly_flag_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/flag_trigger launchdarkly_flag_trigger} Data Source.
 func NewDataLaunchdarklyFlagTrigger(scope constructs.Construct, id *string, config *DataLaunchdarklyFlagTriggerConfig) DataLaunchdarklyFlagTrigger {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataLaunchdarklyFlagTrigger(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/flag_trigger launchdarkly_flag_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/flag_trigger launchdarkly_flag_trigger} Data Source.
 func NewDataLaunchdarklyFlagTrigger_Override(d DataLaunchdarklyFlagTrigger, scope constructs.Construct, id *string, config *DataLaunchdarklyFlagTriggerConfig) {
 	_init_.Initialize()
 

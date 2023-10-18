@@ -15,10 +15,6 @@ func (d *jsiiProxy_DataLaunchdarklySegmentRulesList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegmentRulesList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegmentRulesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

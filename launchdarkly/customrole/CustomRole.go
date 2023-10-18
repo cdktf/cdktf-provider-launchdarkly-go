@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/custom_role launchdarkly_custom_role}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/custom_role launchdarkly_custom_role}.
 type CustomRole interface {
 	cdktf.TerraformResource
 	BasePermissions() *string
@@ -439,7 +439,7 @@ func (j *jsiiProxy_CustomRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/custom_role launchdarkly_custom_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/custom_role launchdarkly_custom_role} Resource.
 func NewCustomRole(scope constructs.Construct, id *string, config *CustomRoleConfig) CustomRole {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewCustomRole(scope constructs.Construct, id *string, config *CustomRoleCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/custom_role launchdarkly_custom_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/custom_role launchdarkly_custom_role} Resource.
 func NewCustomRole_Override(c CustomRole, scope constructs.Construct, id *string, config *CustomRoleConfig) {
 	_init_.Initialize()
 

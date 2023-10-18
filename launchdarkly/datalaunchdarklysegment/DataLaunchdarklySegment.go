@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment launchdarkly_segment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment launchdarkly_segment}.
 type DataLaunchdarklySegment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -29,16 +29,11 @@ type DataLaunchdarklySegment interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	EnvKey() *string
 	SetEnvKey(val *string)
 	EnvKeyInput() *string
 	Excluded() *[]*string
-	SetExcluded(val *[]*string)
 	ExcludedContexts() DataLaunchdarklySegmentExcludedContextsList
-	ExcludedContextsInput() interface{}
-	ExcludedInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -51,10 +46,7 @@ type DataLaunchdarklySegment interface {
 	SetId(val *string)
 	IdInput() *string
 	Included() *[]*string
-	SetIncluded(val *[]*string)
 	IncludedContexts() DataLaunchdarklySegmentIncludedContextsList
-	IncludedContextsInput() interface{}
-	IncludedInput() *[]*string
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -75,7 +67,6 @@ type DataLaunchdarklySegment interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Rules() DataLaunchdarklySegmentRulesList
-	RulesInput() interface{}
 	Tags() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -83,6 +74,8 @@ type DataLaunchdarklySegment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Unbounded() cdktf.IResolvable
+	UnboundedContextKind() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -108,19 +101,10 @@ type DataLaunchdarklySegment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutExcludedContexts(value interface{})
-	PutIncludedContexts(value interface{})
-	PutRules(value interface{})
-	ResetDescription()
-	ResetExcluded()
-	ResetExcludedContexts()
 	ResetId()
-	ResetIncluded()
-	ResetIncludedContexts()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRules()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -196,16 +180,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegment) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegment) EnvKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -241,26 +215,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment) ExcludedContexts() DataLaunchdarklyS
 	_jsii_.Get(
 		j,
 		"excludedContexts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegment) ExcludedContextsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"excludedContextsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegment) ExcludedInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"excludedInput",
 		&returns,
 	)
 	return returns
@@ -331,26 +285,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment) IncludedContexts() DataLaunchdarklyS
 	_jsii_.Get(
 		j,
 		"includedContexts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegment) IncludedContextsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"includedContextsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegment) IncludedInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"includedInput",
 		&returns,
 	)
 	return returns
@@ -456,16 +390,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment) Rules() DataLaunchdarklySegmentRules
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegment) RulesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"rulesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegment) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -506,8 +430,28 @@ func (j *jsiiProxy_DataLaunchdarklySegment) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataLaunchdarklySegment) Unbounded() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"unbounded",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment launchdarkly_segment} Data Source.
+func (j *jsiiProxy_DataLaunchdarklySegment) UnboundedContextKind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unboundedContextKind",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment launchdarkly_segment} Data Source.
 func NewDataLaunchdarklySegment(scope constructs.Construct, id *string, config *DataLaunchdarklySegmentConfig) DataLaunchdarklySegment {
 	_init_.Initialize()
 
@@ -525,7 +469,7 @@ func NewDataLaunchdarklySegment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment launchdarkly_segment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment launchdarkly_segment} Data Source.
 func NewDataLaunchdarklySegment_Override(d DataLaunchdarklySegment, scope constructs.Construct, id *string, config *DataLaunchdarklySegmentConfig) {
 	_init_.Initialize()
 
@@ -555,17 +499,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklySegment)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklySegment)SetEnvKey(val *string) {
 	if err := j.validateSetEnvKeyParameters(val); err != nil {
 		panic(err)
@@ -573,17 +506,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment)SetEnvKey(val *string) {
 	_jsii_.Set(
 		j,
 		"envKey",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegment)SetExcluded(val *[]*string) {
-	if err := j.validateSetExcludedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"excluded",
 		val,
 	)
 }
@@ -603,17 +525,6 @@ func (j *jsiiProxy_DataLaunchdarklySegment)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklySegment)SetIncluded(val *[]*string) {
-	if err := j.validateSetIncludedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"included",
 		val,
 	)
 }
@@ -944,63 +855,6 @@ func (d *jsiiProxy_DataLaunchdarklySegment) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklySegment) PutExcludedContexts(value interface{}) {
-	if err := d.validatePutExcludedContextsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putExcludedContexts",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) PutIncludedContexts(value interface{}) {
-	if err := d.validatePutIncludedContextsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putIncludedContexts",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) PutRules(value interface{}) {
-	if err := d.validatePutRulesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putRules",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) ResetExcluded() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetExcluded",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) ResetExcludedContexts() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetExcludedContexts",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklySegment) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1009,34 +863,10 @@ func (d *jsiiProxy_DataLaunchdarklySegment) ResetId() {
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklySegment) ResetIncluded() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIncluded",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) ResetIncludedContexts() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIncludedContexts",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklySegment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklySegment) ResetRules() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRules",
 		nil, // no parameters
 	)
 }
