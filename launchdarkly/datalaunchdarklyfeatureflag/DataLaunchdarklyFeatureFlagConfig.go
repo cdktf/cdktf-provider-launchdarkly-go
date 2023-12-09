@@ -24,13 +24,13 @@ type DataLaunchdarklyFeatureFlagConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique feature flag key that references the flag in your application code.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The feature flag's project key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
 	ProjectKey *string `field:"required" json:"projectKey" yaml:"projectKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

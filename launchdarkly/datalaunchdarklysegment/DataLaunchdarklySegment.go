@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment launchdarkly_segment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/segment launchdarkly_segment}.
 type DataLaunchdarklySegment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DataLaunchdarklySegment) UnboundedContextKind() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment launchdarkly_segment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/segment launchdarkly_segment} Data Source.
 func NewDataLaunchdarklySegment(scope constructs.Construct, id *string, config *DataLaunchdarklySegmentConfig) DataLaunchdarklySegment {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewDataLaunchdarklySegment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment launchdarkly_segment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/segment launchdarkly_segment} Data Source.
 func NewDataLaunchdarklySegment_Override(d DataLaunchdarklySegment, scope constructs.Construct, id *string, config *DataLaunchdarklySegmentConfig) {
 	_init_.Initialize()
 

@@ -37,6 +37,8 @@ type DataLaunchdarklyEnvironmentApprovalSettingsOutputReference interface {
 	MinNumApprovals() *float64
 	Required() cdktf.IResolvable
 	RequiredApprovalTags() *[]*string
+	ServiceConfig() cdktf.StringMap
+	ServiceKind() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -179,6 +181,26 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) R
 	_jsii_.Get(
 		j,
 		"requiredApprovalTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) ServiceConfig() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"serviceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) ServiceKind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceKind",
 		&returns,
 	)
 	return returns

@@ -266,6 +266,22 @@ func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) validateSetRequir
 	return nil
 }
 
+func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) validateSetServiceConfigParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) validateSetServiceKindParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

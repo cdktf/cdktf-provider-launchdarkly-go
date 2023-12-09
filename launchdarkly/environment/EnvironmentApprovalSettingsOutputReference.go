@@ -47,6 +47,12 @@ type EnvironmentApprovalSettingsOutputReference interface {
 	SetRequiredApprovalTags(val *[]*string)
 	RequiredApprovalTagsInput() *[]*string
 	RequiredInput() interface{}
+	ServiceConfig() *map[string]*string
+	SetServiceConfig(val *map[string]*string)
+	ServiceConfigInput() *map[string]*string
+	ServiceKind() *string
+	SetServiceKind(val *string)
+	ServiceKindInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -84,6 +90,8 @@ type EnvironmentApprovalSettingsOutputReference interface {
 	ResetMinNumApprovals()
 	ResetRequired()
 	ResetRequiredApprovalTags()
+	ResetServiceConfig()
+	ResetServiceKind()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -249,6 +257,46 @@ func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) RequiredInput() i
 	return returns
 }
 
+func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) ServiceConfig() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"serviceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) ServiceConfigInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"serviceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) ServiceKind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceKind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) ServiceKindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceKindInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -381,6 +429,28 @@ func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference)SetRequiredApprova
 	_jsii_.Set(
 		j,
 		"requiredApprovalTags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference)SetServiceConfig(val *map[string]*string) {
+	if err := j.validateSetServiceConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceConfig",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference)SetServiceKind(val *string) {
+	if err := j.validateSetServiceKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceKind",
 		val,
 	)
 }
@@ -629,6 +699,22 @@ func (e *jsiiProxy_EnvironmentApprovalSettingsOutputReference) ResetRequiredAppr
 	_jsii_.InvokeVoid(
 		e,
 		"resetRequiredApprovalTags",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EnvironmentApprovalSettingsOutputReference) ResetServiceConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetServiceConfig",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EnvironmentApprovalSettingsOutputReference) ResetServiceKind() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetServiceKind",
 		nil, // no parameters
 	)
 }

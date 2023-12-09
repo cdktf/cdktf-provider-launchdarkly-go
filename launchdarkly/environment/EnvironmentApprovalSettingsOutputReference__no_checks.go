@@ -83,6 +83,14 @@ func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) validateSetRequir
 	return nil
 }
 
+func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) validateSetServiceConfigParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) validateSetServiceKindParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EnvironmentApprovalSettingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
