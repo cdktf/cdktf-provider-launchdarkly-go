@@ -7,6 +7,10 @@ package project
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectDefaultClientSideAvailabilityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectDefaultClientSideAvailabilityList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package segment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SegmentExcludedContextsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SegmentExcludedContextsList) validateGetParameters(index *float64) error {
 	return nil
 }

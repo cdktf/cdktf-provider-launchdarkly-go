@@ -7,6 +7,10 @@ package datalaunchdarklyfeatureflagenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package datalaunchdarklyenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsList) validateGetParameters(index *float64) error {
 	return nil
 }

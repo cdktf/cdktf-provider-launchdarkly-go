@@ -7,6 +7,10 @@ package datalaunchdarklysegment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataLaunchdarklySegmentIncludedContextsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLaunchdarklySegmentIncludedContextsList) validateGetParameters(index *float64) error {
 	return nil
 }

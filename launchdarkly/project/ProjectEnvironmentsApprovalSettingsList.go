@@ -5,9 +5,9 @@ package project
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/jsii"
 
-	"github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project/internal"
+	"github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/project/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,11 @@ type ProjectEnvironmentsApprovalSettingsList interface {
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ProjectEnvironmentsApprovalSettingsOutputReference
@@ -179,6 +184,22 @@ func (j *jsiiProxy_ProjectEnvironmentsApprovalSettingsList)SetWrapsSet(val *bool
 		"wrapsSet",
 		val,
 	)
+}
+
+func (p *jsiiProxy_ProjectEnvironmentsApprovalSettingsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := p.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		p,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (p *jsiiProxy_ProjectEnvironmentsApprovalSettingsList) ComputeFqn() *string {
