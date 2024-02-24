@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag launchdarkly_feature_flag}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag launchdarkly_feature_flag}.
 type FeatureFlag interface {
 	cdktf.TerraformResource
 	Archived() interface{}
@@ -67,6 +67,9 @@ type FeatureFlag interface {
 	MaintainerId() *string
 	SetMaintainerId(val *string)
 	MaintainerIdInput() *string
+	MaintainerTeamKey() *string
+	SetMaintainerTeamKey(val *string)
+	MaintainerTeamKeyInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -157,6 +160,7 @@ type FeatureFlag interface {
 	ResetId()
 	ResetIncludeInSnippet()
 	ResetMaintainerId()
+	ResetMaintainerTeamKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -451,6 +455,26 @@ func (j *jsiiProxy_FeatureFlag) MaintainerIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FeatureFlag) MaintainerTeamKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintainerTeamKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureFlag) MaintainerTeamKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintainerTeamKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FeatureFlag) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -642,7 +666,7 @@ func (j *jsiiProxy_FeatureFlag) VariationTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag launchdarkly_feature_flag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag launchdarkly_feature_flag} Resource.
 func NewFeatureFlag(scope constructs.Construct, id *string, config *FeatureFlagConfig) FeatureFlag {
 	_init_.Initialize()
 
@@ -660,7 +684,7 @@ func NewFeatureFlag(scope constructs.Construct, id *string, config *FeatureFlagC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag launchdarkly_feature_flag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag launchdarkly_feature_flag} Resource.
 func NewFeatureFlag_Override(f FeatureFlag, scope constructs.Construct, id *string, config *FeatureFlagConfig) {
 	_init_.Initialize()
 
@@ -782,6 +806,17 @@ func (j *jsiiProxy_FeatureFlag)SetMaintainerId(val *string) {
 	_jsii_.Set(
 		j,
 		"maintainerId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureFlag)SetMaintainerTeamKey(val *string) {
+	if err := j.validateSetMaintainerTeamKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintainerTeamKey",
 		val,
 	)
 }
@@ -1317,6 +1352,14 @@ func (f *jsiiProxy_FeatureFlag) ResetMaintainerId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetMaintainerId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureFlag) ResetMaintainerTeamKey() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetMaintainerTeamKey",
 		nil, // no parameters
 	)
 }

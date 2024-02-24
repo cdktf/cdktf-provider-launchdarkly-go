@@ -1,12 +1,15 @@
-# CDKTF Go bindings for launchdarkly/launchdarkly provider version 2.17.0
+# CDKTF Go bindings for launchdarkly/launchdarkly provider version 2.18.0
 
-This repo builds and publishes the [Terraform launchdarkly provider](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform launchdarkly provider](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-launchdarkly-go`](https://github.com/cdktf/cdktf-provider-launchdarkly-go) package.
 
-`go get github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly`
+`go get github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-launchdarkly-go/blob/main/launchdarkly/go.mod#L1) file.
 
 ## Docs
 
@@ -20,7 +23,7 @@ This project is explicitly not tracking the Terraform launchdarkly provider vers
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform launchdarkly provider](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0)
+* [Terraform launchdarkly provider](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

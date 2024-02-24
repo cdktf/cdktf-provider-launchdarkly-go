@@ -235,6 +235,22 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetMaintainerIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetMaintainerTeamKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) validateSetProjectKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

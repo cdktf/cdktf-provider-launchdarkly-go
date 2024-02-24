@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag launchdarkly_feature_flag}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag launchdarkly_feature_flag}.
 type DataLaunchdarklyFeatureFlag interface {
 	cdktf.TerraformDataSource
 	Archived() cdktf.IResolvable
@@ -52,6 +52,11 @@ type DataLaunchdarklyFeatureFlag interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MaintainerId() *string
+	SetMaintainerId(val *string)
+	MaintainerIdInput() *string
+	MaintainerTeamKey() *string
+	SetMaintainerTeamKey(val *string)
+	MaintainerTeamKeyInput() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -100,6 +105,8 @@ type DataLaunchdarklyFeatureFlag interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetMaintainerId()
+	ResetMaintainerTeamKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -312,6 +319,36 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) MaintainerId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) MaintainerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintainerIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) MaintainerTeamKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintainerTeamKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) MaintainerTeamKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintainerTeamKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -443,7 +480,7 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag) VariationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
 func NewDataLaunchdarklyFeatureFlag(scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagConfig) DataLaunchdarklyFeatureFlag {
 	_init_.Initialize()
 
@@ -461,7 +498,7 @@ func NewDataLaunchdarklyFeatureFlag(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source.
 func NewDataLaunchdarklyFeatureFlag_Override(d DataLaunchdarklyFeatureFlag, scope constructs.Construct, id *string, config *DataLaunchdarklyFeatureFlagConfig) {
 	_init_.Initialize()
 
@@ -528,6 +565,28 @@ func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetLifecycle(val *cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetMaintainerId(val *string) {
+	if err := j.validateSetMaintainerIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintainerId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyFeatureFlag)SetMaintainerTeamKey(val *string) {
+	if err := j.validateSetMaintainerTeamKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintainerTeamKey",
 		val,
 	)
 }
@@ -840,6 +899,22 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetMaintainerId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaintainerId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlag) ResetMaintainerTeamKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaintainerTeamKey",
 		nil, // no parameters
 	)
 }

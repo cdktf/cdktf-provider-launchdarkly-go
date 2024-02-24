@@ -143,6 +143,10 @@ func (j *jsiiProxy_FeatureFlag) validateSetMaintainerIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_FeatureFlag) validateSetMaintainerTeamKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureFlag) validateSetNameParameters(val *string) error {
 	return nil
 }

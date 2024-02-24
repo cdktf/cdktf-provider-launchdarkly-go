@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/environment launchdarkly_environment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/environment launchdarkly_environment}.
 type Environment interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -603,7 +603,7 @@ func (j *jsiiProxy_Environment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/environment launchdarkly_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/environment launchdarkly_environment} Resource.
 func NewEnvironment(scope constructs.Construct, id *string, config *EnvironmentConfig) Environment {
 	_init_.Initialize()
 
@@ -621,7 +621,7 @@ func NewEnvironment(scope constructs.Construct, id *string, config *EnvironmentC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/environment launchdarkly_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/environment launchdarkly_environment} Resource.
 func NewEnvironment_Override(e Environment, scope constructs.Construct, id *string, config *EnvironmentConfig) {
 	_init_.Initialize()
 

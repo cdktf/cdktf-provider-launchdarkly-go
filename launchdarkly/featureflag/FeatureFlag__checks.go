@@ -521,6 +521,14 @@ func (j *jsiiProxy_FeatureFlag) validateSetMaintainerIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_FeatureFlag) validateSetMaintainerTeamKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FeatureFlag) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
