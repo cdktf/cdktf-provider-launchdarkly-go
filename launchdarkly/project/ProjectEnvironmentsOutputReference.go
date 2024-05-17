@@ -38,6 +38,9 @@ type ProjectEnvironmentsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Critical() interface{}
+	SetCritical(val interface{})
+	CriticalInput() interface{}
 	DefaultTrackEvents() interface{}
 	SetDefaultTrackEvents(val interface{})
 	DefaultTrackEventsInput() interface{}
@@ -99,6 +102,7 @@ type ProjectEnvironmentsOutputReference interface {
 	PutApprovalSettings(value interface{})
 	ResetApprovalSettings()
 	ResetConfirmChanges()
+	ResetCritical()
 	ResetDefaultTrackEvents()
 	ResetDefaultTtl()
 	ResetRequireComments()
@@ -224,6 +228,26 @@ func (j *jsiiProxy_ProjectEnvironmentsOutputReference) CreationStack() *[]*strin
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectEnvironmentsOutputReference) Critical() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"critical",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectEnvironmentsOutputReference) CriticalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"criticalInput",
 		&returns,
 	)
 	return returns
@@ -487,6 +511,17 @@ func (j *jsiiProxy_ProjectEnvironmentsOutputReference)SetConfirmChanges(val inte
 	_jsii_.Set(
 		j,
 		"confirmChanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ProjectEnvironmentsOutputReference)SetCritical(val interface{}) {
+	if err := j.validateSetCriticalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"critical",
 		val,
 	)
 }
@@ -810,6 +845,14 @@ func (p *jsiiProxy_ProjectEnvironmentsOutputReference) ResetConfirmChanges() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetConfirmChanges",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ProjectEnvironmentsOutputReference) ResetCritical() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCritical",
 		nil, // no parameters
 	)
 }

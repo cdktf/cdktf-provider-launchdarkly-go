@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.2/docs/resources/environment launchdarkly_environment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.3/docs/resources/environment launchdarkly_environment}.
 type Environment interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -37,6 +37,9 @@ type Environment interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Critical() interface{}
+	SetCritical(val interface{})
+	CriticalInput() interface{}
 	DefaultTrackEvents() interface{}
 	SetDefaultTrackEvents(val interface{})
 	DefaultTrackEventsInput() interface{}
@@ -145,6 +148,7 @@ type Environment interface {
 	PutApprovalSettings(value interface{})
 	ResetApprovalSettings()
 	ResetConfirmChanges()
+	ResetCritical()
 	ResetDefaultTrackEvents()
 	ResetDefaultTtl()
 	ResetId()
@@ -287,6 +291,26 @@ func (j *jsiiProxy_Environment) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Environment) Critical() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"critical",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Environment) CriticalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"criticalInput",
 		&returns,
 	)
 	return returns
@@ -603,7 +627,7 @@ func (j *jsiiProxy_Environment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.2/docs/resources/environment launchdarkly_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.3/docs/resources/environment launchdarkly_environment} Resource.
 func NewEnvironment(scope constructs.Construct, id *string, config *EnvironmentConfig) Environment {
 	_init_.Initialize()
 
@@ -621,7 +645,7 @@ func NewEnvironment(scope constructs.Construct, id *string, config *EnvironmentC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.2/docs/resources/environment launchdarkly_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.3/docs/resources/environment launchdarkly_environment} Resource.
 func NewEnvironment_Override(e Environment, scope constructs.Construct, id *string, config *EnvironmentConfig) {
 	_init_.Initialize()
 
@@ -672,6 +696,17 @@ func (j *jsiiProxy_Environment)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Environment)SetCritical(val interface{}) {
+	if err := j.validateSetCriticalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"critical",
 		val,
 	)
 }
@@ -1197,6 +1232,14 @@ func (e *jsiiProxy_Environment) ResetConfirmChanges() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetConfirmChanges",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Environment) ResetCritical() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCritical",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.2/docs/data-sources/environment launchdarkly_environment}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.3/docs/data-sources/environment launchdarkly_environment}.
 type DataLaunchdarklyEnvironment interface {
 	cdktf.TerraformDataSource
 	ApiKey() *string
@@ -28,6 +28,9 @@ type DataLaunchdarklyEnvironment interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Critical() interface{}
+	SetCritical(val interface{})
+	CriticalInput() interface{}
 	DefaultTrackEvents() cdktf.IResolvable
 	DefaultTtl() *float64
 	// Experimental.
@@ -99,6 +102,7 @@ type DataLaunchdarklyEnvironment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCritical()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -197,6 +201,26 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyEnvironment) Critical() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"critical",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyEnvironment) CriticalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"criticalInput",
 		&returns,
 	)
 	return returns
@@ -443,7 +467,7 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.2/docs/data-sources/environment launchdarkly_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.3/docs/data-sources/environment launchdarkly_environment} Data Source.
 func NewDataLaunchdarklyEnvironment(scope constructs.Construct, id *string, config *DataLaunchdarklyEnvironmentConfig) DataLaunchdarklyEnvironment {
 	_init_.Initialize()
 
@@ -461,7 +485,7 @@ func NewDataLaunchdarklyEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.2/docs/data-sources/environment launchdarkly_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.3/docs/data-sources/environment launchdarkly_environment} Data Source.
 func NewDataLaunchdarklyEnvironment_Override(d DataLaunchdarklyEnvironment, scope constructs.Construct, id *string, config *DataLaunchdarklyEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -479,6 +503,17 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyEnvironment)SetCritical(val interface{}) {
+	if err := j.validateSetCriticalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"critical",
 		val,
 	)
 }
@@ -833,6 +868,14 @@ func (d *jsiiProxy_DataLaunchdarklyEnvironment) OverrideLogicalId(newLogicalId *
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyEnvironment) ResetCritical() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCritical",
+		nil, // no parameters
 	)
 }
 

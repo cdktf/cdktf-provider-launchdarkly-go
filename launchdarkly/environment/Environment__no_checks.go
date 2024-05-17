@@ -111,6 +111,10 @@ func (j *jsiiProxy_Environment) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_Environment) validateSetCriticalParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Environment) validateSetDefaultTrackEventsParameters(val interface{}) error {
 	return nil
 }

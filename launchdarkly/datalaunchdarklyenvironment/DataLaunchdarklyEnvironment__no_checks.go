@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetCriticalParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataLaunchdarklyEnvironment) validateSetIdParameters(val *string) error {
 	return nil
 }

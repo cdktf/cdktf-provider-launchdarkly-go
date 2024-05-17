@@ -71,6 +71,10 @@ func (j *jsiiProxy_ProjectEnvironmentsOutputReference) validateSetConfirmChanges
 	return nil
 }
 
+func (j *jsiiProxy_ProjectEnvironmentsOutputReference) validateSetCriticalParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectEnvironmentsOutputReference) validateSetDefaultTrackEventsParameters(val interface{}) error {
 	return nil
 }
