@@ -211,22 +211,6 @@ func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetCustomRoleKeysParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -246,14 +230,6 @@ func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetKeyParameters(val *string) e
 func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

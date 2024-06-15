@@ -59,19 +59,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetKindParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetPatternParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetSubstringParameters(val *string) error {
+func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyMetricUrls) error {
 	return nil
 }
 
@@ -80,10 +68,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetTerrafo
 }
 
 func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetUrlParameters(val *string) error {
 	return nil
 }
 

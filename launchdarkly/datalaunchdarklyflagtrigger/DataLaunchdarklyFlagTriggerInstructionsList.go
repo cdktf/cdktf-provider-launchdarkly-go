@@ -1,17 +1,17 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package datalaunchdarklymetric
+package datalaunchdarklyflagtrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/jsii"
 
-	"github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklymetric/internal"
+	"github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyflagtrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataLaunchdarklyMetricUrlsList interface {
+type DataLaunchdarklyFlagTriggerInstructionsList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -36,7 +36,7 @@ type DataLaunchdarklyMetricUrlsList interface {
 	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) DataLaunchdarklyMetricUrlsOutputReference
+	Get(index *float64) DataLaunchdarklyFlagTriggerInstructionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -47,12 +47,12 @@ type DataLaunchdarklyMetricUrlsList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataLaunchdarklyMetricUrlsList
-type jsiiProxy_DataLaunchdarklyMetricUrlsList struct {
+// The jsii proxy struct for DataLaunchdarklyFlagTriggerInstructionsList
+type jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) CreationStack() *[]*string {
+func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -62,7 +62,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) Fqn() *string {
+func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) TerraformAttribute() *string {
+func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -82,7 +82,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -92,7 +92,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) TerraformResource() cdktf.IIn
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) WrapsSet() *bool {
+func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -103,16 +103,16 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) WrapsSet() *bool {
 }
 
 
-func NewDataLaunchdarklyMetricUrlsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyMetricUrlsList {
+func NewDataLaunchdarklyFlagTriggerInstructionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyFlagTriggerInstructionsList {
 	_init_.Initialize()
 
-	if err := validateNewDataLaunchdarklyMetricUrlsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewDataLaunchdarklyFlagTriggerInstructionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataLaunchdarklyMetricUrlsList{}
+	j := jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsList",
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTriggerInstructionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,17 +120,17 @@ func NewDataLaunchdarklyMetricUrlsList(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewDataLaunchdarklyMetricUrlsList_Override(d DataLaunchdarklyMetricUrlsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataLaunchdarklyFlagTriggerInstructionsList_Override(d DataLaunchdarklyFlagTriggerInstructionsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsList",
+		"@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTriggerInstructionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -141,7 +141,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -152,7 +152,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList)SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
@@ -179,7 +179,7 @@ func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) AllWithMapKey(mapKeyAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) ComputeFqn() *string {
+func (d *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -192,11 +192,11 @@ func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) Get(index *float64) DataLaunchdarklyMetricUrlsOutputReference {
+func (d *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) Get(index *float64) DataLaunchdarklyFlagTriggerInstructionsOutputReference {
 	if err := d.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns DataLaunchdarklyMetricUrlsOutputReference
+	var returns DataLaunchdarklyFlagTriggerInstructionsOutputReference
 
 	_jsii_.Invoke(
 		d,
@@ -208,7 +208,7 @@ func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) Get(index *float64) DataLaunc
 	return returns
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -224,7 +224,7 @@ func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) Resolve(_context cdktf.IResol
 	return returns
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) ToString() *string {
+func (d *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

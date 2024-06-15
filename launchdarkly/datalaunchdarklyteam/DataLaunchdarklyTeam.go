@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team launchdarkly_team}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team launchdarkly_team}.
 type DataLaunchdarklyTeam interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,15 +24,11 @@ type DataLaunchdarklyTeam interface {
 	// Experimental.
 	SetCount(val interface{})
 	CustomRoleKeys() *[]*string
-	SetCustomRoleKeys(val *[]*string)
-	CustomRoleKeysInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,8 +49,6 @@ type DataLaunchdarklyTeam interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Maintainers() DataLaunchdarklyTeamMaintainersList
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	ProjectKeys() *[]*string
@@ -95,10 +89,7 @@ type DataLaunchdarklyTeam interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetCustomRoleKeys()
-	ResetDescription()
 	ResetId()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -161,16 +152,6 @@ func (j *jsiiProxy_DataLaunchdarklyTeam) CustomRoleKeys() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyTeam) CustomRoleKeysInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"customRoleKeysInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyTeam) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -186,16 +167,6 @@ func (j *jsiiProxy_DataLaunchdarklyTeam) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyTeam) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -301,16 +272,6 @@ func (j *jsiiProxy_DataLaunchdarklyTeam) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyTeam) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyTeam) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -382,7 +343,7 @@ func (j *jsiiProxy_DataLaunchdarklyTeam) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team launchdarkly_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team launchdarkly_team} Data Source.
 func NewDataLaunchdarklyTeam(scope constructs.Construct, id *string, config *DataLaunchdarklyTeamConfig) DataLaunchdarklyTeam {
 	_init_.Initialize()
 
@@ -400,7 +361,7 @@ func NewDataLaunchdarklyTeam(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team launchdarkly_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team launchdarkly_team} Data Source.
 func NewDataLaunchdarklyTeam_Override(d DataLaunchdarklyTeam, scope constructs.Construct, id *string, config *DataLaunchdarklyTeamConfig) {
 	_init_.Initialize()
 
@@ -422,32 +383,10 @@ func (j *jsiiProxy_DataLaunchdarklyTeam)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyTeam)SetCustomRoleKeys(val *[]*string) {
-	if err := j.validateSetCustomRoleKeysParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"customRoleKeys",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyTeam)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyTeam)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
 		val,
 	)
 }
@@ -489,17 +428,6 @@ func (j *jsiiProxy_DataLaunchdarklyTeam)SetLifecycle(val *cdktf.TerraformResourc
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyTeam)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -797,34 +725,10 @@ func (d *jsiiProxy_DataLaunchdarklyTeam) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyTeam) ResetCustomRoleKeys() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCustomRoleKeys",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyTeam) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklyTeam) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyTeam) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
 		nil, // no parameters
 	)
 }

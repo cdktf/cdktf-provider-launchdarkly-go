@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger launchdarkly_flag_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/flag_trigger launchdarkly_flag_trigger}.
 type DataLaunchdarklyFlagTrigger interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,9 +27,7 @@ type DataLaunchdarklyFlagTrigger interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() cdktf.IResolvable
 	EnvKey() *string
 	SetEnvKey(val *string)
 	EnvKeyInput() *string
@@ -47,11 +45,8 @@ type DataLaunchdarklyFlagTrigger interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Instructions() DataLaunchdarklyFlagTriggerInstructionsOutputReference
-	InstructionsInput() *DataLaunchdarklyFlagTriggerInstructions
+	Instructions() DataLaunchdarklyFlagTriggerInstructionsList
 	IntegrationKey() *string
-	SetIntegrationKey(val *string)
-	IntegrationKeyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -100,10 +95,6 @@ type DataLaunchdarklyFlagTrigger interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutInstructions(value *DataLaunchdarklyFlagTriggerInstructions)
-	ResetEnabled()
-	ResetInstructions()
-	ResetIntegrationKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -166,21 +157,11 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) EnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -276,21 +257,11 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) Instructions() DataLaunchdarklyFlagTriggerInstructionsOutputReference {
-	var returns DataLaunchdarklyFlagTriggerInstructionsOutputReference
+func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) Instructions() DataLaunchdarklyFlagTriggerInstructionsList {
+	var returns DataLaunchdarklyFlagTriggerInstructionsList
 	_jsii_.Get(
 		j,
 		"instructions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) InstructionsInput() *DataLaunchdarklyFlagTriggerInstructions {
-	var returns *DataLaunchdarklyFlagTriggerInstructions
-	_jsii_.Get(
-		j,
-		"instructionsInput",
 		&returns,
 	)
 	return returns
@@ -301,16 +272,6 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) IntegrationKey() *string {
 	_jsii_.Get(
 		j,
 		"integrationKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) IntegrationKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"integrationKeyInput",
 		&returns,
 	)
 	return returns
@@ -427,7 +388,7 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) TriggerUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger launchdarkly_flag_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/flag_trigger launchdarkly_flag_trigger} Data Source.
 func NewDataLaunchdarklyFlagTrigger(scope constructs.Construct, id *string, config *DataLaunchdarklyFlagTriggerConfig) DataLaunchdarklyFlagTrigger {
 	_init_.Initialize()
 
@@ -445,7 +406,7 @@ func NewDataLaunchdarklyFlagTrigger(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger launchdarkly_flag_trigger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/flag_trigger launchdarkly_flag_trigger} Data Source.
 func NewDataLaunchdarklyFlagTrigger_Override(d DataLaunchdarklyFlagTrigger, scope constructs.Construct, id *string, config *DataLaunchdarklyFlagTriggerConfig) {
 	_init_.Initialize()
 
@@ -471,17 +432,6 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTrigger)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFlagTrigger)SetEnabled(val interface{}) {
-	if err := j.validateSetEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enabled",
 		val,
 	)
 }
@@ -523,17 +473,6 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTrigger)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFlagTrigger)SetIntegrationKey(val *string) {
-	if err := j.validateSetIntegrationKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"integrationKey",
 		val,
 	)
 }
@@ -850,41 +789,6 @@ func (d *jsiiProxy_DataLaunchdarklyFlagTrigger) OverrideLogicalId(newLogicalId *
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFlagTrigger) PutInstructions(value *DataLaunchdarklyFlagTriggerInstructions) {
-	if err := d.validatePutInstructionsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putInstructions",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFlagTrigger) ResetEnabled() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFlagTrigger) ResetInstructions() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetInstructions",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyFlagTrigger) ResetIntegrationKey() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIntegrationKey",
-		nil, // no parameters
 	)
 }
 

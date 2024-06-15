@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/webhook launchdarkly_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/webhook launchdarkly_webhook}.
 type DataLaunchdarklyWebhook interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -43,8 +43,6 @@ type DataLaunchdarklyWebhook interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	On() cdktf.IResolvable
@@ -55,8 +53,6 @@ type DataLaunchdarklyWebhook interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Secret() *string
-	SetSecret(val *string)
-	SecretInput() *string
 	Statements() DataLaunchdarklyWebhookStatementsList
 	Tags() *[]*string
 	// Experimental.
@@ -91,11 +87,9 @@ type DataLaunchdarklyWebhook interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSecret()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -225,16 +219,6 @@ func (j *jsiiProxy_DataLaunchdarklyWebhook) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhook) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyWebhook) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -280,16 +264,6 @@ func (j *jsiiProxy_DataLaunchdarklyWebhook) Secret() *string {
 	_jsii_.Get(
 		j,
 		"secret",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhook) SecretInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"secretInput",
 		&returns,
 	)
 	return returns
@@ -356,7 +330,7 @@ func (j *jsiiProxy_DataLaunchdarklyWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/webhook launchdarkly_webhook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/webhook launchdarkly_webhook} Data Source.
 func NewDataLaunchdarklyWebhook(scope constructs.Construct, id *string, config *DataLaunchdarklyWebhookConfig) DataLaunchdarklyWebhook {
 	_init_.Initialize()
 
@@ -374,7 +348,7 @@ func NewDataLaunchdarklyWebhook(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/webhook launchdarkly_webhook} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/webhook launchdarkly_webhook} Data Source.
 func NewDataLaunchdarklyWebhook_Override(d DataLaunchdarklyWebhook, scope constructs.Construct, id *string, config *DataLaunchdarklyWebhookConfig) {
 	_init_.Initialize()
 
@@ -434,32 +408,10 @@ func (j *jsiiProxy_DataLaunchdarklyWebhook)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhook)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyWebhook)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhook)SetSecret(val *string) {
-	if err := j.validateSetSecretParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"secret",
 		val,
 	)
 }
@@ -749,26 +701,10 @@ func (d *jsiiProxy_DataLaunchdarklyWebhook) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyWebhook) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklyWebhook) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyWebhook) ResetSecret() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSecret",
 		nil, // no parameters
 	)
 }

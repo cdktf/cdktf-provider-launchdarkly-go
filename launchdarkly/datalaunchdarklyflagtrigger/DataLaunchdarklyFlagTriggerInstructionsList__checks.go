@@ -3,7 +3,7 @@
 
 //go:build !no_runtime_type_checking
 
-package datalaunchdarklymetric
+package datalaunchdarklyflagtrigger
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+func (d *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
 	if mapKeyAttributeName == nil {
 		return fmt.Errorf("parameter mapKeyAttributeName is required, but nil was provided")
 	}
@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateAllWithMapKeyParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateGetParameters(index *float64) error {
+func (d *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) validateGetParameters(index *float64) error {
 	if index == nil {
 		return fmt.Errorf("parameter index is required, but nil was provided")
 	}
@@ -27,7 +27,7 @@ func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -35,7 +35,7 @@ func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -43,7 +43,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -51,7 +51,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateSetTerraformResourceP
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateSetWrapsSetParameters(val *bool) error {
+func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) validateSetWrapsSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewDataLaunchdarklyMetricUrlsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataLaunchdarklyFlagTriggerInstructionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

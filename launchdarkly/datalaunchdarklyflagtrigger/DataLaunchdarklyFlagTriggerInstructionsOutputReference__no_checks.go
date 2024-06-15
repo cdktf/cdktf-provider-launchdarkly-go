@@ -63,10 +63,6 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsOutputReference) validateSetKindParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
@@ -75,7 +71,7 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsOutputReference) valid
 	return nil
 }
 
-func validateNewDataLaunchdarklyFlagTriggerInstructionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataLaunchdarklyFlagTriggerInstructionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

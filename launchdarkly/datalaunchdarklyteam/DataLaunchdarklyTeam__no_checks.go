@@ -75,14 +75,6 @@ func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetCustomRoleKeysParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -92,10 +84,6 @@ func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetKeyParameters(val *string) e
 }
 
 func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyTeam) validateSetNameParameters(val *string) error {
 	return nil
 }
 

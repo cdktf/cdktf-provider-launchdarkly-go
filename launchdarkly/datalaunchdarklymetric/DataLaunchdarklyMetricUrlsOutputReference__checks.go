@@ -166,49 +166,9 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataLaunchdarklyMetricUrls:
-		val := val.(*DataLaunchdarklyMetricUrls)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataLaunchdarklyMetricUrls:
-		val_ := val.(DataLaunchdarklyMetricUrls)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataLaunchdarklyMetricUrls; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetKindParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetPatternParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetSubstringParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetInternalValueParameters(val *DataLaunchdarklyMetricUrls) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -223,14 +183,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetTerrafo
 }
 
 func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateSetUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

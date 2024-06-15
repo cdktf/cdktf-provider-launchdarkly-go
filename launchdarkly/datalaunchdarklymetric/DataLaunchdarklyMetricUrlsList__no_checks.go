@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

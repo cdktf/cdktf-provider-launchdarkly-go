@@ -33,8 +33,6 @@ type DataLaunchdarklyFlagTriggerInstructionsOutputReference interface {
 	InternalValue() *DataLaunchdarklyFlagTriggerInstructions
 	SetInternalValue(val *DataLaunchdarklyFlagTriggerInstructions)
 	Kind() *string
-	SetKind(val *string)
-	KindInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -142,16 +140,6 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsOutputReference) Kind(
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsOutputReference) KindInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"kindInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -173,29 +161,29 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsOutputReference) Terra
 }
 
 
-func NewDataLaunchdarklyFlagTriggerInstructionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataLaunchdarklyFlagTriggerInstructionsOutputReference {
+func NewDataLaunchdarklyFlagTriggerInstructionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataLaunchdarklyFlagTriggerInstructionsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataLaunchdarklyFlagTriggerInstructionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataLaunchdarklyFlagTriggerInstructionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTriggerInstructionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataLaunchdarklyFlagTriggerInstructionsOutputReference_Override(d DataLaunchdarklyFlagTriggerInstructionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataLaunchdarklyFlagTriggerInstructionsOutputReference_Override(d DataLaunchdarklyFlagTriggerInstructionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTriggerInstructionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -229,17 +217,6 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsOutputReference)SetKind(val *string) {
-	if err := j.validateSetKindParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"kind",
 		val,
 	)
 }

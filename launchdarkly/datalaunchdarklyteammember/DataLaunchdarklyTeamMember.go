@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team_member launchdarkly_team_member}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team_member launchdarkly_team_member}.
 type DataLaunchdarklyTeamMember interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -41,8 +41,6 @@ type DataLaunchdarklyTeamMember interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	LastName() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -88,7 +86,6 @@ type DataLaunchdarklyTeamMember interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -231,16 +228,6 @@ func (j *jsiiProxy_DataLaunchdarklyTeamMember) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyTeamMember) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyTeamMember) LastName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -332,7 +319,7 @@ func (j *jsiiProxy_DataLaunchdarklyTeamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team_member launchdarkly_team_member} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team_member launchdarkly_team_member} Data Source.
 func NewDataLaunchdarklyTeamMember(scope constructs.Construct, id *string, config *DataLaunchdarklyTeamMemberConfig) DataLaunchdarklyTeamMember {
 	_init_.Initialize()
 
@@ -350,7 +337,7 @@ func NewDataLaunchdarklyTeamMember(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team_member launchdarkly_team_member} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team_member launchdarkly_team_member} Data Source.
 func NewDataLaunchdarklyTeamMember_Override(d DataLaunchdarklyTeamMember, scope constructs.Construct, id *string, config *DataLaunchdarklyTeamMemberConfig) {
 	_init_.Initialize()
 
@@ -395,17 +382,6 @@ func (j *jsiiProxy_DataLaunchdarklyTeamMember)SetForEach(val cdktf.ITerraformIte
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyTeamMember)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -711,14 +687,6 @@ func (d *jsiiProxy_DataLaunchdarklyTeamMember) OverrideLogicalId(newLogicalId *s
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyTeamMember) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

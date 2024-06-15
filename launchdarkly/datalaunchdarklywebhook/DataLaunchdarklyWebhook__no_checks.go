@@ -83,14 +83,6 @@ func (j *jsiiProxy_DataLaunchdarklyWebhook) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyWebhook) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyWebhook) validateSetSecretParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataLaunchdarklyWebhookParameters(scope constructs.Construct, id *string, config *DataLaunchdarklyWebhookConfig) error {
 	return nil
 }

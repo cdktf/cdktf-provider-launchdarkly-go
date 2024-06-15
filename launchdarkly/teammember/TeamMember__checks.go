@@ -361,14 +361,6 @@ func (j *jsiiProxy_TeamMember) validateSetFirstNameParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_TeamMember) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_TeamMember) validateSetLastNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

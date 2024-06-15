@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataLaunchdarklyMetric) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetric) validatePutUrlsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataLaunchdarklyMetric_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -79,23 +75,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetEventKeyParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetIsActiveParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetIsNumericParameters(val interface{}) error {
 	return nil
 }
 
@@ -103,39 +83,11 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetKeyParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetKindParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetMaintainerIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetProjectKeyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetRandomizationUnitsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetSelectorParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetSuccessCriteriaParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetUnitParameters(val *string) error {
 	return nil
 }
 

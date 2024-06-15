@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric launchdarkly_metric}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric launchdarkly_metric}.
 type DataLaunchdarklyMetric interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -28,11 +28,7 @@ type DataLaunchdarklyMetric interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	EventKey() *string
-	SetEventKey(val *string)
-	EventKeyInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,28 +40,18 @@ type DataLaunchdarklyMetric interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsActive() interface{}
-	SetIsActive(val interface{})
-	IsActiveInput() interface{}
-	IsNumeric() interface{}
-	SetIsNumeric(val interface{})
-	IsNumericInput() interface{}
+	IsActive() cdktf.IResolvable
+	IsNumeric() cdktf.IResolvable
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
 	Kind() *string
-	SetKind(val *string)
-	KindInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MaintainerId() *string
-	SetMaintainerId(val *string)
-	MaintainerIdInput() *string
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	ProjectKey() *string
@@ -76,16 +62,10 @@ type DataLaunchdarklyMetric interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	RandomizationUnits() *[]*string
-	SetRandomizationUnits(val *[]*string)
-	RandomizationUnitsInput() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
 	Selector() *string
-	SetSelector(val *string)
-	SelectorInput() *string
 	SuccessCriteria() *string
-	SetSuccessCriteria(val *string)
-	SuccessCriteriaInput() *string
 	Tags() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -94,10 +74,7 @@ type DataLaunchdarklyMetric interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Unit() *string
-	SetUnit(val *string)
-	UnitInput() *string
 	Urls() DataLaunchdarklyMetricUrlsList
-	UrlsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -123,23 +100,10 @@ type DataLaunchdarklyMetric interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutUrls(value interface{})
-	ResetDescription()
-	ResetEventKey()
 	ResetId()
-	ResetIsActive()
-	ResetIsNumeric()
-	ResetKind()
-	ResetMaintainerId()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRandomizationUnits()
-	ResetSelector()
-	ResetSuccessCriteria()
-	ResetUnit()
-	ResetUrls()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -209,31 +173,11 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric) EventKey() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"eventKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) EventKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"eventKeyInput",
 		&returns,
 	)
 	return returns
@@ -289,8 +233,8 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) IsActive() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyMetric) IsActive() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"isActive",
@@ -299,31 +243,11 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) IsActive() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) IsActiveInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isActiveInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) IsNumeric() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyMetric) IsNumeric() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"isNumeric",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) IsNumericInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isNumericInput",
 		&returns,
 	)
 	return returns
@@ -359,16 +283,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) Kind() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) KindInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"kindInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -389,31 +303,11 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) MaintainerId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) MaintainerIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"maintainerIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
 		&returns,
 	)
 	return returns
@@ -469,16 +363,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) RandomizationUnits() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) RandomizationUnitsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"randomizationUnitsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -499,31 +383,11 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) Selector() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) SelectorInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"selectorInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric) SuccessCriteria() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"successCriteria",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric) SuccessCriteriaInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"successCriteriaInput",
 		&returns,
 	)
 	return returns
@@ -579,16 +443,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) Unit() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) UnitInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"unitInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric) Urls() DataLaunchdarklyMetricUrlsList {
 	var returns DataLaunchdarklyMetricUrlsList
 	_jsii_.Get(
@@ -599,18 +453,8 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) Urls() DataLaunchdarklyMetricUrlsList
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) UrlsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"urlsInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric launchdarkly_metric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric launchdarkly_metric} Data Source.
 func NewDataLaunchdarklyMetric(scope constructs.Construct, id *string, config *DataLaunchdarklyMetricConfig) DataLaunchdarklyMetric {
 	_init_.Initialize()
 
@@ -628,7 +472,7 @@ func NewDataLaunchdarklyMetric(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric launchdarkly_metric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric launchdarkly_metric} Data Source.
 func NewDataLaunchdarklyMetric_Override(d DataLaunchdarklyMetric, scope constructs.Construct, id *string, config *DataLaunchdarklyMetricConfig) {
 	_init_.Initialize()
 
@@ -658,28 +502,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetric)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetEventKey(val *string) {
-	if err := j.validateSetEventKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"eventKey",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -699,28 +521,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetric)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetIsActive(val interface{}) {
-	if err := j.validateSetIsActiveParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"isActive",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetIsNumeric(val interface{}) {
-	if err := j.validateSetIsNumericParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"isNumeric",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric)SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
@@ -732,17 +532,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetric)SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetKind(val *string) {
-	if err := j.validateSetKindParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"kind",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetric)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -750,28 +539,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetric)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetMaintainerId(val *string) {
-	if err := j.validateSetMaintainerIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"maintainerId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -791,50 +558,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetric)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetRandomizationUnits(val *[]*string) {
-	if err := j.validateSetRandomizationUnitsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"randomizationUnits",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetSelector(val *string) {
-	if err := j.validateSetSelectorParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"selector",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetSuccessCriteria(val *string) {
-	if err := j.validateSetSuccessCriteriaParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"successCriteria",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetric)SetUnit(val *string) {
-	if err := j.validateSetUnitParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"unit",
 		val,
 	)
 }
@@ -1124,33 +847,6 @@ func (d *jsiiProxy_DataLaunchdarklyMetric) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetric) PutUrls(value interface{}) {
-	if err := d.validatePutUrlsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putUrls",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetDescription() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetEventKey() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEventKey",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklyMetric) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1159,90 +855,10 @@ func (d *jsiiProxy_DataLaunchdarklyMetric) ResetId() {
 	)
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetIsActive() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIsActive",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetIsNumeric() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIsNumeric",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetKind() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetKind",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetMaintainerId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMaintainerId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataLaunchdarklyMetric) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetRandomizationUnits() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRandomizationUnits",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetSelector() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSelector",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetSuccessCriteria() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSuccessCriteria",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetUnit() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUnit",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetric) ResetUrls() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUrls",
 		nil, // no parameters
 	)
 }

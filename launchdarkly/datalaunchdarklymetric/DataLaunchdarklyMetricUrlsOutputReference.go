@@ -30,17 +30,11 @@ type DataLaunchdarklyMetricUrlsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataLaunchdarklyMetricUrls
+	SetInternalValue(val *DataLaunchdarklyMetricUrls)
 	Kind() *string
-	SetKind(val *string)
-	KindInput() *string
 	Pattern() *string
-	SetPattern(val *string)
-	PatternInput() *string
 	Substring() *string
-	SetSubstring(val *string)
-	SubstringInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -50,8 +44,6 @@ type DataLaunchdarklyMetricUrlsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Url() *string
-	SetUrl(val *string)
-	UrlInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,9 +68,6 @@ type DataLaunchdarklyMetricUrlsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetPattern()
-	ResetSubstring()
-	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -134,8 +123,8 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) InternalValue() *DataLaunchdarklyMetricUrls {
+	var returns *DataLaunchdarklyMetricUrls
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -154,16 +143,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) Kind() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) KindInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"kindInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) Pattern() *string {
 	var returns *string
 	_jsii_.Get(
@@ -174,31 +153,11 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) Pattern() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) PatternInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"patternInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) Substring() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"substring",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) SubstringInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"substringInput",
 		&returns,
 	)
 	return returns
@@ -229,16 +188,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) Url() *string {
 	_jsii_.Get(
 		j,
 		"url",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) UrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"urlInput",
 		&returns,
 	)
 	return returns
@@ -294,46 +243,13 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference)SetInternalValue(val *DataLaunchdarklyMetricUrls) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference)SetKind(val *string) {
-	if err := j.validateSetKindParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"kind",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference)SetPattern(val *string) {
-	if err := j.validateSetPatternParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pattern",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference)SetSubstring(val *string) {
-	if err := j.validateSetSubstringParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"substring",
 		val,
 	)
 }
@@ -356,17 +272,6 @@ func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference)SetTerraformResourc
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference)SetUrl(val *string) {
-	if err := j.validateSetUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"url",
 		val,
 	)
 }
@@ -555,30 +460,6 @@ func (d *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) InterpolationForAt
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) ResetPattern() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPattern",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) ResetSubstring() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSubstring",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) ResetUrl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUrl",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

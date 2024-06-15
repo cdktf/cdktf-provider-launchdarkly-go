@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataLaunchdarklyFlagTrigger) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFlagTrigger) validatePutInstructionsParameters(value *DataLaunchdarklyFlagTriggerInstructions) error {
-	return nil
-}
-
 func validateDataLaunchdarklyFlagTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -79,10 +75,6 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) validateSetEnvKeyParameters(val *string) error {
 	return nil
 }
@@ -92,10 +84,6 @@ func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) validateSetFlagKeyParameters(val
 }
 
 func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataLaunchdarklyFlagTrigger) validateSetIntegrationKeyParameters(val *string) error {
 	return nil
 }
 

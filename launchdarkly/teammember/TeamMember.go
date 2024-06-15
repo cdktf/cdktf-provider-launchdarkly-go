@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member launchdarkly_team_member}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member launchdarkly_team_member}.
 type TeamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,8 +49,6 @@ type TeamMember interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	LastName() *string
 	SetLastName(val *string)
 	LastNameInput() *string
@@ -124,7 +122,6 @@ type TeamMember interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetCustomRoles()
 	ResetFirstName()
-	ResetId()
 	ResetLastName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -298,16 +295,6 @@ func (j *jsiiProxy_TeamMember) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TeamMember) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_TeamMember) LastName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -429,7 +416,7 @@ func (j *jsiiProxy_TeamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member launchdarkly_team_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member launchdarkly_team_member} Resource.
 func NewTeamMember(scope constructs.Construct, id *string, config *TeamMemberConfig) TeamMember {
 	_init_.Initialize()
 
@@ -447,7 +434,7 @@ func NewTeamMember(scope constructs.Construct, id *string, config *TeamMemberCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member launchdarkly_team_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member launchdarkly_team_member} Resource.
 func NewTeamMember_Override(t TeamMember, scope constructs.Construct, id *string, config *TeamMemberConfig) {
 	_init_.Initialize()
 
@@ -525,17 +512,6 @@ func (j *jsiiProxy_TeamMember)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_TeamMember)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -957,14 +933,6 @@ func (t *jsiiProxy_TeamMember) ResetFirstName() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetFirstName",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_TeamMember) ResetId() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetId",
 		nil, // no parameters
 	)
 }

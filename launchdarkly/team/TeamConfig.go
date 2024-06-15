@@ -22,34 +22,36 @@ type TeamConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The team's unique key.
+	// The team key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#key Team#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#key Team#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// The team's human-readable name.
+	// A human-friendly name for the team.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#name Team#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#name Team#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// A list of custom role keys for the team.
+	// List of custom role keys the team will access.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#custom_role_keys Team#custom_role_keys}
+	// The referenced custom roles must already exist in LaunchDarkly. If they don't, the provider may behave unexpectedly.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#custom_role_keys Team#custom_role_keys}
 	CustomRoleKeys *[]*string `field:"optional" json:"customRoleKeys" yaml:"customRoleKeys"`
-	// The team's description.
+	// The team description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#description Team#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#description Team#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#id Team#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#id Team#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// A list of team maintainer IDs as strings.
+	// List of member IDs for users who maintain the team.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#maintainers Team#maintainers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#maintainers Team#maintainers}
 	Maintainers *[]*string `field:"optional" json:"maintainers" yaml:"maintainers"`
-	// A list of team member IDs as strings.
+	// List of member IDs who belong to the team.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#member_ids Team#member_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#member_ids Team#member_ids}
 	MemberIds *[]*string `field:"optional" json:"memberIds" yaml:"memberIds"`
 }
 
