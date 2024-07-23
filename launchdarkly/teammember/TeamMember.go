@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member launchdarkly_team_member}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/team_member launchdarkly_team_member}.
 type TeamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_TeamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member launchdarkly_team_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/team_member launchdarkly_team_member} Resource.
 func NewTeamMember(scope constructs.Construct, id *string, config *TeamMemberConfig) TeamMember {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewTeamMember(scope constructs.Construct, id *string, config *TeamMemberCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member launchdarkly_team_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/team_member launchdarkly_team_member} Resource.
 func NewTeamMember_Override(t TeamMember, scope constructs.Construct, id *string, config *TeamMemberConfig) {
 	_init_.Initialize()
 

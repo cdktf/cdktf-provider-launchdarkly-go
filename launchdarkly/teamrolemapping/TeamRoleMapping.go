@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_role_mapping launchdarkly_team_role_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/team_role_mapping launchdarkly_team_role_mapping}.
 type TeamRoleMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_TeamRoleMapping) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_role_mapping launchdarkly_team_role_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/team_role_mapping launchdarkly_team_role_mapping} Resource.
 func NewTeamRoleMapping(scope constructs.Construct, id *string, config *TeamRoleMappingConfig) TeamRoleMapping {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewTeamRoleMapping(scope constructs.Construct, id *string, config *TeamRole
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_role_mapping launchdarkly_team_role_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/team_role_mapping launchdarkly_team_role_mapping} Resource.
 func NewTeamRoleMapping_Override(t TeamRoleMapping, scope constructs.Construct, id *string, config *TeamRoleMappingConfig) {
 	_init_.Initialize()
 

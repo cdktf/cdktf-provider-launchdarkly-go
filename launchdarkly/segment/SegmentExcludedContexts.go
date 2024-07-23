@@ -7,11 +7,11 @@ package segment
 type SegmentExcludedContexts struct {
 	// The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/segment#context_kind Segment#context_kind}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/segment#context_kind Segment#context_kind}
 	ContextKind *string `field:"required" json:"contextKind" yaml:"contextKind"`
 	// List of target object keys included in or excluded from the segment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/segment#values Segment#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/segment#values Segment#values}
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 
