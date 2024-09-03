@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/data-sources/metric launchdarkly_metric}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/metric launchdarkly_metric}.
 type DataLaunchdarklyMetric interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -454,7 +454,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) Urls() DataLaunchdarklyMetricUrlsList
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/data-sources/metric launchdarkly_metric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/metric launchdarkly_metric} Data Source.
 func NewDataLaunchdarklyMetric(scope constructs.Construct, id *string, config *DataLaunchdarklyMetricConfig) DataLaunchdarklyMetric {
 	_init_.Initialize()
 
@@ -472,7 +472,7 @@ func NewDataLaunchdarklyMetric(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/data-sources/metric launchdarkly_metric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/metric launchdarkly_metric} Data Source.
 func NewDataLaunchdarklyMetric_Override(d DataLaunchdarklyMetric, scope constructs.Construct, id *string, config *DataLaunchdarklyMetricConfig) {
 	_init_.Initialize()
 
