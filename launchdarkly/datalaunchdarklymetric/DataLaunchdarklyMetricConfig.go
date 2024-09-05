@@ -26,15 +26,15 @@ type DataLaunchdarklyMetricConfig struct {
 	//
 	// A change in this field will force the destruction of the existing resource and the creation of a new one.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/metric#key DataLaunchdarklyMetric#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/data-sources/metric#key DataLaunchdarklyMetric#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The metrics's project key.
 	//
 	// A change in this field will force the destruction of the existing resource and the creation of a new one.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/metric#project_key DataLaunchdarklyMetric#project_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/data-sources/metric#project_key DataLaunchdarklyMetric#project_key}
 	ProjectKey *string `field:"required" json:"projectKey" yaml:"projectKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/metric#id DataLaunchdarklyMetric#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/data-sources/metric#id DataLaunchdarklyMetric#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

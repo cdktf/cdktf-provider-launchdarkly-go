@@ -17,15 +17,15 @@ type FeatureFlagVariations struct {
 	// }
 	// ```
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/feature_flag#value FeatureFlag#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/feature_flag#value FeatureFlag#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// The variation's description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/feature_flag#description FeatureFlag#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/feature_flag#description FeatureFlag#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The name of the variation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/feature_flag#name FeatureFlag#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/feature_flag#name FeatureFlag#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

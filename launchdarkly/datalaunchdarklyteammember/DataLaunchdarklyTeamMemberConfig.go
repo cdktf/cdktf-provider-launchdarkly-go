@@ -24,7 +24,7 @@ type DataLaunchdarklyTeamMemberConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique email address associated with the team member.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/team_member#email DataLaunchdarklyTeamMember#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/data-sources/team_member#email DataLaunchdarklyTeamMember#email}
 	Email *string `field:"required" json:"email" yaml:"email"`
 }
 
