@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs launchdarkly}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs launchdarkly}.
 type LaunchdarklyProvider interface {
 	cdktf.TerraformProvider
 	AccessToken() *string
@@ -282,7 +282,7 @@ func (j *jsiiProxy_LaunchdarklyProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs launchdarkly} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs launchdarkly} Resource.
 func NewLaunchdarklyProvider(scope constructs.Construct, id *string, config *LaunchdarklyProviderConfig) LaunchdarklyProvider {
 	_init_.Initialize()
 
@@ -300,7 +300,7 @@ func NewLaunchdarklyProvider(scope constructs.Construct, id *string, config *Lau
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs launchdarkly} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs launchdarkly} Resource.
 func NewLaunchdarklyProvider_Override(l LaunchdarklyProvider, scope constructs.Construct, id *string, config *LaunchdarklyProviderConfig) {
 	_init_.Initialize()
 

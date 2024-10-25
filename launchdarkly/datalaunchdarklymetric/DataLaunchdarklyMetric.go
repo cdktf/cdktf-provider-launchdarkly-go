@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/data-sources/metric launchdarkly_metric}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/data-sources/metric launchdarkly_metric}.
 type DataLaunchdarklyMetric interface {
 	cdktf.TerraformDataSource
+	AnalysisType() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -40,6 +41,7 @@ type DataLaunchdarklyMetric interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IncludeUnitsWithoutEvents() cdktf.IResolvable
 	IsActive() cdktf.IResolvable
 	IsNumeric() cdktf.IResolvable
 	Key() *string
@@ -54,6 +56,7 @@ type DataLaunchdarklyMetric interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	PercentileValue() *float64
 	ProjectKey() *string
 	SetProjectKey(val *string)
 	ProjectKeyInput() *string
@@ -74,7 +77,9 @@ type DataLaunchdarklyMetric interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Unit() *string
+	UnitAggregationType() *string
 	Urls() DataLaunchdarklyMetricUrlsList
+	Version() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -121,6 +126,16 @@ type DataLaunchdarklyMetric interface {
 // The jsii proxy struct for DataLaunchdarklyMetric
 type jsiiProxy_DataLaunchdarklyMetric struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataLaunchdarklyMetric) AnalysisType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"analysisType",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataLaunchdarklyMetric) CdktfStack() cdktf.TerraformStack {
@@ -233,6 +248,16 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataLaunchdarklyMetric) IncludeUnitsWithoutEvents() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"includeUnitsWithoutEvents",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataLaunchdarklyMetric) IsActive() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -318,6 +343,16 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyMetric) PercentileValue() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"percentileValue",
 		&returns,
 	)
 	return returns
@@ -443,6 +478,16 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) Unit() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataLaunchdarklyMetric) UnitAggregationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unitAggregationType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataLaunchdarklyMetric) Urls() DataLaunchdarklyMetricUrlsList {
 	var returns DataLaunchdarklyMetricUrlsList
 	_jsii_.Get(
@@ -453,8 +498,18 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) Urls() DataLaunchdarklyMetricUrlsList
 	return returns
 }
 
+func (j *jsiiProxy_DataLaunchdarklyMetric) Version() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/data-sources/metric launchdarkly_metric} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/data-sources/metric launchdarkly_metric} Data Source.
 func NewDataLaunchdarklyMetric(scope constructs.Construct, id *string, config *DataLaunchdarklyMetricConfig) DataLaunchdarklyMetric {
 	_init_.Initialize()
 
@@ -472,7 +527,7 @@ func NewDataLaunchdarklyMetric(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/data-sources/metric launchdarkly_metric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/data-sources/metric launchdarkly_metric} Data Source.
 func NewDataLaunchdarklyMetric_Override(d DataLaunchdarklyMetric, scope constructs.Construct, id *string, config *DataLaunchdarklyMetricConfig) {
 	_init_.Initialize()
 

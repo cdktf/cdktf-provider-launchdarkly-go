@@ -95,6 +95,10 @@ func validateMetric_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Metric) validateSetAnalysisTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Metric) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (j *jsiiProxy_Metric) validateSetEventKeyParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Metric) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Metric) validateSetIncludeUnitsWithoutEventsParameters(val interface{}) error {
 	return nil
 }
 
@@ -143,6 +151,10 @@ func (j *jsiiProxy_Metric) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Metric) validateSetPercentileValueParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Metric) validateSetProjectKeyParameters(val *string) error {
 	return nil
 }
@@ -168,6 +180,10 @@ func (j *jsiiProxy_Metric) validateSetTagsParameters(val *[]*string) error {
 }
 
 func (j *jsiiProxy_Metric) validateSetUnitParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Metric) validateSetUnitAggregationTypeParameters(val *string) error {
 	return nil
 }
 

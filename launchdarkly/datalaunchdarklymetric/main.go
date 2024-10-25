@@ -15,6 +15,7 @@ func init() {
 		reflect.TypeOf((*DataLaunchdarklyMetric)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "analysisType", GoGetter: "AnalysisType"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -35,6 +36,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "includeUnitsWithoutEvents", GoGetter: "IncludeUnitsWithoutEvents"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isActive", GoGetter: "IsActive"},
 			_jsii_.MemberProperty{JsiiProperty: "isNumeric", GoGetter: "IsNumeric"},
@@ -46,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "percentileValue", GoGetter: "PercentileValue"},
 			_jsii_.MemberProperty{JsiiProperty: "projectKey", GoGetter: "ProjectKey"},
 			_jsii_.MemberProperty{JsiiProperty: "projectKeyInput", GoGetter: "ProjectKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
@@ -66,7 +69,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "unit", GoGetter: "Unit"},
+			_jsii_.MemberProperty{JsiiProperty: "unitAggregationType", GoGetter: "UnitAggregationType"},
 			_jsii_.MemberProperty{JsiiProperty: "urls", GoGetter: "Urls"},
+			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataLaunchdarklyMetric{}

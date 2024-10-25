@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric launchdarkly_metric}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric launchdarkly_metric}.
 type Metric interface {
 	cdktf.TerraformResource
+	AnalysisType() *string
+	SetAnalysisType(val *string)
+	AnalysisTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -48,6 +51,9 @@ type Metric interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IncludeUnitsWithoutEvents() interface{}
+	SetIncludeUnitsWithoutEvents(val interface{})
+	IncludeUnitsWithoutEventsInput() interface{}
 	IsActive() interface{}
 	SetIsActive(val interface{})
 	IsActiveInput() interface{}
@@ -72,6 +78,9 @@ type Metric interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PercentileValue() *float64
+	SetPercentileValue(val *float64)
+	PercentileValueInput() *float64
 	ProjectKey() *string
 	SetProjectKey(val *string)
 	ProjectKeyInput() *string
@@ -105,9 +114,13 @@ type Metric interface {
 	TerraformResourceType() *string
 	Unit() *string
 	SetUnit(val *string)
+	UnitAggregationType() *string
+	SetUnitAggregationType(val *string)
+	UnitAggregationTypeInput() *string
 	UnitInput() *string
 	Urls() MetricUrlsList
 	UrlsInput() interface{}
+	Version() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -152,20 +165,24 @@ type Metric interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutUrls(value interface{})
+	ResetAnalysisType()
 	ResetDescription()
 	ResetEventKey()
 	ResetId()
+	ResetIncludeUnitsWithoutEvents()
 	ResetIsActive()
 	ResetIsNumeric()
 	ResetMaintainerId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPercentileValue()
 	ResetRandomizationUnits()
 	ResetSelector()
 	ResetSuccessCriteria()
 	ResetTags()
 	ResetUnit()
+	ResetUnitAggregationType()
 	ResetUrls()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -183,6 +200,26 @@ type Metric interface {
 // The jsii proxy struct for Metric
 type jsiiProxy_Metric struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Metric) AnalysisType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"analysisType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metric) AnalysisTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"analysisTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Metric) CdktfStack() cdktf.TerraformStack {
@@ -325,6 +362,26 @@ func (j *jsiiProxy_Metric) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Metric) IncludeUnitsWithoutEvents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeUnitsWithoutEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metric) IncludeUnitsWithoutEventsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeUnitsWithoutEventsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Metric) IsActive() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -460,6 +517,26 @@ func (j *jsiiProxy_Metric) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metric) PercentileValue() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"percentileValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metric) PercentileValueInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"percentileValueInput",
 		&returns,
 	)
 	return returns
@@ -635,6 +712,26 @@ func (j *jsiiProxy_Metric) Unit() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Metric) UnitAggregationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unitAggregationType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Metric) UnitAggregationTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"unitAggregationTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Metric) UnitInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -665,8 +762,18 @@ func (j *jsiiProxy_Metric) UrlsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Metric) Version() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric launchdarkly_metric} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric launchdarkly_metric} Resource.
 func NewMetric(scope constructs.Construct, id *string, config *MetricConfig) Metric {
 	_init_.Initialize()
 
@@ -684,7 +791,7 @@ func NewMetric(scope constructs.Construct, id *string, config *MetricConfig) Met
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric launchdarkly_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric launchdarkly_metric} Resource.
 func NewMetric_Override(m Metric, scope constructs.Construct, id *string, config *MetricConfig) {
 	_init_.Initialize()
 
@@ -692,6 +799,17 @@ func NewMetric_Override(m Metric, scope constructs.Construct, id *string, config
 		"@cdktf/provider-launchdarkly.metric.Metric",
 		[]interface{}{scope, id, config},
 		m,
+	)
+}
+
+func (j *jsiiProxy_Metric)SetAnalysisType(val *string) {
+	if err := j.validateSetAnalysisTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"analysisType",
+		val,
 	)
 }
 
@@ -762,6 +880,17 @@ func (j *jsiiProxy_Metric)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Metric)SetIncludeUnitsWithoutEvents(val interface{}) {
+	if err := j.validateSetIncludeUnitsWithoutEventsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeUnitsWithoutEvents",
 		val,
 	)
 }
@@ -839,6 +968,17 @@ func (j *jsiiProxy_Metric)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Metric)SetPercentileValue(val *float64) {
+	if err := j.validateSetPercentileValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"percentileValue",
 		val,
 	)
 }
@@ -924,6 +1064,17 @@ func (j *jsiiProxy_Metric)SetUnit(val *string) {
 	_jsii_.Set(
 		j,
 		"unit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Metric)SetUnitAggregationType(val *string) {
+	if err := j.validateSetUnitAggregationTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unitAggregationType",
 		val,
 	)
 }
@@ -1292,6 +1443,14 @@ func (m *jsiiProxy_Metric) PutUrls(value interface{}) {
 	)
 }
 
+func (m *jsiiProxy_Metric) ResetAnalysisType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAnalysisType",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_Metric) ResetDescription() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1312,6 +1471,14 @@ func (m *jsiiProxy_Metric) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Metric) ResetIncludeUnitsWithoutEvents() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIncludeUnitsWithoutEvents",
 		nil, // no parameters
 	)
 }
@@ -1344,6 +1511,14 @@ func (m *jsiiProxy_Metric) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Metric) ResetPercentileValue() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPercentileValue",
 		nil, // no parameters
 	)
 }
@@ -1384,6 +1559,14 @@ func (m *jsiiProxy_Metric) ResetUnit() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetUnit",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Metric) ResetUnitAggregationType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetUnitAggregationType",
 		nil, // no parameters
 	)
 }
