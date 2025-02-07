@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataLaunchdarklyTeamMember) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataLaunchdarklyTeamMember) validatePutRoleAttributesParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataLaunchdarklyTeamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

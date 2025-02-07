@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/metric launchdarkly_metric}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/metric launchdarkly_metric}.
 type DataLaunchdarklyMetric interface {
 	cdktf.TerraformDataSource
 	AnalysisType() *string
@@ -42,7 +42,9 @@ type DataLaunchdarklyMetric interface {
 	SetId(val *string)
 	IdInput() *string
 	IncludeUnitsWithoutEvents() cdktf.IResolvable
-	IsActive() cdktf.IResolvable
+	IsActive() interface{}
+	SetIsActive(val interface{})
+	IsActiveInput() interface{}
 	IsNumeric() cdktf.IResolvable
 	Key() *string
 	SetKey(val *string)
@@ -106,6 +108,7 @@ type DataLaunchdarklyMetric interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetIsActive()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -258,11 +261,21 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) IncludeUnitsWithoutEvents() cdktf.IRe
 	return returns
 }
 
-func (j *jsiiProxy_DataLaunchdarklyMetric) IsActive() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataLaunchdarklyMetric) IsActive() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"isActive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyMetric) IsActiveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isActiveInput",
 		&returns,
 	)
 	return returns
@@ -509,7 +522,7 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/metric launchdarkly_metric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/metric launchdarkly_metric} Data Source.
 func NewDataLaunchdarklyMetric(scope constructs.Construct, id *string, config *DataLaunchdarklyMetricConfig) DataLaunchdarklyMetric {
 	_init_.Initialize()
 
@@ -527,7 +540,7 @@ func NewDataLaunchdarklyMetric(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/metric launchdarkly_metric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/metric launchdarkly_metric} Data Source.
 func NewDataLaunchdarklyMetric_Override(d DataLaunchdarklyMetric, scope constructs.Construct, id *string, config *DataLaunchdarklyMetricConfig) {
 	_init_.Initialize()
 
@@ -572,6 +585,17 @@ func (j *jsiiProxy_DataLaunchdarklyMetric)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLaunchdarklyMetric)SetIsActive(val interface{}) {
+	if err := j.validateSetIsActiveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isActive",
 		val,
 	)
 }
@@ -906,6 +930,14 @@ func (d *jsiiProxy_DataLaunchdarklyMetric) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyMetric) ResetIsActive() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsActive",
 		nil, // no parameters
 	)
 }

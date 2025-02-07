@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/team_member launchdarkly_team_member}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/team_member launchdarkly_team_member}.
 type DataLaunchdarklyTeamMember interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -55,6 +55,8 @@ type DataLaunchdarklyTeamMember interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Role() *string
+	RoleAttributes() DataLaunchdarklyTeamMemberRoleAttributesList
+	RoleAttributesInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -86,9 +88,11 @@ type DataLaunchdarklyTeamMember interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRoleAttributes(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRoleAttributes()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -288,6 +292,26 @@ func (j *jsiiProxy_DataLaunchdarklyTeamMember) Role() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataLaunchdarklyTeamMember) RoleAttributes() DataLaunchdarklyTeamMemberRoleAttributesList {
+	var returns DataLaunchdarklyTeamMemberRoleAttributesList
+	_jsii_.Get(
+		j,
+		"roleAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyTeamMember) RoleAttributesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"roleAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataLaunchdarklyTeamMember) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -319,7 +343,7 @@ func (j *jsiiProxy_DataLaunchdarklyTeamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/team_member launchdarkly_team_member} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/team_member launchdarkly_team_member} Data Source.
 func NewDataLaunchdarklyTeamMember(scope constructs.Construct, id *string, config *DataLaunchdarklyTeamMemberConfig) DataLaunchdarklyTeamMember {
 	_init_.Initialize()
 
@@ -337,7 +361,7 @@ func NewDataLaunchdarklyTeamMember(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/team_member launchdarkly_team_member} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/team_member launchdarkly_team_member} Data Source.
 func NewDataLaunchdarklyTeamMember_Override(d DataLaunchdarklyTeamMember, scope constructs.Construct, id *string, config *DataLaunchdarklyTeamMemberConfig) {
 	_init_.Initialize()
 
@@ -690,10 +714,29 @@ func (d *jsiiProxy_DataLaunchdarklyTeamMember) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (d *jsiiProxy_DataLaunchdarklyTeamMember) PutRoleAttributes(value interface{}) {
+	if err := d.validatePutRoleAttributesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRoleAttributes",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLaunchdarklyTeamMember) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLaunchdarklyTeamMember) ResetRoleAttributes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRoleAttributes",
 		nil, // no parameters
 	)
 }

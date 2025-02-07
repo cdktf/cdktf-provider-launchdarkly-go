@@ -38,6 +38,7 @@ type DataLaunchdarklyTeamMembersTeamMembersOutputReference interface {
 	SetInternalValue(val *DataLaunchdarklyTeamMembersTeamMembers)
 	LastName() *string
 	Role() *string
+	RoleAttributes() DataLaunchdarklyTeamMembersTeamMembersRoleAttributesList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -190,6 +191,16 @@ func (j *jsiiProxy_DataLaunchdarklyTeamMembersTeamMembersOutputReference) Role()
 	_jsii_.Get(
 		j,
 		"role",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLaunchdarklyTeamMembersTeamMembersOutputReference) RoleAttributes() DataLaunchdarklyTeamMembersTeamMembersRoleAttributesList {
+	var returns DataLaunchdarklyTeamMembersTeamMembersRoleAttributesList
+	_jsii_.Get(
+		j,
+		"roleAttributes",
 		&returns,
 	)
 	return returns

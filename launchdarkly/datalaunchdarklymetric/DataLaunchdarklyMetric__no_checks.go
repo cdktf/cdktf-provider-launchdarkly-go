@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetIsActiveParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataLaunchdarklyMetric) validateSetKeyParameters(val *string) error {
 	return nil
 }

@@ -75,6 +75,10 @@ func (t *jsiiProxy_TeamMember) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (t *jsiiProxy_TeamMember) validatePutRoleAttributesParameters(value interface{}) error {
+	return nil
+}
+
 func validateTeamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

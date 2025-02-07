@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member launchdarkly_team_member}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member launchdarkly_team_member}.
 type TeamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,8 @@ type TeamMember interface {
 	RawOverrides() interface{}
 	Role() *string
 	SetRole(val *string)
+	RoleAttributes() TeamMemberRoleAttributesList
+	RoleAttributesInput() interface{}
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -120,6 +122,7 @@ type TeamMember interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRoleAttributes(value interface{})
 	ResetCustomRoles()
 	ResetFirstName()
 	ResetLastName()
@@ -127,6 +130,7 @@ type TeamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRole()
+	ResetRoleAttributes()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -375,6 +379,26 @@ func (j *jsiiProxy_TeamMember) Role() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TeamMember) RoleAttributes() TeamMemberRoleAttributesList {
+	var returns TeamMemberRoleAttributesList
+	_jsii_.Get(
+		j,
+		"roleAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamMember) RoleAttributesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"roleAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamMember) RoleInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -416,7 +440,7 @@ func (j *jsiiProxy_TeamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member launchdarkly_team_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member launchdarkly_team_member} Resource.
 func NewTeamMember(scope constructs.Construct, id *string, config *TeamMemberConfig) TeamMember {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewTeamMember(scope constructs.Construct, id *string, config *TeamMemberCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member launchdarkly_team_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member launchdarkly_team_member} Resource.
 func NewTeamMember_Override(t TeamMember, scope constructs.Construct, id *string, config *TeamMemberConfig) {
 	_init_.Initialize()
 
@@ -921,6 +945,17 @@ func (t *jsiiProxy_TeamMember) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (t *jsiiProxy_TeamMember) PutRoleAttributes(value interface{}) {
+	if err := t.validatePutRoleAttributesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putRoleAttributes",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamMember) ResetCustomRoles() {
 	_jsii_.InvokeVoid(
 		t,
@@ -957,6 +992,14 @@ func (t *jsiiProxy_TeamMember) ResetRole() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetRole",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamMember) ResetRoleAttributes() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRoleAttributes",
 		nil, // no parameters
 	)
 }
