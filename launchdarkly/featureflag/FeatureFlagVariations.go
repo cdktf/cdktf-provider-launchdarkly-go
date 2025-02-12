@@ -19,15 +19,15 @@ type FeatureFlagVariations struct {
 	//
 	// -> **Note:** Terraform manages `variations` as an ordered array and identifies them by index. This means that if you change the order of your `variations` block, you may end up destroying and recreating those variations. Additionally, if you delete variations that have targets that have been attached outside of Terraform, those targets may be incorrectly reassigned to a different variation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/feature_flag#value FeatureFlag#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/feature_flag#value FeatureFlag#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// The variation's description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/feature_flag#description FeatureFlag#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/feature_flag#description FeatureFlag#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The name of the variation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/feature_flag#name FeatureFlag#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/feature_flag#name FeatureFlag#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

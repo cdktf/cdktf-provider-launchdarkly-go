@@ -28,6 +28,9 @@ type FeatureFlagEnvironmentRulesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContextKind() *string
+	SetContextKind(val *string)
+	ContextKindInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -81,6 +84,7 @@ type FeatureFlagEnvironmentRulesOutputReference interface {
 	PutClauses(value interface{})
 	ResetBucketBy()
 	ResetClauses()
+	ResetContextKind()
 	ResetDescription()
 	ResetRolloutWeights()
 	ResetVariation()
@@ -154,6 +158,26 @@ func (j *jsiiProxy_FeatureFlagEnvironmentRulesOutputReference) ComplexObjectIsFr
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureFlagEnvironmentRulesOutputReference) ContextKind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contextKind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FeatureFlagEnvironmentRulesOutputReference) ContextKindInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contextKindInput",
 		&returns,
 	)
 	return returns
@@ -326,6 +350,17 @@ func (j *jsiiProxy_FeatureFlagEnvironmentRulesOutputReference)SetComplexObjectIs
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FeatureFlagEnvironmentRulesOutputReference)SetContextKind(val *string) {
+	if err := j.validateSetContextKindParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"contextKind",
 		val,
 	)
 }
@@ -605,6 +640,14 @@ func (f *jsiiProxy_FeatureFlagEnvironmentRulesOutputReference) ResetClauses() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetClauses",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FeatureFlagEnvironmentRulesOutputReference) ResetContextKind() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetContextKind",
 		nil, // no parameters
 	)
 }

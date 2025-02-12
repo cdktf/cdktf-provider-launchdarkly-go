@@ -67,6 +67,10 @@ func (j *jsiiProxy_FeatureFlagEnvironmentRulesOutputReference) validateSetComple
 	return nil
 }
 
+func (j *jsiiProxy_FeatureFlagEnvironmentRulesOutputReference) validateSetContextKindParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FeatureFlagEnvironmentRulesOutputReference) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
