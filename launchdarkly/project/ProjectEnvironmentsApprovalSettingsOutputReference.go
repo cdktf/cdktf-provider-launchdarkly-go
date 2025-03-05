@@ -13,6 +13,9 @@ import (
 
 type ProjectEnvironmentsApprovalSettingsOutputReference interface {
 	cdktf.ComplexObject
+	AutoApplyApprovedChanges() interface{}
+	SetAutoApplyApprovedChanges(val interface{})
+	AutoApplyApprovedChangesInput() interface{}
 	CanApplyDeclinedChanges() interface{}
 	SetCanApplyDeclinedChanges(val interface{})
 	CanApplyDeclinedChangesInput() interface{}
@@ -85,6 +88,7 @@ type ProjectEnvironmentsApprovalSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAutoApplyApprovedChanges()
 	ResetCanApplyDeclinedChanges()
 	ResetCanReviewOwnRequest()
 	ResetMinNumApprovals()
@@ -105,6 +109,26 @@ type ProjectEnvironmentsApprovalSettingsOutputReference interface {
 // The jsii proxy struct for ProjectEnvironmentsApprovalSettingsOutputReference
 type jsiiProxy_ProjectEnvironmentsApprovalSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ProjectEnvironmentsApprovalSettingsOutputReference) AutoApplyApprovedChanges() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoApplyApprovedChanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ProjectEnvironmentsApprovalSettingsOutputReference) AutoApplyApprovedChangesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoApplyApprovedChangesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ProjectEnvironmentsApprovalSettingsOutputReference) CanApplyDeclinedChanges() interface{} {
@@ -342,6 +366,17 @@ func NewProjectEnvironmentsApprovalSettingsOutputReference_Override(p ProjectEnv
 		"@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
+	)
+}
+
+func (j *jsiiProxy_ProjectEnvironmentsApprovalSettingsOutputReference)SetAutoApplyApprovedChanges(val interface{}) {
+	if err := j.validateSetAutoApplyApprovedChangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoApplyApprovedChanges",
+		val,
 	)
 }
 
@@ -661,6 +696,14 @@ func (p *jsiiProxy_ProjectEnvironmentsApprovalSettingsOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_ProjectEnvironmentsApprovalSettingsOutputReference) ResetAutoApplyApprovedChanges() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAutoApplyApprovedChanges",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_ProjectEnvironmentsApprovalSettingsOutputReference) ResetCanApplyDeclinedChanges() {

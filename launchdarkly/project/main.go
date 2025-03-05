@@ -182,6 +182,8 @@ func init() {
 		"@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference",
 		reflect.TypeOf((*ProjectEnvironmentsApprovalSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "autoApplyApprovedChanges", GoGetter: "AutoApplyApprovedChanges"},
+			_jsii_.MemberProperty{JsiiProperty: "autoApplyApprovedChangesInput", GoGetter: "AutoApplyApprovedChangesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "canApplyDeclinedChanges", GoGetter: "CanApplyDeclinedChanges"},
 			_jsii_.MemberProperty{JsiiProperty: "canApplyDeclinedChangesInput", GoGetter: "CanApplyDeclinedChangesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "canReviewOwnRequest", GoGetter: "CanReviewOwnRequest"},
@@ -209,6 +211,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requiredApprovalTags", GoGetter: "RequiredApprovalTags"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredApprovalTagsInput", GoGetter: "RequiredApprovalTagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredInput", GoGetter: "RequiredInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoApplyApprovedChanges", GoMethod: "ResetAutoApplyApprovedChanges"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCanApplyDeclinedChanges", GoMethod: "ResetCanApplyDeclinedChanges"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCanReviewOwnRequest", GoMethod: "ResetCanReviewOwnRequest"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinNumApprovals", GoMethod: "ResetMinNumApprovals"},

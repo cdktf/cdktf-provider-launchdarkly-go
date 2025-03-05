@@ -51,6 +51,10 @@ func (p *jsiiProxy_ProjectEnvironmentsApprovalSettingsOutputReference) validateR
 	return nil
 }
 
+func (j *jsiiProxy_ProjectEnvironmentsApprovalSettingsOutputReference) validateSetAutoApplyApprovedChangesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectEnvironmentsApprovalSettingsOutputReference) validateSetCanApplyDeclinedChangesParameters(val interface{}) error {
 	return nil
 }

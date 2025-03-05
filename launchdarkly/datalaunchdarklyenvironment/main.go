@@ -105,6 +105,7 @@ func init() {
 		"@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentApprovalSettingsOutputReference",
 		reflect.TypeOf((*DataLaunchdarklyEnvironmentApprovalSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "autoApplyApprovedChanges", GoGetter: "AutoApplyApprovedChanges"},
 			_jsii_.MemberProperty{JsiiProperty: "canApplyDeclinedChanges", GoGetter: "CanApplyDeclinedChanges"},
 			_jsii_.MemberProperty{JsiiProperty: "canReviewOwnRequest", GoGetter: "CanReviewOwnRequest"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -13,6 +13,7 @@ import (
 
 type DataLaunchdarklyEnvironmentApprovalSettingsOutputReference interface {
 	cdktf.ComplexObject
+	AutoApplyApprovedChanges() cdktf.IResolvable
 	CanApplyDeclinedChanges() cdktf.IResolvable
 	CanReviewOwnRequest() cdktf.IResolvable
 	// the index of the complex object in a list.
@@ -84,6 +85,16 @@ type DataLaunchdarklyEnvironmentApprovalSettingsOutputReference interface {
 // The jsii proxy struct for DataLaunchdarklyEnvironmentApprovalSettingsOutputReference
 type jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) AutoApplyApprovedChanges() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"autoApplyApprovedChanges",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsOutputReference) CanApplyDeclinedChanges() cdktf.IResolvable {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/destination launchdarkly_destination}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/destination launchdarkly_destination}.
 type Destination interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_Destination) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/destination launchdarkly_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/destination launchdarkly_destination} Resource.
 func NewDestination(scope constructs.Construct, id *string, config *DestinationConfig) Destination {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewDestination(scope constructs.Construct, id *string, config *DestinationC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/destination launchdarkly_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/destination launchdarkly_destination} Resource.
 func NewDestination_Override(d Destination, scope constructs.Construct, id *string, config *DestinationConfig) {
 	_init_.Initialize()
 

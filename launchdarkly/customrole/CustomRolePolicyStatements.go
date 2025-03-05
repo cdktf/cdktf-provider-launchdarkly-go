@@ -9,25 +9,25 @@ type CustomRolePolicyStatements struct {
 	//
 	// This argument defines whether the statement allows or denies access to the named resources and actions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/custom_role#effect CustomRole#effect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/custom_role#effect CustomRole#effect}
 	Effect *string `field:"required" json:"effect" yaml:"effect"`
 	// The list of action specifiers defining the actions to which the statement applies.
 	//
 	// Either `actions` or `not_actions` must be specified. For a list of available actions read [Actions reference](https://docs.launchdarkly.com/home/account-security/custom-roles/actions#actions-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/custom_role#actions CustomRole#actions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/custom_role#actions CustomRole#actions}
 	Actions *[]*string `field:"optional" json:"actions" yaml:"actions"`
 	// The list of action specifiers defining the actions to which the statement does not apply.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/custom_role#not_actions CustomRole#not_actions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/custom_role#not_actions CustomRole#not_actions}
 	NotActions *[]*string `field:"optional" json:"notActions" yaml:"notActions"`
 	// The list of resource specifiers defining the resources to which the statement does not apply.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/custom_role#not_resources CustomRole#not_resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/custom_role#not_resources CustomRole#not_resources}
 	NotResources *[]*string `field:"optional" json:"notResources" yaml:"notResources"`
 	// The list of resource specifiers defining the resources to which the statement applies.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/custom_role#resources CustomRole#resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/custom_role#resources CustomRole#resources}
 	Resources *[]*string `field:"optional" json:"resources" yaml:"resources"`
 }
 
