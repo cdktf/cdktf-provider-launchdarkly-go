@@ -26,7 +26,7 @@ type TeamMemberConfig struct {
 	//
 	// A change in this field will force the destruction of the existing resource and the creation of a new one.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/team_member#email TeamMember#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#email TeamMember#email}
 	Email *string `field:"required" json:"email" yaml:"email"`
 	// The list of custom roles keys associated with the team member.
 	//
@@ -34,25 +34,25 @@ type TeamMemberConfig struct {
 	//
 	// -> **Note:** each `launchdarkly_team_member` must have either a `role` or `custom_roles` argument.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/team_member#custom_roles TeamMember#custom_roles}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#custom_roles TeamMember#custom_roles}
 	CustomRoles *[]*string `field:"optional" json:"customRoles" yaml:"customRoles"`
 	// The team member's given name. Once created, this cannot be updated except by the team member.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/team_member#first_name TeamMember#first_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#first_name TeamMember#first_name}
 	FirstName *string `field:"optional" json:"firstName" yaml:"firstName"`
 	// TThe team member's family name. Once created, this cannot be updated except by the team member.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/team_member#last_name TeamMember#last_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#last_name TeamMember#last_name}
 	LastName *string `field:"optional" json:"lastName" yaml:"lastName"`
 	// The role associated with team member.
 	//
 	// Supported roles are `reader`, `writer`, `no_access`, or `admin`. If you don't specify a role, `reader` is assigned by default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/team_member#role TeamMember#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#role TeamMember#role}
 	Role *string `field:"optional" json:"role" yaml:"role"`
 	// role_attributes block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/team_member#role_attributes TeamMember#role_attributes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#role_attributes TeamMember#role_attributes}
 	RoleAttributes interface{} `field:"optional" json:"roleAttributes" yaml:"roleAttributes"`
 }
 
