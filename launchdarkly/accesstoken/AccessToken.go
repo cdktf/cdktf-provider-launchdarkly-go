@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/access_token launchdarkly_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/resources/access_token launchdarkly_access_token}.
 type AccessToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -513,7 +513,7 @@ func (j *jsiiProxy_AccessToken) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/access_token launchdarkly_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/resources/access_token launchdarkly_access_token} Resource.
 func NewAccessToken(scope constructs.Construct, id *string, config *AccessTokenConfig) AccessToken {
 	_init_.Initialize()
 
@@ -531,7 +531,7 @@ func NewAccessToken(scope constructs.Construct, id *string, config *AccessTokenC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/access_token launchdarkly_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/resources/access_token launchdarkly_access_token} Resource.
 func NewAccessToken_Override(a AccessToken, scope constructs.Construct, id *string, config *AccessTokenConfig) {
 	_init_.Initialize()
 

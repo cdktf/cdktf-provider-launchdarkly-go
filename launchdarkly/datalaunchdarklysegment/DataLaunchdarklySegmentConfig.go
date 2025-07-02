@@ -24,17 +24,17 @@ type DataLaunchdarklySegmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The segment's environment key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
 	EnvKey *string `field:"required" json:"envKey" yaml:"envKey"`
 	// The unique key that references the segment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/data-sources/segment#key DataLaunchdarklySegment#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/segment#key DataLaunchdarklySegment#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The segment's project key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
 	ProjectKey *string `field:"required" json:"projectKey" yaml:"projectKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
