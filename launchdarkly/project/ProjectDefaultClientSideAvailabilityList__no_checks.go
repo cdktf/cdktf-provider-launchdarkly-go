@@ -15,7 +15,7 @@ func (p *jsiiProxy_ProjectDefaultClientSideAvailabilityList) validateGetParamete
 	return nil
 }
 
-func (p *jsiiProxy_ProjectDefaultClientSideAvailabilityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectDefaultClientSideAvailabilityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

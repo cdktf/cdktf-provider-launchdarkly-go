@@ -15,7 +15,7 @@ func (f *jsiiProxy_FeatureFlagEnvironmentTargetsList) validateGetParameters(inde
 	return nil
 }
 
-func (f *jsiiProxy_FeatureFlagEnvironmentTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FeatureFlagEnvironmentTargetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

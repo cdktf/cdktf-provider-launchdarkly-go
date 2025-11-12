@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklySegmentRulesClausesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

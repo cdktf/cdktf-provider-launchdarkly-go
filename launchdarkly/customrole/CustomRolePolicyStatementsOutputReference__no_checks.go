@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomRolePolicyStatementsOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_CustomRolePolicyStatementsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomRolePolicyStatementsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomRolePolicyStatementsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomRolePolicyStatementsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

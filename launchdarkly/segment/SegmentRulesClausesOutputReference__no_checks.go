@@ -43,11 +43,11 @@ func (s *jsiiProxy_SegmentRulesClausesOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (s *jsiiProxy_SegmentRulesClausesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SegmentRulesClausesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SegmentRulesClausesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SegmentRulesClausesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

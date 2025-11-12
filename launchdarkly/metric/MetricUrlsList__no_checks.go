@@ -15,7 +15,7 @@ func (m *jsiiProxy_MetricUrlsList) validateGetParameters(index *float64) error {
 	return nil
 }
 
-func (m *jsiiProxy_MetricUrlsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MetricUrlsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

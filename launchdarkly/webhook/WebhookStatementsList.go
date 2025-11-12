@@ -41,7 +41,7 @@ type WebhookStatementsList interface {
 	Get(index *float64) WebhookStatementsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (w *jsiiProxy_WebhookStatementsList) Get(index *float64) WebhookStatementsO
 	return returns
 }
 
-func (w *jsiiProxy_WebhookStatementsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WebhookStatementsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (w *jsiiProxy_WebhookStatementsList) Resolve(_context cdktf.IResolveContext
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

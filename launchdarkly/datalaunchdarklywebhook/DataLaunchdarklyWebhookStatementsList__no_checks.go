@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyWebhookStatementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

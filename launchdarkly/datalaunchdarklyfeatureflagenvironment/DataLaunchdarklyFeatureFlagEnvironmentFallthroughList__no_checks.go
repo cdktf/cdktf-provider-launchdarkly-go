@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentFallthroughList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

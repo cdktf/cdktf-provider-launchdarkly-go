@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLaunchdarklyTeamMemberRoleAttributesOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyTeamMemberRoleAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLaunchdarklyTeamMemberRoleAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyTeamMemberRoleAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyTeamMemberRoleAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

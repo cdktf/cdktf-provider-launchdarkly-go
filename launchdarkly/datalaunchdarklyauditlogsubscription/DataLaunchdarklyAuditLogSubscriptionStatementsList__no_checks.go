@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyAuditLogSubscriptionStatementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

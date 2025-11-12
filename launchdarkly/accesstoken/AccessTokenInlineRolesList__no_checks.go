@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccessTokenInlineRolesList) validateGetParameters(index *floa
 	return nil
 }
 
-func (a *jsiiProxy_AccessTokenInlineRolesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessTokenInlineRolesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

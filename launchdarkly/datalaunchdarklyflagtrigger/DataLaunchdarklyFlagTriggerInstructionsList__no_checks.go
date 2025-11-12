@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyFlagTriggerInstructionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

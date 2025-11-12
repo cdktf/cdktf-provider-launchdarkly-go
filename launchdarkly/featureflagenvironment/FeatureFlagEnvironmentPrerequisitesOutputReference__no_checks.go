@@ -43,11 +43,11 @@ func (f *jsiiProxy_FeatureFlagEnvironmentPrerequisitesOutputReference) validateG
 	return nil
 }
 
-func (f *jsiiProxy_FeatureFlagEnvironmentPrerequisitesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FeatureFlagEnvironmentPrerequisitesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FeatureFlagEnvironmentPrerequisitesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FeatureFlagEnvironmentPrerequisitesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

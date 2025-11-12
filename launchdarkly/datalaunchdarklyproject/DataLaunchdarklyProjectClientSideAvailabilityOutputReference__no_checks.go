@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLaunchdarklyProjectClientSideAvailabilityOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyProjectClientSideAvailabilityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLaunchdarklyProjectClientSideAvailabilityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyProjectClientSideAvailabilityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyProjectClientSideAvailabilityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

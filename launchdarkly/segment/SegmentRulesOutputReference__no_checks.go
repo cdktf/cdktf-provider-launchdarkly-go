@@ -43,7 +43,7 @@ func (s *jsiiProxy_SegmentRulesOutputReference) validateGetStringMapAttributePar
 	return nil
 }
 
-func (s *jsiiProxy_SegmentRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SegmentRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SegmentRulesOutputReference) validatePutClausesParameters(val
 	return nil
 }
 
-func (s *jsiiProxy_SegmentRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SegmentRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

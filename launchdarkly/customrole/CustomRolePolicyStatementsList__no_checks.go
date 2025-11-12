@@ -15,7 +15,7 @@ func (c *jsiiProxy_CustomRolePolicyStatementsList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_CustomRolePolicyStatementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomRolePolicyStatementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

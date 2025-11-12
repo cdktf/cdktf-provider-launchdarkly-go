@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

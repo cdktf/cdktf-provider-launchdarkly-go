@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLaunchdarklyProjectClientSideAvailabilityList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyProjectClientSideAvailabilityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyProjectClientSideAvailabilityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

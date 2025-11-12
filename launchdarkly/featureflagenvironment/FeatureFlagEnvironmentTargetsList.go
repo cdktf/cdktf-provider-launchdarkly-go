@@ -41,7 +41,7 @@ type FeatureFlagEnvironmentTargetsList interface {
 	Get(index *float64) FeatureFlagEnvironmentTargetsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (f *jsiiProxy_FeatureFlagEnvironmentTargetsList) Get(index *float64) Featur
 	return returns
 }
 
-func (f *jsiiProxy_FeatureFlagEnvironmentTargetsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FeatureFlagEnvironmentTargetsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (f *jsiiProxy_FeatureFlagEnvironmentTargetsList) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

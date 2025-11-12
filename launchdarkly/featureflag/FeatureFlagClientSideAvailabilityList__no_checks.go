@@ -15,7 +15,7 @@ func (f *jsiiProxy_FeatureFlagClientSideAvailabilityList) validateGetParameters(
 	return nil
 }
 
-func (f *jsiiProxy_FeatureFlagClientSideAvailabilityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FeatureFlagClientSideAvailabilityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

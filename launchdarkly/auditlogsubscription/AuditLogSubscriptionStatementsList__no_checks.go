@@ -15,7 +15,7 @@ func (a *jsiiProxy_AuditLogSubscriptionStatementsList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_AuditLogSubscriptionStatementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuditLogSubscriptionStatementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

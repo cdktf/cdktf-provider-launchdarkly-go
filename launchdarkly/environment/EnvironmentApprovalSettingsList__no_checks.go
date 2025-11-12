@@ -15,7 +15,7 @@ func (e *jsiiProxy_EnvironmentApprovalSettingsList) validateGetParameters(index 
 	return nil
 }
 
-func (e *jsiiProxy_EnvironmentApprovalSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EnvironmentApprovalSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

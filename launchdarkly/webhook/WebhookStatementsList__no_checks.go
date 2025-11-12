@@ -15,7 +15,7 @@ func (w *jsiiProxy_WebhookStatementsList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (w *jsiiProxy_WebhookStatementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WebhookStatementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SegmentExcludedContextsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (s *jsiiProxy_SegmentExcludedContextsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SegmentExcludedContextsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

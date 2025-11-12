@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccessTokenPolicyStatementsList) validateGetParameters(index 
 	return nil
 }
 
-func (a *jsiiProxy_AccessTokenPolicyStatementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessTokenPolicyStatementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

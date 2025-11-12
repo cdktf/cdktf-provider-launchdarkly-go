@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLaunchdarklyTeamMaintainersList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyTeamMaintainersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyTeamMaintainersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

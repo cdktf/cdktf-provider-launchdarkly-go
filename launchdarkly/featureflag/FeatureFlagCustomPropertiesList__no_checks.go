@@ -15,7 +15,7 @@ func (f *jsiiProxy_FeatureFlagCustomPropertiesList) validateGetParameters(index 
 	return nil
 }
 
-func (f *jsiiProxy_FeatureFlagCustomPropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FeatureFlagCustomPropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

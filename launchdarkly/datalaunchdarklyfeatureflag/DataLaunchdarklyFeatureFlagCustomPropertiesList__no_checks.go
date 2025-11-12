@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyFeatureFlagCustomPropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

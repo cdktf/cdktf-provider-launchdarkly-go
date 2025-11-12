@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyMetricUrlsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

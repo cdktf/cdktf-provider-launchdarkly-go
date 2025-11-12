@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyEnvironmentApprovalSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

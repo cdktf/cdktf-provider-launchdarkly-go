@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyMetricUrlsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

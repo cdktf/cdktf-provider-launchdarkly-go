@@ -15,7 +15,7 @@ func (r *jsiiProxy_RelayProxyConfigurationPolicyList) validateGetParameters(inde
 	return nil
 }
 
-func (r *jsiiProxy_RelayProxyConfigurationPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RelayProxyConfigurationPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

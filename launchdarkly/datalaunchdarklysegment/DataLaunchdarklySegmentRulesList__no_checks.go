@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLaunchdarklySegmentRulesList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklySegmentRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklySegmentRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLaunchdarklyTeamMembersTeamMembersOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyTeamMembersTeamMembersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLaunchdarklyTeamMembersTeamMembersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLaunchdarklyTeamMembersTeamMembersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLaunchdarklyTeamMembersTeamMembersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
